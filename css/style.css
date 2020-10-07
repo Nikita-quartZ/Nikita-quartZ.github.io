@@ -329,6 +329,8 @@ footer {
 	background-repeat: no-repeat;
 	border: none;
 	cursor: pointer;
+	position: relative;
+	top: 3px;
 }
 .search:hover {
 	background-image: url(../img/Search-orange.svg);
@@ -340,8 +342,6 @@ footer {
 	background-color: white;
 	display: none;
 	margin-right: 50px;
-	position: relative;
-	bottom: 3.6px;
 }
 .line-first, .line-second, .line-third {
 	width: 30px;
