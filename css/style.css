@@ -398,3 +398,28 @@ h1 {
 	line-height: 16px;
 	color: #999;
 }
+.accordionjs {
+	margin-top: 0;
+}
+.accordionjs .acc_section {
+	border: none;
+	border-top: 1px solid #CACACA;
+	border-bottom: 1px solid  #CACACA;
+	padding: 30px 10px;
+}
+.acc_head {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 32px;
+}
+.accordionjs .acc_section.acc_active > .acc_head {
+	padding-bottom: 30px;
+	border-bottom: 1px solid #9D5CD0;
+	background: #FFF;
+}
+.accordionjs .acc_section.acc_active > .acc_content {
+	display: flex;
+}
+.info-accordion-children {
+	width: 208px;
+}
