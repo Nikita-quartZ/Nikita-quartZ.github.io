@@ -423,3 +423,15 @@ h1 {
 .info-accordion-children {
 	width: 208px;
 }
+.fourth-section-children {
+	width: 500px;
+	height: 700px;
+	border: 1px solid #CACACA;
+}
+.fourth-section-block {
+	display: flex;
+	justify-content: space-between;
+}
+.fourth-section-button {
+	margin: 0 auto;
+}
