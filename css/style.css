@@ -79,8 +79,9 @@ input, textarea, button {
 	outline: none;
 }
 .control {
-	width: 1600px;
+	max-width: 1900px;
 	margin: 0 auto;
+	padding: 0 160px;
 }
 .header {
 	background-image: url(../img/slide\ 1-1x.jpg);
@@ -427,11 +428,85 @@ h1 {
 	width: 500px;
 	height: 700px;
 	border: 1px solid #CACACA;
+	padding: 50px 50px;
+	padding-top: 313px;
+}
+.fourth-section-children-first {
+	background-image: url(../img/Rectangle\ 101.jpg);
+	background-repeat: no-repeat;
+}
+.fourth-section-children-second {
+	background-image: url(../img/Rectangle\ 102.jpg);
+	background-repeat: no-repeat;
+}
+.fourth-section-children-third {
+	background-image: url(../img/Rectangle\ 103.jpg);
+	background-repeat: no-repeat;
 }
 .fourth-section-block {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: 50px;
 }
 .fourth-section-button {
 	margin: 0 auto;
+	display: block;
+	padding: 17px 35px;
+	border: 2px solid #9D5CD0;
+	border-radius: 100px;
+	color: #9D5CD0;
+	background: none;
+	margin-bottom: 80px;
+}
+.mini-info {
+	width: 200px;
+	color: #999999;
+	margin-left: auto;
+	text-align: right;
+	font-size: 12px;
+	line-height: 16px;
+}
+.event {
+	font-size: 24px;
+	line-height: 33px;
+	font-weight: 600;
+}
+.additional-info-1 {
+	position: relative;
+	top: 45px;
+	border: none;
+	margin-top: auto;
+	color: #9D5CD0;
+	border-bottom: 1px solid #9D5CD0;
+	background: none;
+}
+.additional-info-2 {
+	position: relative;
+	top: 14px;
+	border: none;
+	margin-top: auto;
+	color: #9D5CD0;
+	border-bottom: 1px solid #9D5CD0;
+	background: none;
+}
+.additional-info-3 {
+	position: relative;
+	top: 17px;
+	border: none;
+	margin-top: auto;
+	color: #9D5CD0;
+	border-bottom: 1px solid #9D5CD0;
+	background: none;
+}
+.fiveth-section {
+	background-image: url(../img/birmingham.jpg);
+	width: 1920px;
+	height: 766px;
+	padding-top: 80px;
+}
+.books {
+	color: #FFF;
+}
+.checkboxs {
+	color: #FFF;
 }
