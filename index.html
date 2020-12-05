@@ -32,7 +32,9 @@
                             <li class="navigation-children">Проекты</li>
                             <li class="navigation-children">Контакты</li>
                         </ul>
-                        <button class="login"><img src="img//Vector.svg" alt="login"> Войти</button>
+                        <form action="#" class="header-form">
+                            <button class="login"><img src="img//Vector.svg" alt="login" class="login-img"> Войти</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -81,10 +83,10 @@
                         <p class="second-paragraph">Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#" class="second-login">авторизуйтесь</a>, либо воспользуйтесь лицензией. </p>
                     </div>
                     <div class="second-flex-block">
-                        <div class="button-swiper">
-                            <img src="img/Group 22.svg" alt="button" class="first-button-swiper swiper-button-prev">
+                        <div class="button-swiper1">
+                            <img src="img/Group 22.png" alt="button" class="first-button-swiper swiper-button-prev">
                             <span class="pagination">1/3</span>
-                            <img src="img/Group 23.svg" alt="button" class="second-button-swiper swiper-button-next">
+                            <img src="img/Group 23.png" alt="button" class="second-button-swiper swiper-button-next">
                         </div>
                         <div class="swiper-container">
                             <!-- Additional required wrapper -->
@@ -115,8 +117,6 @@
                                     <img src="img/Rectangle 71.jpg" alt="picture" class="picture">
                                 </div>
                             </div>
-                            <!-- If we need scrollbar -->
-                            <div class="swiper-scrollbar"></div>
                         </div>
                     </div>
                 </div>
@@ -409,53 +409,194 @@
             </div>
         </section>
         <section class="fiveth-section">
-            <div class="control">
-                <h2 class="section-header books">Издания</h2>
-                <div class="left-colomn">
-                    <ul class="checkbox-block">
-                        <li class="checkboxs">
-                            <input type="checkbox">
-                            Бестселлеры
-                        </li>
-                        <li class="checkboxs">
-                            <input type="checkbox">
-                            Искусство</li>
-                        <li class="checkboxs">
-                            <input type="checkbox">
-                            Архитектура</li>
-                        <li class="checkboxs">
-                            <input type="checkbox">
-                            Дизайн</li>
-                        <li class="checkboxs">
-                            <input type="checkbox">
-                            Мода</li>
-                        <li class="checkboxs">
-                            <input type="checkbox">
-                            Детям</li>
-                        <li class="checkboxs">
-                            <input type="checkbox">
-                            Художественная литература</li>
-                        <li class="checkboxs">
-                            <input type="checkbox">
-                            Публицистика</li>
-                        <li class="checkboxs">
-                            <input type="checkbox">
-                            Путеводители</li>
-                        <li class="checkboxs">
-                            <input type="checkbox">
-                            Философия</li>
-                        <li class="checkboxs">
-                            <input type="checkbox">
-                            Учебная литература</li>
-                        <li class="checkboxs">
-                            <input type="checkbox">
-                            Журналы и газеты</li>
-                    </ul>
-                </div>
-                <div class="right-colomn">
-
+            <div class="control" >
+                <div class="fiveth-section-flex">
+                    <div class="left-colomn">
+                        <h2 class="section-header books">Издания</h2>
+                        <div class="checkbox-block">
+                            <span class="check-span">Категории</span> 
+                            <label for="check1">
+                                <input type="checkbox" name="check1" id="check1">
+                                Бестселлеры
+                                <span></span>
+                            </label>
+                            <label for="check2">
+                                <input type="checkbox" name="check2" id="check2">
+                                Искусство
+                                <span></span>
+                            </label>
+                            <label for="check3">
+                                <input type="checkbox" name="check3" id="check3">
+                                Архитектура
+                                <span></span>
+                            </label>
+                            <label for="check4">
+                                <input type="checkbox" name="check4" id="check4">
+                                Дизайн
+                                <span></span>
+                            </label>
+                            <label for="check5">
+                                <input type="checkbox" name="check5" id="check5">
+                                Мода
+                                <span></span>
+                            </label>
+                            <label for="check6">
+                                <input type="checkbox" name="check6" id="check6">
+                                Детям
+                                <span></span>
+                            </label>
+                            <label for="check7">
+                                <input type="checkbox" name="check7" id="check7">
+                                Художественная литература
+                                <span></span>
+                            </label>
+                            <label for="check8">
+                                <input type="checkbox" name="check8" id="check8">
+                                Публицистика
+                                <span></span>
+                            </label>
+                            <label for="check9">
+                                <input type="checkbox" name="check9" id="check9">
+                                Путеводители
+                                <span></span>
+                            </label>
+                            <label for="check10">
+                                <input type="checkbox" name="check10" id="check10">
+                                Философия
+                                <span></span>
+                            </label>
+                            <label for="check11">
+                                <input type="checkbox" name="check11" id="check11">
+                                Учебная литература
+                                <span></span>
+                            </label>
+                            <label for="check12">
+                                <input type="checkbox" name="check12" id="check12">
+                                Журналы и газеты
+                                <span></span>
+                            </label>
+                        </div>
+                        <div class="cost-block">
+                            <p class="cost-paragraph">Цена</p>
+                            <div class="cost-from">
+                                <span>От</span><input type="text" class="cost-input"><span>до</span><input type="text" class="cost-input"><span>рублей</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-colomn">
+                        <div class="button-swiper2">
+                            <img src="img/Group 22.png" alt="button" class="first-button-swiper swiper-button-prev">
+                            <span class="pagination">1/3</span>
+                            <img src="img/Group 23.png" alt="button" class="second-button-swiper swiper-button-next">
+                        </div>
+                        <div class="right-colomn-flex">
+                            <div class="swiper-container swiper-padding">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+                                        <div class="right-colomn-children">
+                                            <div class="picture1"></div>
+                                            <div class="flex-paragraph">
+                                                <p class="author"><span class="paint-name">Искусство цвета</span><br>
+                                                    Иттен, Иоханнес </p>
+                                                <p class="cost">620 руб</p>
+                                            </div>
+                                            <button class="buy-picture">Заказать</button>
+                                        </div>
+                                        <div class="right-colomn-children">
+                                            <div class="picture2"></div>
+                                            <div class="flex-paragraph">
+                                                <p class="author"><span class="paint-name">Типографика</span><br>
+                                                    Рудер, Эмиль </p>
+                                                <p class="cost">2 450 руб</p>
+                                            </div>
+                                            <button class="buy-picture">Заказать</button>
+                                        </div>
+                                        <div class="right-colomn-children">
+                                            <div class="picture3"></div>
+                                            <div class="flex-paragraph">
+                                                <p class="author"><span class="paint-name">Книга про буквы</span><br>   
+                                                    Гордон, Юрий  </p>
+                                                <p class="cost">2 200 руб</p>
+                                            </div>
+                                            <button class="buy-picture">Заказать</button>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="right-colomn-children">
+                                            <div class="picture4"></div>
+                                            <div class="flex-paragraph">
+                                                <p class="author"><span class="paint-name">Николай Ильин</span><br> 
+                                                    Кричевский, Владимир </p>
+                                                <p class="cost">1 100 руб</p>
+                                            </div>
+                                            <button class="buy-picture">Заказать</button>
+                                        </div>
+                                        <div class="right-colomn-children">
+                                            <div class="picture5"></div>
+                                            <div class="flex-paragraph">
+                                                <p class="author"><span class="paint-name">Модульные сетки в граф...</span><br> 
+                                                    Мюллер-Брокманн, Йозеф </p>
+                                                <p class="cost">1 450 руб</p>
+                                            </div>
+                                            <button class="buy-picture">Заказать</button>
+                                        </div>
+                                        <div class="right-colomn-children">
+                                            <div class="picture6"></div>
+                                            <div class="flex-paragraph">
+                                                <p class="author"><span class="paint-name">Эволюция графических ст...</span><br>
+                                                    Хеллер, Чваст  </p>
+                                                <p class="cost">3 200 руб</p>
+                                            </div>
+                                            <button class="buy-picture">Заказать</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
+        <section class="sixth-section">
+            <div class="control">
+                <h2 class="section-header">Проекты</h2>
+                <p class="projects-paragraph">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное <br> информационно-пропагандистское <img src="img/i.png" alt="i" class="i"> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены <img src="img/i.png" alt="i" class="i"> исключительно в разрезе маркетинговых и финансовых <img src="img/i.png" alt="i" class="i"> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a href="" class="link-blanchard">blanchard-art.ru/projects/about</a></p>
+                <h3 class="partners-header">Партнёры проектов:</h3>
+                <div class="swiper-container">
+                    <div class="swiper-button-prev">
+                        <img src="img/Group 31.png" alt="button" class="swiper-left">
+                    </div>
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="partners1"></div>
+                            <div class="partners2"></div>
+                            <div class="partners3"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners4"></div>
+                            <div class="partners5"></div>
+                            <div class="partners6"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="partners7"></div>
+                            <div class="partners8"></div>
+                            <div class="partners9"></div>
+                        </div>
+                    <!-- If we need navigation buttons -->
+                </div>
+                <div class="swiper-button-next swiper-right">
+                    <img src="img/Group 32.png" alt="button" class="swiper-right">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="control">
+                <h2 class="section-header">Издания</h2>
+            </div>
+            <div></div>
         </section>
     </main>
     <footer>
