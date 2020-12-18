@@ -1061,3 +1061,35 @@ label {
 	content: none;
 	outline: none;
 }
+.contact-block {
+	display: flex;	
+	height: 682px;
+}
+.phone {
+	width: 37%;
+	border: 1px solid rgba(202, 202, 202, 1);
+	border-bottom: none;
+	
+}
+.map {
+	width: 63%;
+}
+[class*=ground-pane] {
+    filter: grayscale(1)
+}
+.footer {
+	background-color: black;
+	height: 140px;
+}
+.footer-control {
+	display: flex;
+	height: 140px;
+	align-items: center;
+	justify-content: space-between;
+}
+.follow {
+	float: right;
+}
+.follow-children {
+	margin-left: 15px;
+}
