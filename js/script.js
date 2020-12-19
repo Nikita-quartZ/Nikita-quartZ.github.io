@@ -10,11 +10,21 @@ window.addEventListener('DOMContentLoaded', function() {
     
         pagination: {
         el: '.swiper-pagination',
+        type: 'fraction'
         },
     
         navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+        }
+    });
+
+    var mySwiper = new Swiper('.swiper-container3', {
+        loop: true,
+    
+        navigation: {
+        nextEl: '.swiper-right',
+        prevEl: '.swiper-left',
         }
     });
     // Javascript для accordion
@@ -40,4 +50,25 @@ window.addEventListener('DOMContentLoaded', function() {
         // Callback before a section is open
         beforeOpenSection: function( section ){},
     });
+    ymaps.ready(init);
+        function init(){
+            var myMap = new ymaps.Map("map", {
+                center: [55.758396, 37.601309],
+                zoom: 14
+            });
+            var myGeoObject = new ymaps.GeoObject({
+    geometry: {
+        type: "Point",
+        coordinates: [55.758396, 37.601309]
+    }
+    });
+
+    var myPlacemark = new ymaps.Placemark([55.758396, 37.601309], {}, {
+        iconLayout: 'default#image',
+        iconImageHref: 'img/Ellipse12.svg',
+        iconImageSize: [30, 42],
+        iconImageOffeset: [-3,-42],
+    })
+    myMap.geoObjects.add(myPlacemark); 
+        }
 });
