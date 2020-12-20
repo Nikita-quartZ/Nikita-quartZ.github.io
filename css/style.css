@@ -214,14 +214,22 @@ h1 {
 	margin-bottom: 115px;
 }
 .button-header {
-	width: 314px;
-	height: 70px;
+	width: 308px;
+	height: 66px;
 	background: var(--first-color);
 	border-radius: 100px;
 	border: none;
 	color: white;
 	font-weight: bold;
 	cursor: pointer;
+	border: 3px solid var(--first-color);
+	transition: border .15s linear;
+}
+.button-header:hover {
+	border: 3px solid #D1A9F0;
+}
+.button-header:active {
+	background: #7943A4;
 }
 .section-header {
 	margin-top: 80px;
@@ -275,6 +283,19 @@ h1 {
 }
 .is-selected {
     display: none;
+}
+.choices[data-type*=select-one]:after {
+	content: none;
+}
+.choices {
+	background-image: url(../img/Rectangle\ 66.svg);
+	background-repeat: no-repeat;
+	background-position: 320px center;
+}
+.choices:hover {
+	background-image: url(../img/close.svg);
+	background-repeat: no-repeat;
+	background-position: 320px center;
 }
 .choices__list--dropdown.is-active {
     border: 1px solid var(--second-color);
@@ -347,17 +368,18 @@ h1 {
 	width: 66px;
 	height: 66px;
 	margin-left: 30px;
+	transition: box-shadow 0.15s linear;
 }
 .French {
 	width: 46px;
 	height: 46px;
 	border-radius: 25px;
 }
-.French:hover {
+.country:hover {
 	box-shadow: 0 0 20px var(--first-color);
 	background-color: var(--first-color);
 }
-.French:active {
+.country:active {
 	border: 2px solid var(--first-color);
 	box-shadow: none;
 }
@@ -366,52 +388,20 @@ h1 {
 	height: 46px;
 	border-radius: 25px;
 }
-.Germany:hover {
-	box-shadow: 0 0 20px var(--first-color);
-	background-color: var(--first-color);
-}
-.Germany:active {
-	border: 2px solid var(--first-color);
-	box-shadow: none;
-}
 .Italy {
 	width: 46px;
 	height: 46px;
 	border-radius: 25px;
-}
-.Italy:hover {
-	box-shadow: 0 0 20px var(--first-color);
-	background-color: var(--first-color);
-}
-.Italy:active {
-	border: 2px solid var(--first-color);
-	box-shadow: none;
 }
 .Russia {
 	width: 46px;
 	height: 46px;
 	border-radius: 25px;
 }
-.Russia:hover {
-	box-shadow: 0 0 20px var(--first-color);
-	background-color:var(--first-color);
-}
-.Russia:active {
-	border: 2px solid var(--first-color);
-	box-shadow: none;
-}
 .Belgium {
 	width: 46px;
 	height: 46px;
 	border-radius: 25px;
-}
-.Belgium:hover {
-	box-shadow: 0 0 20px var(--first-color);
-	background-color:var(--first-color);
-}
-.Belgium:active {
-	border: 2px solid var(--first-color);
-	box-shadow: none;
 }
 .painters-paragraph {
 	width: 1080px;
@@ -464,6 +454,21 @@ h1 {
 .info-accordion-children {
 	width: 208px;
 }
+.accordionjs .acc_section .acc_head {
+	background-image: url(../img/Group\ 77.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	transition: color, background-image .3s linear;
+}
+.accordionjs .acc_section .acc_head:hover {
+	color: var(--first-color);
+	background-image: url(../img/Group\ 21.png);
+}
+.accordionjs .acc_section.acc_active > .acc_head {
+	background-image: url(../img/Group\ 20.png);
+	background-repeat: no-repeat;
+	background-position: right 0px;
+}
 .fourth-section-children {
 	width: 500px;
 	height: 700px;
@@ -498,6 +503,14 @@ h1 {
 	background: none;
 	margin-bottom: 80px;
 	cursor: pointer;
+	transition: border .15s linear;
+}
+.fourth-section-button:hover {
+	border: 2px solid #D1A9F0;
+}
+.fourth-section-button:active {
+	background: #7943A4;
+	color: #FFF;
 }
 .mini-info {
 	width: 200px;
@@ -520,6 +533,15 @@ h1 {
 	color: var(--first-color);
 	border-bottom: 1px solid var(--first-color);
 	background: none;
+	cursor: pointer;
+	transition: font-weight .1s linear;
+}
+.additional-info-1:hover {
+	font-weight: bold;
+}
+.additional-info-1:active {
+	border-bottom: 1px solid #7943A4;
+	color: #7943A4;
 }
 .additional-info-2 {
 	position: relative;
@@ -529,6 +551,15 @@ h1 {
 	color: var(--first-color);
 	border-bottom: 1px solid var(--first-color);
 	background: none;
+	cursor: pointer;
+	transition: font-weight .1s linear;
+}
+.additional-info-2:hover {
+	font-weight: bold;
+}
+.additional-info-2:active {
+	border-bottom: 1px solid #7943A4;
+	color: #7943A4;
 }
 .additional-info-3 {
 	position: relative;
@@ -538,6 +569,15 @@ h1 {
 	color: var(--first-color);
 	border-bottom: 1px solid var(--first-color);
 	background: none;
+	cursor: pointer;
+	transition: font-weight .1s linear;
+}
+.additional-info-3:hover {
+	font-weight: bold;
+}
+.additional-info-4:active {
+	border-bottom: 1px solid #7943A4;
+	color: #7943A4;
 }
 .fiveth-section {
 	background-image: url(../img/birmingham.jpg);
@@ -982,6 +1022,14 @@ label {
 	color: #FFF;
 	padding: 8px 14px;
 	cursor: pointer;
+	transition: border .15s linear;
+}
+.buy-picture:hover {
+	background: var(--first-color);
+}
+.buy-picture:active {
+	border: 2px solid #D1A9F0;
+	background: #7943A4;
 }
 .cost-input {
 	width: 82px;
@@ -1176,9 +1224,33 @@ label {
 }
 .swiper-left {
 	float: left;
+	outline: none;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/Group\ 31.png);
+	transition: background-image .15s linear;
+}
+.swiper-left:hover {
+	background-image: url(../img/Group\ 12.png);
+}
+.swiper-left:active {
+	background-image: url(../img/Group\ 11.png);
 }
 .swiper-right {
 	float: right;
+	outline: none;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/Group\ 32.png);
+	transition: background-image .15s linear;
+}
+.swiper-right:hover {
+	background-image: url(../img/Group\ 2.png);
+}
+.swiper-right:active {
+	background-image: url(../img/Group\ 1.png);
 }
 .partners-block1 {
 	display: flex;
@@ -1237,6 +1309,17 @@ label {
 	line-height: 25px;
 	font-weight: bold;
 	margin-bottom: 38px;
+	transition: background .15s linear;
+	cursor: pointer;
+}
+.button-call:hover {
+	background: var(--first-color);
+	color: #FFF;
+}
+.button-call:active {
+	border: 2px solid #D1A9F0;
+	background: #7943A4;
+	color: #FFF;
 }
 .phone-follow {
 	font-size: 24px;
