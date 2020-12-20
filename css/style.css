@@ -468,6 +468,7 @@ h1 {
 	background-image: url(../img/Group\ 20.png);
 	background-repeat: no-repeat;
 	background-position: right 0px;
+	color: var(--first-color);
 }
 .fourth-section-children {
 	width: 500px;
