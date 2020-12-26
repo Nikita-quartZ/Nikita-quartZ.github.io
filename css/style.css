@@ -58,6 +58,33 @@
     font-weight: 800;
     font-style: italic;
 }
+@keyframes change-background {  
+	0% {     
+	  background-image: url(../img/slide\ 1-1x.jpg);
+	  background-size: 1920px 800px;
+	}
+	15% {
+	  background-size: 2304px 960px;
+	}
+	33% {     
+	  background-image: url(../img/slide\ 2-1x.jpg);
+	  background-size: 1920px 800px;
+	}
+	48% {
+	  background-size: 2304px 960px;
+	}
+	66% {
+	  background-image: url(../img/slide\ 3-1x.jpg);
+	  background-size: 1920px 800px;
+	 }
+	 81% {
+	  background-size: 2304px 960px;
+	}
+	100% {     
+	  background-image: url(../img/slide\ 1-1x.jpg);
+	  background-size: 1920px 800px;
+	} 
+  }
 :root {
 	--first-color:  #9D5CD0;
 	--second-color: #999999;
@@ -89,13 +116,13 @@ input, textarea, button {
 	padding: 0 160px;
 }
 .header {
-	background-image: url(../img/slide\ 1-1x.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
 	height: 800px;
 	color: white;
 	font-size: 18px;
 	line-height: 25px;
+	animation: change-background 25s ease infinite;
+	background-position: center;
 }
 .black-bar {
 	height: 100px;
@@ -348,6 +375,9 @@ h1 {
 	width: 30px;
 	height: 30px;
 }
+.swiper-block-height {
+	height: 750px;
+}
 .pagination {
 	margin-left: 10px;
 	margin-right: 10px;
@@ -436,7 +466,7 @@ h1 {
 	border: none;
 	border-top: 1px solid #CACACA;
 	border-bottom: 1px solid  #CACACA;
-	padding: 30px 10px;
+	padding: 30px 0;
 }
 .acc_head {
 	font-weight: 600;
@@ -616,6 +646,7 @@ h1 {
 }
 #check1:checked + span {
 	border: 1px solid var(--first-color);
+	color: var(--first-color);
 }
 #check1 +span:before {
     content: '\2022';
