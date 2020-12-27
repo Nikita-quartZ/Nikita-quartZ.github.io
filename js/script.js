@@ -32,22 +32,16 @@ window.addEventListener('DOMContentLoaded', function() {
         $("#my-accordion").accordionjs();
     });
     $("#my-accordion").accordionjs({
-        // Allow self close.(data-close-able)
         closeAble   : false,
 
-        // Close other sections.(data-close-other)
         closeOther  : false,
 
-        // Animation Speed.(data-slide-speed)
         slideSpeed  : 150,
 
-        // The section open on first init. A number from 1 to X or false.(data-active-index)
         activeIndex : false,
 
-        // Callback when a section is open
         openSection: function( section ){},
 
-        // Callback before a section is open
         beforeOpenSection: function( section ){},
     });
     ymaps.ready(init);
@@ -71,4 +65,11 @@ window.addEventListener('DOMContentLoaded', function() {
     })
     myMap.geoObjects.add(myPlacemark); 
         }
+    //Все события
+    let fourthSectionButton = document.querySelector('.fourth-section-button')
+    let fourthSectionBlockSecond = document.querySelector('.fourth-section-block-second')
+    fourthSectionButton.addEventListener('click', function(){
+        fourthSectionButton.classList.add('is-active-fourth-button')
+        fourthSectionBlockSecond.classList.add('is-active-fourth-block')
+    })
 });

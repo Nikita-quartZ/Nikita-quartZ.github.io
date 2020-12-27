@@ -359,6 +359,96 @@ h1 {
 	width: 350px;
 	height: 350px;
 }
+.picture11 {
+	background-image: url(../img/Rectangle\ 70.jpg);
+}
+.picture12 {
+	background-image: url(../img/Rectangle\ 69.jpg);
+}
+.picture13 {
+	background-image: url(../img/Rectangle\ 68.jpg);
+}
+.picture14 {
+	background-image: url(../img/Rectangle\ 72.jpg);
+}
+.picture15 {
+	background-image: url(../img/Rectangle\ 73.jpg);
+}
+.picture16 {
+	background-image: url(../img/Rectangle\ 71.jpg);
+}
+.picture17 {
+	background-image: url(../img/Rectangle\ 70-2.jpg);
+}
+.picture18 {
+	background-image: url(../img/Rectangle\ 68-2.jpg);
+}
+.picture19 {
+	background-image: url(../img/Rectangle\ 69-2.jpg);
+}
+.picture20 {
+	background-image: url(../img/Rectangle\ 72-2.jpg);
+}
+.picture21 {
+	background-image: url(../img/Rectangle\ 71-2.jpg);
+}
+.picture22 {
+	background-image: url(../img/Rectangle\ 73-2.jpg);
+}
+.picture23 {
+	background-image: url(../img/Rectangle\ 77.jpg);
+}
+.picture24 {
+	background-image: url(../img/Rectangle\ 74.jpg);
+}
+.picture25 {
+	background-image: url(../img/Rectangle\ 79.jpg);
+}
+.picture26 {
+	background-image: url(../img/Rectangle\ 78.jpg);
+}
+.picture27 {
+	background-image: url(../img/Rectangle\ 75.jpg);
+}
+.picture28 {
+	background-image: url(../img/Rectangle\ 76.jpg);
+}
+.picture29 {
+	background-image: url(../img/Rectangle\ 86.jpg);
+}
+.picture30 {
+	background-image: url(../img/Rectangle\ 80.jpg);
+}
+.picture31 {
+	background-image: url(../img/Rectangle\ 90.jpg);
+}
+.picture32 {
+	background-image: url(../img/Rectangle\ 88.jpg);
+}
+.picture33 {
+	background-image: url(../img/Rectangle\ 82.jpg);
+}
+.picture34 {
+	background-image: url(../img/Rectangle\ 84.jpg);
+}
+.picture35 {
+	background-image: url(../img/Rectangle\ 87.jpg);
+}
+.picture36 {
+	background-image: url(../img/Rectangle\ 81.jpg);
+}
+.picture37 {
+	background-image: url(../img/Rectangle\ 91.jpg);
+}
+.picture38 {
+	background-image: url(../img/Rectangle\ 89.jpg);
+}
+.picture39 {
+	background-image: url(../img/Rectangle\ 83.jpg);
+}
+.picture40 {
+	background-image: url(../img/Rectangle\ 85.jpg);
+}
 .swiper-slide {
 	display: flex;
 	flex-wrap: wrap;
@@ -513,10 +603,12 @@ h1 {
 }
 .fourth-section-children {
 	width: 500px;
-	height: 700px;
+	min-height: 700px;
 	border: 1px solid #CACACA;
 	padding: 50px 50px;
 	padding-top: 313px;
+	padding-bottom: 75px;
+	position: relative;
 }
 .fourth-section-children-first {
 	background-image: url(../img/Rectangle\ 101.jpg);
@@ -530,10 +622,26 @@ h1 {
 	background-image: url(../img/Rectangle\ 103.jpg);
 	background-repeat: no-repeat;
 }
-.fourth-section-block {
+.fourth-section-children-fourth {
+	background-image: url(../img/Rectangle\ 104.jpg);
+	background-repeat: no-repeat;
+}
+.fourth-section-children-fiveth {
+	background-image: url(../img/Rectangle\ 105.jpg);
+	background-repeat: no-repeat;
+}
+.fourth-section-block-first {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 50px;
+}
+.fourth-section-block-second {
+	justify-content: space-between;
+	margin-bottom: 50px;
+	display: none;
+}
+.is-active-fourth-block {
+	display: flex;
 }
 .fourth-section-button {
 	margin: 0 auto;
@@ -554,6 +662,9 @@ h1 {
 	background: #7943A4;
 	color: #FFF;
 }
+.is-active-fourth-button {
+	display: none;
+}
 .mini-info {
 	width: 200px;
 	color:  var(--second-color);
@@ -567,57 +678,21 @@ h1 {
 	line-height: 33px;
 	font-weight: 600;
 }
-.additional-info-1 {
-	position: relative;
-	top: 45px;
+.additional-info {
+	position: absolute;
+	bottom: 40px;
 	border: none;
-	margin-top: auto;
+	margin-top: 25px;
 	color: var(--first-color);
 	border-bottom: 1px solid var(--first-color);
 	background: none;
 	cursor: pointer;
 	transition: font-weight .1s linear;
 }
-.additional-info-1:hover {
+.additional-info:hover {
 	font-weight: bold;
 }
-.additional-info-1:active {
-	border-bottom: 1px solid #7943A4;
-	color: #7943A4;
-}
-.additional-info-2 {
-	position: relative;
-	top: 14px;
-	border: none;
-	margin-top: auto;
-	color: var(--first-color);
-	border-bottom: 1px solid var(--first-color);
-	background: none;
-	cursor: pointer;
-	transition: font-weight .1s linear;
-}
-.additional-info-2:hover {
-	font-weight: bold;
-}
-.additional-info-2:active {
-	border-bottom: 1px solid #7943A4;
-	color: #7943A4;
-}
-.additional-info-3 {
-	position: relative;
-	top: 17px;
-	border: none;
-	margin-top: auto;
-	color: var(--first-color);
-	border-bottom: 1px solid var(--first-color);
-	background: none;
-	cursor: pointer;
-	transition: font-weight .1s linear;
-}
-.additional-info-3:hover {
-	font-weight: bold;
-}
-.additional-info-4:active {
+.additional-info:active {
 	border-bottom: 1px solid #7943A4;
 	color: #7943A4;
 }
