@@ -116,6 +116,7 @@ input, textarea, button {
 	padding: 0 160px;
 }
 .header {
+	background-size: cover;
 	background-repeat: no-repeat;
 	height: 800px;
 	color: white;
@@ -207,19 +208,29 @@ input, textarea, button {
 	background: none;
 	border: none;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.85);
-	color: #FFF;
+	color: var(--first-color);
 	width: 218px;
+	padding-bottom: 2px;
 }
 .header-input::placeholder {
 	color: #FFF;
 }
 .button-search {
-	background: none;
+	background-color: rgba(0, 0, 0, 0);
+	background-image: url(../img/Search.svg);
+	width: 23px;
+	height: 22px;
 	border: none;
 	position: relative;
 	top: 5px;
 	right: 3px;
 	cursor: pointer;
+}
+.input-block:hover .header-input {
+	border-bottom: 1px solid var(--first-color);
+}
+.input-block:hover .button-search {
+	background-image: url(../img/search2.svg);
 }
 h1 {
 	font-weight: bold;
@@ -965,6 +976,114 @@ label {
 }
 #check12:checked +span:before {
     opacity: 1;
+}
+#check1:active ~ #checks1 {
+	color: var(--third-color);
+}
+#check2:active ~ #checks2 {
+	color: var(--third-color);
+}
+#check3:active ~ #checks3 {
+	color: var(--third-color);
+}
+#check4:active ~ #checks4 {
+	color: var(--third-color);
+}
+#check5:active ~ #checks5 {
+	color: var(--third-color);
+}
+#check6:active ~ #checks6 {
+	color: var(--third-color);
+}
+#check7:active ~ #checks7 {
+	color: var(--third-color);
+}
+#check8:active ~ #checks8 {
+	color: var(--third-color);
+}
+#check9:active ~ #checks9 {
+	color: var(--third-color);
+}
+#check10:active ~ #checks10 {
+	color: var(--third-color);
+}
+#check11:active ~ #checks11 {
+	color: var(--third-color);
+}
+#check12:active ~ #checks12 {
+	color: var(--third-color);
+}
+#check1:active ~ span {
+	border: 1px solid var(--third-color);
+}
+#check2:active ~ span {
+	border: 1px solid var(--third-color);
+}
+#check3:active ~ span {
+	border: 1px solid var(--third-color);
+}
+#check4:active ~ span {
+	border: 1px solid var(--third-color);
+}
+#check5:active ~ span {
+	border: 1px solid var(--third-color);
+}
+#check6:active ~ span {
+	border: 1px solid var(--third-color);
+}
+#check7:active ~ span {
+	border: 1px solid var(--third-color);
+}
+#check8:active ~ span {
+	border: 1px solid var(--third-color);
+}
+#check9:active ~ span {
+	border: 1px solid var(--third-color);
+}
+#check10:active ~ span {
+	border: 1px solid var(--third-color);
+}
+#check11:active ~ span {
+	border: 1px solid var(--third-color);
+}
+#check12:active ~ span {
+	border: 1px solid var(--third-color);
+}
+#check1:checked ~ #checks1 {
+	color: var(--first-color);
+}
+#check2:checked ~ #checks2 {
+	color: var(--first-color);
+}
+#check3:checked ~ #checks3 {
+	color: var(--first-color);
+}
+#check4:checked ~ #checks4 {
+	color: var(--first-color);
+}
+#check5:checked ~ #checks5 {
+	color: var(--first-color);
+}
+#check6:checked ~ #checks6 {
+	color: var(--first-color);
+}
+#check7:checked ~ #checks7 {
+	color: var(--first-color);
+}
+#check8:checked ~ #checks8 {
+	color: var(--first-color);
+}
+#check9:checked ~ #checks9 {
+	color: var(--first-color);
+}
+#check10:checked ~ #checks10 {
+	color: var(--first-color);
+}
+#check11:checked ~ #checks11 {
+	color: var(--first-color);
+}
+#check12:checked ~ #checks12 {
+	color: var(--first-color);
 }
 .cost-block {
 	margin-top: 16px;
