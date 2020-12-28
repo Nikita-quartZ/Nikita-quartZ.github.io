@@ -191,15 +191,151 @@ input, textarea, button {
 }
 .selects-children {
 	margin-right: 111px;
+}
+.selects-children-name {
+	color: #FFF;
+	border: none;
+	background: none;
+	text-align: left;
+	background-image: url(../img/Rectangle\ 54.svg);
+	background-repeat: no-repeat;
+	background-position: right 7px;
 	cursor: pointer;
-	transition: color .15s linear;
+	transition: color .1s linear;
 }
-.selects-children:hover {
+.selects-active {
 	color: var(--first-color);
+	background-image: url(../img/RectangleUpp.svg);
 }
-.selects-children:active {
+.selects-children-name:hover {
+	color: var(--first-color);
+	background-image: url(../img/Rectangle\ 76.svg);
+}
+.selects-children-name:active {
 	color: var(--third-color);
+	background-image: url(../img/Rectangle\ 74.svg);
 }
+.selects-active:hover {
+	color: var(--first-color);
+	background-image: url(../img/RectangleUpp.svg);
+}
+.children-1 {
+	width: 83px;
+}
+.children-2 {
+	width: 143px;
+}
+.children-3 {
+	width: 178px;
+}
+.children-4 {
+	width: 90px;
+}
+.children-5 {
+	width: 93px;
+}
+.select-painters {
+	position: absolute;
+	top: 170px;
+	width: 300px;
+	height: 300px;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 40px 19px 40px 40px;
+	display: none;
+}
+.select-painters-active {
+	display: block;
+}
+.painter-name {
+	width: 220px;
+	height: 40px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+.painter-background:hover {
+	border: 2px solid var(--first-color);
+}
+.painter-background {
+	width: 100%;
+	height: 100%;
+	padding-top: 2px;
+	padding-left: 14px;
+	border: 2px solid rgba(0, 0, 0, 0);
+}
+.painter-background:active {
+	background: rgba(194, 131, 243, 0.4);
+}
+.painter-name1 {
+	background-image: url(../img/Rectangle\ 57.jpg);
+}
+.painter-name2 {
+	background-image: url(../img/Rectangle\ 58.jpg);
+}
+.painter-name3 {
+	background-image: url(../img/Rectangle\ 59.jpg);
+}
+.painter-name4 {
+	background-image: url(../img/Rectangle\ 60.jpg);
+}
+.painter-name5 {
+	background-image: url(../img/Rectangle\ 57-2.jpg);
+}
+.painter-name6 {
+	background-image: url(../img/Rectangle\ 58-2.jpg);
+}
+.painter-name7 {
+	background-image: url(../img/Rectangle\ 59-2.jpg);
+}
+.painter-name8 {
+	background-image: url(../img/Rectangle\ 60-2.jpg);
+}
+.painter-name9 {
+	background-image: url(../img/Rectangle\ 57-3.jpg);
+}
+.painter-name10 {
+	background-image: url(../img/Rectangle\ 58-3.jpg);
+}
+.painter-name11 {
+	background-image: url(../img/Rectangle\ 59-3.jpg);
+}
+.painter-name12 {
+	background-image: url(../img/Rectangle\ 60-3.jpg);
+}
+.painter-name13 {
+	background-image: url(../img/Rectangle\ 57-4.jpg);
+}
+.painter-name14 {
+	background-image: url(../img/Rectangle\ 58-4.jpg);
+}
+.painter-name15 {
+	background-image: url(../img/Rectangle\ 59-4.jpg);
+}
+.painter-name16 {
+	background-image: url(../img/Rectangle\ 60-4.jpg);
+}
+.painter-name17 {
+	background-image: url(../img/Rectangle\ 57-5.jpg);
+}
+.painter-name18 {
+	background-image: url(../img/Rectangle\ 58-5.jpg);
+}
+.painter-name19 {
+	background-image: url(../img/Rectangle\ 59-5.jpg);
+}
+.painter-name20 {
+	background-image: url(../img/Rectangle\ 60-5.jpg);
+}
+/* .simplebar-scrollbar {
+	width: 2px !important;
+	height: 28px;
+	background: #FFFFFF;
+	display: block !important;
+}
+.simplebar-track.simplebar-vertical {
+	width: 2px;
+	background: #000000;
+	visibility: visible !important;
+} */
 .input-block {
 	color: white;
 	margin-left: auto;
@@ -330,7 +466,7 @@ h1 {
 	background-repeat: no-repeat;
 	background-position: 320px center;
 }
-.choices:hover {
+.choices[data-type*=select-one].is-open:hover {
 	background-image: url(../img/close.svg);
 	background-repeat: no-repeat;
 	background-position: 320px center;
@@ -514,44 +650,47 @@ h1 {
 	margin-top: 0;
 	margin-bottom: 0;
 }
-.country {
-	width: 66px;
-	height: 66px;
-	margin-left: 30px;
-	transition: box-shadow 0.15s linear;
-}
-.French {
+.country-effect {
 	width: 46px;
 	height: 46px;
-	border-radius: 25px;
+	border-radius: 50%;
+	border: none;
+	transition: box-shadow 0.15s linear;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFF;
 }
-.country:hover {
+.country-block {
+	width: 66px;
+	height: 66px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 30px;
+}
+.country-effect:hover {
 	box-shadow: 0 0 20px var(--first-color);
-	background-color: var(--first-color);
 }
-.country:active {
+.country-effect:active {
+	width: 48px;
+	height: 48px;
 	border: 2px solid var(--first-color);
 	box-shadow: none;
 }
-.Germany {
-	width: 46px;
-	height: 46px;
-	border-radius: 25px;
+.country-active:hover {
+	box-shadow: none;
 }
-.Italy {
-	width: 46px;
-	height: 46px;
-	border-radius: 25px;
+.country-effect-active {
+	height: 66px;
+	width: 66px;
+	border: 2px solid var(--first-color);
 }
-.Russia {
-	width: 46px;
-	height: 46px;
-	border-radius: 25px;
+.country-effect-active:hover {
+	box-shadow: none;
 }
-.Belgium {
-	width: 46px;
-	height: 46px;
-	border-radius: 25px;
+.country-effect-active:active {
+	box-shadow: none;
 }
 .painters-paragraph {
 	width: 1080px;

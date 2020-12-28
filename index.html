@@ -9,7 +9,9 @@
     <link rel= "stylesheet" href="css/choices.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/accordion.css">
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
     <script src="js/select.js"></script>
     <script src="js/accordion.min.js" defer></script>
@@ -42,13 +44,103 @@
             <div class="blur-bar">
                 <div class="control">
                     <div class="block-selects">
-                        <ul class="selects">
-                            <li class="selects-children">Реализм</li>
-                            <li class="selects-children">Импрессионизм</li>
-                            <li class="selects-children">Постимпрессионизм</li>
-                            <li class="selects-children">Авангард</li>
-                            <li class="selects-children">Футуризм</li>
-                        </ul>
+                        <div class="selects">
+                            <div class="selects-children">
+                                <button class="selects-children-name children-1" data-path="one" data-painter="six" data-target="six">Реализм</button>
+                                <div class="select-painters" data-target="one">
+                                    <div data-simplebar>
+                                        <div class="painter-name painter-name1">
+                                            <div class="painter-background">Тинторетто</div>
+                                        </div>
+                                        <div class="painter-name painter-name2">
+                                            <div class="painter-background">Фридрих</div>
+                                        </div>
+                                        <div class="painter-name painter-name3">
+                                            <div class="painter-background">Леонардо</div>
+                                        </div>
+                                        <div class="painter-name painter-name4">
+                                            <div class="painter-background">Верроккьо</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="selects-children">
+                                <button class="selects-children-name children-2"data-path="two" data-painter="seven" data-target="seven">Импрессионизм</button>
+                                <div class="select-painters" data-target="two">
+                                    <div data-simplebar>
+                                        <div class="painter-name painter-name5">
+                                            <div class="painter-background">Моне</div>
+                                        </div>
+                                        <div class="painter-name painter-name6">
+                                            <div class="painter-background">Сислей</div>
+                                        </div>
+                                        <div class="painter-name painter-name7">
+                                            <div class="painter-background">Мане</div>
+                                        </div>
+                                        <div class="painter-name painter-name8">
+                                            <div class="painter-background">Ренуар</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="selects-children">
+                                <button class="selects-children-name children-3"data-path="three" data-painter="eight" data-target="eight">Постимпрессионизм</button>
+                                <div class="select-painters" data-target="three">
+                                    <div data-simplebar>
+                                        <div class="painter-name painter-name9">
+                                            <div class="painter-background">Ван Гог</div>
+                                        </div>
+                                        <div class="painter-name painter-name10">
+                                            <div class="painter-background">Сезанн</div>
+                                        </div>
+                                        <div class="painter-name painter-name11">
+                                            <div class="painter-background">Гоген</div>
+                                        </div>
+                                        <div class="painter-name painter-name12">
+                                            <div class="painter-background">Сёра</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="selects-children">
+                                <button class="selects-children-name children-4"data-path="four" data-painter="nine" data-target="nine">Авангард</button>
+                                <div class="select-painters" data-target="four">
+                                    <div data-simplebar>
+                                        <div class="painter-name painter-name13">
+                                            <div class="painter-background">Кандинский</div>
+                                        </div>
+                                        <div class="painter-name painter-name14">
+                                            <div class="painter-background">Маринетти</div>
+                                        </div>
+                                        <div class="painter-name painter-name15">
+                                            <div class="painter-background">Малевич</div>
+                                        </div>
+                                        <div class="painter-name painter-name16">
+                                            <div class="painter-background">Пикассо</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="selects-children">
+                                <button class="selects-children-name children-5"data-path="five" data-painter="ten" data-target="ten">Футуризм</button>
+                                <div class="select-painters" data-target="five">
+                                    <div data-simplebar>
+                                        <div class="painter-name painter-name17">
+                                            <div class="painter-background">Карра</div>
+                                        </div>
+                                        <div class="painter-name painter-name18">
+                                            <div class="painter-background">Прателла</div>
+                                        </div>
+                                        <div class="painter-name painter-name19">
+                                            <div class="painter-background">Северини</div>
+                                        </div>
+                                        <div class="painter-name painter-name20">
+                                            <div class="painter-background">Балла</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <form class="input-block" action="#">
                             <button class="button-search" type="submit"></button>
                             <input type="text" placeholder="Поиск по сайту" class="header-input">
@@ -259,264 +351,265 @@
             </div>
         </section>
         <section class="third-section">
-            <div></div>
             <div class="control">
                 <div class="countries">
                     <h2 class="section-header country-header">Галерея</h2>
-                    <img src="img/image 4.png" alt="French" class="French country">
-                    <img src="img/image 6.png" alt="Germany" class="Germany country">
-                    <img src="img/image 7.png" alt="Italy" class="Italy country">
-                    <img src="img/image 8.png" alt="Russia" class="Russia country">
-                    <img src="img/image 5.png" alt="Belgium" class="Belgium country">
+                    <div class="country-block" data-country="first"><button class="country-effect" data-target="first"><img src="img/image 4.png" alt="French" class="French country"></button></div>
+                    <div class="country-block" data-country="second"><button class="country-effect" data-target="second"><img src="img/image 6.png" alt="Germany" class="Germany country" data-target="seventh"></button></div>
+                    <div class="country-block" data-country="third"><button class="country-effect" data-target="third"><img src="img/image 7.png" alt="Italy" class="Italy country" data-target="eighth"></button></div>
+                    <div class="country-block" data-country="fourth"><button class="country-effect" data-target="fourth"><img src="img/image 8.png" alt="Russia" class="Russia country" data-target="nineth"></button></div>
+                    <div class="country-block" data-country="fiveth"><button class="country-effect" data-target="fiveth"><img src="img/image 5.png" alt="Belgium" class="Belgium country" data-target="tenth"> </button></div>  
                 </div>
-                <p class="painters-paragraph">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. </p>
-                <div class="info-about-painters">
-                    <div class="info-painter">
-                        <div class="painter"></div>
-                        <h3 class="painter-name">Доменико Гирландайо</h3>
-                        <p class="painter-paragraph"><span class="date">2 июня 1448 — 11 января 1494.</span><br>
-                            Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
-                    </div>
-                    <div class="accordion-years">
-                        <ul id="my-accordion" class="accordionjs">
-                            <li>
-                                <div>C 1400 по 1499 гг.</div>
-                                <div>
-                                    <div class="info-accordion-children">
-                                        Бенедетто ди Биндо
-                                        Бергоньоне, Амброджо
-                                        Биссоло, Франческо
-                                        Больтраффио, Джованни
-                                        Бонсиньори, Франческо
-                                        Боттичини, Рафаэлло
-                                        Брамантино
-                                        Бреа, Людовико
-                                        Бьяджо д’Антонио Туччи
+                <div>
+                    <p class="painters-paragraph">Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь частью общей картины, стремящиеся вытеснить традиционное производство, нанотехнологии и по сей день остаются уделом либералов, которые жаждут быть функционально разнесены на независимые элементы. </p>
+                    <div class="info-about-painters">
+                        <div class="info-painter">
+                            <div class="painter"></div>
+                            <h3 class="painter-name">Доменико Гирландайо</h3>
+                            <p class="painter-paragraph"><span class="date">2 июня 1448 — 11 января 1494.</span><br>
+                                Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в течение года овладевал профессиональными навыками. Автор фресковых циклов, в которых выпукло, со всевозможными подробностями показана домашняя жизнь библейских персонажей (в их роли выступают знатные граждане Флоренции в костюмах того времени).</p>
+                        </div>
+                        <div class="accordion-years">
+                            <ul id="my-accordion" class="accordionjs">
+                                <li>
+                                    <div>C 1400 по 1499 гг.</div>
+                                    <div>
+                                        <div class="info-accordion-children">
+                                            Бенедетто ди Биндо
+                                            Бергоньоне, Амброджо
+                                            Биссоло, Франческо
+                                            Больтраффио, Джованни
+                                            Бонсиньори, Франческо
+                                            Боттичини, Рафаэлло
+                                            Брамантино
+                                            Бреа, Людовико
+                                            Бьяджо д’Антонио Туччи
+                                        </div>
+                                        <div class="info-accordion-children">
+                                            Веккьетта<br>
+                                            Андреа Верроккьо
+                                            Доменико Гирландайо
+                                            Беноццо Гоццоли
+                                            Граначчи, Франческо
+                                            Грегорио ди Чекко
+                                            Джованни да Удине
+                                            Джованни ди Паоло
+                                            Джорджоне</div>
+                                        <div class="info-accordion-children">
+                                            Парентино, Бернардо
+                                            Пезеллино<br>
+                                            Пьетро Перуджино
+                                            Перуцци, Бальдассаре
+                                            Пизанелло<br>
+                                            Пинтуриккьо
+                                        </div>
                                     </div>
-                                    <div class="info-accordion-children">
-                                        Веккьетта<br>
-                                        Андреа Верроккьо
-                                        Доменико Гирландайо
-                                        Беноццо Гоццоли
-                                        Граначчи, Франческо
-                                        Грегорио ди Чекко
-                                        Джованни да Удине
-                                        Джованни ди Паоло
-                                        Джорджоне</div>
-                                    <div class="info-accordion-children">
-                                        Парентино, Бернардо
-                                        Пезеллино<br>
-                                        Пьетро Перуджино
-                                        Перуцци, Бальдассаре
-                                        Пизанелло<br>
-                                        Пинтуриккьо
+                                </li>
+                                <li>
+                                    <div>C 1500 по 1599 гг.</div>
+                                    <div>
+                                        <div class="info-accordion-children">
+                                            Бенедетто ди Биндо
+                                            Бергоньоне, Амброджо
+                                            Биссоло, Франческо
+                                            Больтраффио, Джованни
+                                            Бонсиньори, Франческо
+                                            Боттичини, Рафаэлло
+                                            Брамантино
+                                            Бреа, Людовико
+                                            Бьяджо д’Антонио Туччи
+                                        </div>
+                                        <div class="info-accordion-children">
+                                            Веккьетта<br>
+                                            Андреа Верроккьо
+                                            Доменико Гирландайо
+                                            Беноццо Гоццоли
+                                            Граначчи, Франческо
+                                            Грегорио ди Чекко
+                                            Джованни да Удине
+                                            Джованни ди Паоло
+                                            Джорджоне</div>
+                                        <div class="info-accordion-children">
+                                            Парентино, Бернардо
+                                            Пезеллино<br>
+                                            Пьетро Перуджино
+                                            Перуцци, Бальдассаре
+                                            Пизанелло<br>
+                                            Пинтуриккьо
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div>C 1500 по 1599 гг.</div>
-                                <div>
-                                    <div class="info-accordion-children">
-                                        Бенедетто ди Биндо
-                                        Бергоньоне, Амброджо
-                                        Биссоло, Франческо
-                                        Больтраффио, Джованни
-                                        Бонсиньори, Франческо
-                                        Боттичини, Рафаэлло
-                                        Брамантино
-                                        Бреа, Людовико
-                                        Бьяджо д’Антонио Туччи
+                                </li>
+                                <li>
+                                    <div>C 1600 по 1699 гг.</div>
+                                    <div>
+                                        <div class="info-accordion-children">
+                                            Бенедетто ди Биндо
+                                            Бергоньоне, Амброджо
+                                            Биссоло, Франческо
+                                            Больтраффио, Джованни
+                                            Бонсиньори, Франческо
+                                            Боттичини, Рафаэлло
+                                            Брамантино
+                                            Бреа, Людовико
+                                            Бьяджо д’Антонио Туччи
+                                        </div>
+                                        <div class="info-accordion-children">
+                                            Веккьетта<br>
+                                            Андреа Верроккьо
+                                            Доменико Гирландайо
+                                            Беноццо Гоццоли
+                                            Граначчи, Франческо
+                                            Грегорио ди Чекко
+                                            Джованни да Удине
+                                            Джованни ди Паоло
+                                            Джорджоне</div>
+                                        <div class="info-accordion-children">
+                                            Парентино, Бернардо
+                                            Пезеллино<br>
+                                            Пьетро Перуджино
+                                            Перуцци, Бальдассаре
+                                            Пизанелло<br>
+                                            Пинтуриккьо
+                                        </div>
                                     </div>
-                                    <div class="info-accordion-children">
-                                        Веккьетта<br>
-                                        Андреа Верроккьо
-                                        Доменико Гирландайо
-                                        Беноццо Гоццоли
-                                        Граначчи, Франческо
-                                        Грегорио ди Чекко
-                                        Джованни да Удине
-                                        Джованни ди Паоло
-                                        Джорджоне</div>
-                                    <div class="info-accordion-children">
-                                        Парентино, Бернардо
-                                        Пезеллино<br>
-                                        Пьетро Перуджино
-                                        Перуцци, Бальдассаре
-                                        Пизанелло<br>
-                                        Пинтуриккьо
+                                </li>
+                                <li>
+                                    <div>C 1700 по 1799 гг.</div>
+                                    <div>
+                                        <div class="info-accordion-children">
+                                            Бенедетто ди Биндо
+                                            Бергоньоне, Амброджо
+                                            Биссоло, Франческо
+                                            Больтраффио, Джованни
+                                            Бонсиньори, Франческо
+                                            Боттичини, Рафаэлло
+                                            Брамантино
+                                            Бреа, Людовико
+                                            Бьяджо д’Антонио Туччи
+                                        </div>
+                                        <div class="info-accordion-children">
+                                            Веккьетта<br>
+                                            Андреа Верроккьо
+                                            Доменико Гирландайо
+                                            Беноццо Гоццоли
+                                            Граначчи, Франческо
+                                            Грегорио ди Чекко
+                                            Джованни да Удине
+                                            Джованни ди Паоло
+                                            Джорджоне</div>
+                                        <div class="info-accordion-children">
+                                            Парентино, Бернардо
+                                            Пезеллино<br>
+                                            Пьетро Перуджино
+                                            Перуцци, Бальдассаре
+                                            Пизанелло<br>
+                                            Пинтуриккьо
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div>C 1600 по 1699 гг.</div>
-                                <div>
-                                    <div class="info-accordion-children">
-                                        Бенедетто ди Биндо
-                                        Бергоньоне, Амброджо
-                                        Биссоло, Франческо
-                                        Больтраффио, Джованни
-                                        Бонсиньори, Франческо
-                                        Боттичини, Рафаэлло
-                                        Брамантино
-                                        Бреа, Людовико
-                                        Бьяджо д’Антонио Туччи
+                                </li><li>
+                                    <div>C 1800 по 1899 гг.</div>
+                                    <div>
+                                        <div class="info-accordion-children">
+                                            Бенедетто ди Биндо
+                                            Бергоньоне, Амброджо
+                                            Биссоло, Франческо
+                                            Больтраффио, Джованни
+                                            Бонсиньори, Франческо
+                                            Боттичини, Рафаэлло
+                                            Брамантино
+                                            Бреа, Людовико
+                                            Бьяджо д’Антонио Туччи
+                                        </div>
+                                        <div class="info-accordion-children">
+                                            Веккьетта<br>
+                                            Андреа Верроккьо
+                                            Доменико Гирландайо
+                                            Беноццо Гоццоли
+                                            Граначчи, Франческо
+                                            Грегорио ди Чекко
+                                            Джованни да Удине
+                                            Джованни ди Паоло
+                                            Джорджоне</div>
+                                        <div class="info-accordion-children">
+                                            Парентино, Бернардо
+                                            Пезеллино<br>
+                                            Пьетро Перуджино
+                                            Перуцци, Бальдассаре
+                                            Пизанелло<br>
+                                            Пинтуриккьо
+                                        </div>
                                     </div>
-                                    <div class="info-accordion-children">
-                                        Веккьетта<br>
-                                        Андреа Верроккьо
-                                        Доменико Гирландайо
-                                        Беноццо Гоццоли
-                                        Граначчи, Франческо
-                                        Грегорио ди Чекко
-                                        Джованни да Удине
-                                        Джованни ди Паоло
-                                        Джорджоне</div>
-                                    <div class="info-accordion-children">
-                                        Парентино, Бернардо
-                                        Пезеллино<br>
-                                        Пьетро Перуджино
-                                        Перуцци, Бальдассаре
-                                        Пизанелло<br>
-                                        Пинтуриккьо
+                                </li>
+                                <li>
+                                    <div>C 1900 по 1999 гг.</div>
+                                    <div>
+                                        <div class="info-accordion-children">
+                                            Бенедетто ди Биндо
+                                            Бергоньоне, Амброджо
+                                            Биссоло, Франческо
+                                            Больтраффио, Джованни
+                                            Бонсиньори, Франческо
+                                            Боттичини, Рафаэлло
+                                            Брамантино
+                                            Бреа, Людовико
+                                            Бьяджо д’Антонио Туччи
+                                        </div>
+                                        <div class="info-accordion-children">
+                                            Веккьетта<br>
+                                            Андреа Верроккьо
+                                            Доменико Гирландайо
+                                            Беноццо Гоццоли
+                                            Граначчи, Франческо
+                                            Грегорио ди Чекко
+                                            Джованни да Удине
+                                            Джованни ди Паоло
+                                            Джорджоне</div>
+                                        <div class="info-accordion-children">
+                                            Парентино, Бернардо
+                                            Пезеллино<br>
+                                            Пьетро Перуджино
+                                            Перуцци, Бальдассаре
+                                            Пизанелло<br>
+                                            Пинтуриккьо
+                                        </div>
                                     </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div>C 1700 по 1799 гг.</div>
-                                <div>
-                                    <div class="info-accordion-children">
-                                        Бенедетто ди Биндо
-                                        Бергоньоне, Амброджо
-                                        Биссоло, Франческо
-                                        Больтраффио, Джованни
-                                        Бонсиньори, Франческо
-                                        Боттичини, Рафаэлло
-                                        Брамантино
-                                        Бреа, Людовико
-                                        Бьяджо д’Антонио Туччи
+                                </li>
+                                <li>
+                                    <div>C 2000 г.</div>
+                                    <div>
+                                        <div class="info-accordion-children">
+                                            Бенедетто ди Биндо
+                                            Бергоньоне, Амброджо
+                                            Биссоло, Франческо
+                                            Больтраффио, Джованни
+                                            Бонсиньори, Франческо
+                                            Боттичини, Рафаэлло
+                                            Брамантино
+                                            Бреа, Людовико
+                                            Бьяджо д’Антонио Туччи
+                                        </div>
+                                        <div class="info-accordion-children">
+                                            Веккьетта<br>
+                                            Андреа Верроккьо
+                                            Доменико Гирландайо
+                                            Беноццо Гоццоли
+                                            Граначчи, Франческо
+                                            Грегорио ди Чекко
+                                            Джованни да Удине
+                                            Джованни ди Паоло
+                                            Джорджоне</div>
+                                        <div class="info-accordion-children">
+                                            Парентино, Бернардо
+                                            Пезеллино<br>
+                                            Пьетро Перуджино
+                                            Перуцци, Бальдассаре
+                                            Пизанелло<br>
+                                            Пинтуриккьо
+                                        </div>
                                     </div>
-                                    <div class="info-accordion-children">
-                                        Веккьетта<br>
-                                        Андреа Верроккьо
-                                        Доменико Гирландайо
-                                        Беноццо Гоццоли
-                                        Граначчи, Франческо
-                                        Грегорио ди Чекко
-                                        Джованни да Удине
-                                        Джованни ди Паоло
-                                        Джорджоне</div>
-                                    <div class="info-accordion-children">
-                                        Парентино, Бернардо
-                                        Пезеллино<br>
-                                        Пьетро Перуджино
-                                        Перуцци, Бальдассаре
-                                        Пизанелло<br>
-                                        Пинтуриккьо
-                                    </div>
-                                </div>
-                            </li><li>
-                                <div>C 1800 по 1899 гг.</div>
-                                <div>
-                                    <div class="info-accordion-children">
-                                        Бенедетто ди Биндо
-                                        Бергоньоне, Амброджо
-                                        Биссоло, Франческо
-                                        Больтраффио, Джованни
-                                        Бонсиньори, Франческо
-                                        Боттичини, Рафаэлло
-                                        Брамантино
-                                        Бреа, Людовико
-                                        Бьяджо д’Антонио Туччи
-                                    </div>
-                                    <div class="info-accordion-children">
-                                        Веккьетта<br>
-                                        Андреа Верроккьо
-                                        Доменико Гирландайо
-                                        Беноццо Гоццоли
-                                        Граначчи, Франческо
-                                        Грегорио ди Чекко
-                                        Джованни да Удине
-                                        Джованни ди Паоло
-                                        Джорджоне</div>
-                                    <div class="info-accordion-children">
-                                        Парентино, Бернардо
-                                        Пезеллино<br>
-                                        Пьетро Перуджино
-                                        Перуцци, Бальдассаре
-                                        Пизанелло<br>
-                                        Пинтуриккьо
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div>C 1900 по 1999 гг.</div>
-                                <div>
-                                    <div class="info-accordion-children">
-                                        Бенедетто ди Биндо
-                                        Бергоньоне, Амброджо
-                                        Биссоло, Франческо
-                                        Больтраффио, Джованни
-                                        Бонсиньори, Франческо
-                                        Боттичини, Рафаэлло
-                                        Брамантино
-                                        Бреа, Людовико
-                                        Бьяджо д’Антонио Туччи
-                                    </div>
-                                    <div class="info-accordion-children">
-                                        Веккьетта<br>
-                                        Андреа Верроккьо
-                                        Доменико Гирландайо
-                                        Беноццо Гоццоли
-                                        Граначчи, Франческо
-                                        Грегорио ди Чекко
-                                        Джованни да Удине
-                                        Джованни ди Паоло
-                                        Джорджоне</div>
-                                    <div class="info-accordion-children">
-                                        Парентино, Бернардо
-                                        Пезеллино<br>
-                                        Пьетро Перуджино
-                                        Перуцци, Бальдассаре
-                                        Пизанелло<br>
-                                        Пинтуриккьо
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div>C 2000 г.</div>
-                                <div>
-                                    <div class="info-accordion-children">
-                                        Бенедетто ди Биндо
-                                        Бергоньоне, Амброджо
-                                        Биссоло, Франческо
-                                        Больтраффио, Джованни
-                                        Бонсиньори, Франческо
-                                        Боттичини, Рафаэлло
-                                        Брамантино
-                                        Бреа, Людовико
-                                        Бьяджо д’Антонио Туччи
-                                    </div>
-                                    <div class="info-accordion-children">
-                                        Веккьетта<br>
-                                        Андреа Верроккьо
-                                        Доменико Гирландайо
-                                        Беноццо Гоццоли
-                                        Граначчи, Франческо
-                                        Грегорио ди Чекко
-                                        Джованни да Удине
-                                        Джованни ди Паоло
-                                        Джорджоне</div>
-                                    <div class="info-accordion-children">
-                                        Парентино, Бернардо
-                                        Пезеллино<br>
-                                        Пьетро Перуджино
-                                        Перуцци, Бальдассаре
-                                        Пизанелло<br>
-                                        Пинтуриккьо
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
