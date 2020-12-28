@@ -74,11 +74,11 @@ window.addEventListener('DOMContentLoaded', function() {
         fourthSectionBlockSecond.classList.add('is-active-fourth-block')
     })
     //Списки header
-    document.querySelectorAll('.selects-children-name').forEach(function(tabsBtn) {
-        tabsBtn.addEventListener('click', function(event1){
+    document.querySelectorAll('.selects-children-name').forEach(function(tabsBtn1) {
+        tabsBtn1.addEventListener('click', function(event1){
             const path = event1.currentTarget.dataset.path
-            document.querySelectorAll('.select-painters').forEach(function(tabCon) {
-                tabCon.classList.remove('select-painters-active')
+            document.querySelectorAll('.select-painters').forEach(function(tabCon1) {
+                tabCon1.classList.remove('select-painters-active')
             })
             document.querySelector(`[data-target="${path}"]`).classList.add('select-painters-active')
 
@@ -90,13 +90,29 @@ window.addEventListener('DOMContentLoaded', function() {
         })
     })
     //Табы на разные языки
-    document.querySelectorAll('.country-block').forEach(function(tabsBtn) {
-        tabsBtn.addEventListener('click', function(event2){
+    document.querySelectorAll('.country-block').forEach(function(tabsBtn2) {
+        tabsBtn2.addEventListener('click', function(event2){
             const country = event2.currentTarget.dataset.country
-            document.querySelectorAll('.country-effect').forEach(function(tabCon) {
-                tabCon.classList.remove('country-effect-active')
+            document.querySelectorAll('.country-effect').forEach(function(tabConц) {
+                tabConц.classList.remove('country-effect-active')
             })
             document.querySelector(`[data-target="${country}"]`).classList.add('country-effect-active')
+        })
+    })
+    //Смена художественного деятеля
+    document.querySelectorAll('.name-painter-all').forEach(function(tabsBtn3) {
+        tabsBtn3.addEventListener('click', function(event3){
+            const painters = event3.currentTarget.dataset.painters
+            document.querySelectorAll('.name-painter-all').forEach(function(tabCon3) {
+                tabCon3.classList.remove('name-painter-all-active')
+            })
+            document.querySelector(`[data-target="${painters}"]`).classList.add('name-painter-all-active')
+
+            const info = event3.currentTarget.dataset.info
+            document.querySelectorAll('.info-painter').forEach(function(tabCon4) {
+                tabCon4.classList.remove('info-painter-active')
+            })
+            console.log(document.querySelector(`[data-target="${info}"]`).classList.add('info-painter-active'))
         })
     })
 });

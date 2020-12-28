@@ -247,10 +247,9 @@ input, textarea, button {
 	display: block;
 }
 .painter-name {
-	width: 220px;
-	height: 40px;
-	margin-bottom: 20px;
-	cursor: pointer;
+	margin-top: 20px;
+	font-size: 24px;
+	line-height: 33px;
 }
 .painter-background:hover {
 	border: 2px solid var(--first-color);
@@ -701,6 +700,10 @@ h1 {
 .info-painter {
 	width: 50%;
 	padding-right: 50px;
+	display: none;
+}
+.info-painter-active {
+	display: block;
 }
 .accordion-years {
 	width: 50%;
@@ -742,6 +745,26 @@ h1 {
 }
 .info-accordion-children {
 	width: 208px;
+}
+.name-painter-all-active {
+	color: var(--first-color);
+	font-weight: 600;
+}
+.name-painter-all {
+	border: none;
+	background: #FFF;
+	cursor: pointer;
+}
+.name-painter-all:hover {
+	text-decoration: underline;
+	color: var(--first-color);
+}
+.name-painter-all:active {
+	text-decoration: none;
+	color: var(--third-color);
+}
+.name-painter-all-active:hover {
+	text-decoration: none;
 }
 .accordionjs .acc_section .acc_head {
 	background-image: url(../img/Group\ 77.png);
