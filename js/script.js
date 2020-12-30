@@ -29,9 +29,73 @@ window.addEventListener('DOMContentLoaded', function() {
     });
     // Javascript для accordion
     jQuery(document).ready(function($){
-        $("#my-accordion").accordionjs();
+        $("#my-accordion1").accordionjs();
     });
-    $("#my-accordion").accordionjs({
+    $("#my-accordion1").accordionjs({
+        closeAble   : false,
+
+        closeOther  : false,
+
+        slideSpeed  : 150,
+
+        activeIndex : false,
+
+        openSection: function( section ){},
+
+        beforeOpenSection: function( section ){},
+    });
+    jQuery(document).ready(function($){
+        $("#my-accordion2").accordionjs();
+    });
+    $("#my-accordion2").accordionjs({
+        closeAble   : false,
+
+        closeOther  : false,
+
+        slideSpeed  : 150,
+
+        activeIndex : false,
+
+        openSection: function( section ){},
+
+        beforeOpenSection: function( section ){},
+    });
+    jQuery(document).ready(function($){
+        $("#my-accordion3").accordionjs();
+    });
+    $("#my-accordion3").accordionjs({
+        closeAble   : false,
+
+        closeOther  : false,
+
+        slideSpeed  : 150,
+
+        activeIndex : false,
+
+        openSection: function( section ){},
+
+        beforeOpenSection: function( section ){},
+    });
+    jQuery(document).ready(function($){
+        $("#my-accordion4").accordionjs();
+    });
+    $("#my-accordion4").accordionjs({
+        closeAble   : false,
+
+        closeOther  : false,
+
+        slideSpeed  : 150,
+
+        activeIndex : false,
+
+        openSection: function( section ){},
+
+        beforeOpenSection: function( section ){},
+    });
+    jQuery(document).ready(function($){
+        $("#my-accordion5").accordionjs();
+    });
+    $("#my-accordion5").accordionjs({
         closeAble   : false,
 
         closeOther  : false,
@@ -93,18 +157,41 @@ window.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.country-block').forEach(function(tabsBtn2) {
         tabsBtn2.addEventListener('click', function(event2){
             const country = event2.currentTarget.dataset.country
-            document.querySelectorAll('.country-effect').forEach(function(tabConц) {
-                tabConц.classList.remove('country-effect-active')
+            document.querySelectorAll('.country-effect').forEach(function(tabCon2) {
+                tabCon2.classList.remove('country-effect-active')
             })
             document.querySelector(`[data-target="${country}"]`).classList.add('country-effect-active')
         })
     })
+    //Смена содержания на другой язык
+    document.querySelectorAll('.country-block').forEach(function(tabsBtn4) {
+        tabsBtn4.addEventListener('click', function(event4){
+            const biog = event4.currentTarget.dataset.biog
+            document.querySelectorAll('.foreign-block').forEach(function(tabCon22) {
+                tabCon22.classList.remove('foreign-block-active')
+            })
+            document.querySelector(`[data-target="${biog}"]`).classList.add('foreign-block-active')
+
+            const activ = event4.currentTarget.dataset.activ
+            document.querySelectorAll('.info-painter').forEach(function(tabCons) {
+                tabCons.classList.remove('info-painter-active')
+            })
+            document.querySelector(`[data-target="${activ}"]`).classList.add('info-painter-active')
+
+            const active = event4.currentTarget.dataset.active
+            document.querySelectorAll('.name-painter-all').forEach(function(tabCons1) {
+                tabCons1.classList.remove('name-painter-all-active')
+            })
+            document.querySelector(`[data-target="${active}"]`).classList.add('name-painter-all-active')
+        })
+    })
+
     //Смена художественного деятеля
     document.querySelectorAll('.name-painter-all').forEach(function(tabsBtn3) {
         tabsBtn3.addEventListener('click', function(event3){
             const painters = event3.currentTarget.dataset.painters
-            document.querySelectorAll('.name-painter-all').forEach(function(tabCon3) {
-                tabCon3.classList.remove('name-painter-all-active')
+            document.querySelectorAll('.name-painter-all').forEach(function(tabCon31) {
+                tabCon31.classList.remove('name-painter-all-active')
             })
             document.querySelector(`[data-target="${painters}"]`).classList.add('name-painter-all-active')
 
@@ -115,4 +202,14 @@ window.addEventListener('DOMContentLoaded', function() {
             console.log(document.querySelector(`[data-target="${info}"]`).classList.add('info-painter-active'))
         })
     })
+    
+    // document.querySelectorAll('.country-block').forEach(function(tabsBtns) {
+    //     tabsBtns.addEventListener('click', function(events){
+    //         const activ = events.currentTarget.dataset.activ
+    //         document.querySelectorAll('.info-painter').forEach(function(tabCons) {
+    //             tabCons.classList.remove('info-painter-active')
+    //         })
+    //         document.querySelector(`[data-target="${activ}"]`).classList.add('info-painter-active')
+    //     })
+    // })
 });

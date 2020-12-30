@@ -691,8 +691,15 @@ h1 {
 .country-effect-active:active {
 	box-shadow: none;
 }
+.foreign-block {
+	display: none;
+}
+.foreign-block-active {
+	display: block;
+}
 .painters-paragraph {
 	width: 1080px;
+	min-height: 128px;
 }
 .info-about-painters {
 	display: flex;
@@ -701,9 +708,12 @@ h1 {
 	width: 50%;
 	padding-right: 50px;
 	display: none;
+	opacity: 0;
 }
 .info-painter-active {
 	display: block;
+	transition: opacity .3s ease;
+	opacity: 1;
 }
 .accordion-years {
 	width: 50%;
@@ -746,20 +756,20 @@ h1 {
 .info-accordion-children {
 	width: 208px;
 }
-.name-painter-all-active {
-	color: var(--first-color);
-	font-weight: 600;
-}
 .name-painter-all {
 	border: none;
 	background: #FFF;
 	cursor: pointer;
 }
+.name-painter-all-active {
+	color: var(--first-color);
+	font-weight: 600;
+}
 .name-painter-all:hover {
 	text-decoration: underline;
 	color: var(--first-color);
 }
-.name-painter-all:active {
+.name-painter-all1:active {
 	text-decoration: none;
 	color: var(--third-color);
 }
