@@ -5,7 +5,8 @@ window.addEventListener('DOMContentLoaded', function() {
         searchEnabled: false
     });
     // Javascript для swiper
-    var mySwiper = new Swiper('.swiper-container', {
+    
+    var mySwiper = new Swiper('.swiper-container1', {
         loop: true,
     
         pagination: {
@@ -14,8 +15,21 @@ window.addEventListener('DOMContentLoaded', function() {
         },
     
         navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.second-button-swiper',
+        prevEl: '.first-button-swiper',
+        }
+    });
+    var mySwiper = new Swiper('.swiper-container2', {
+        loop: true,
+    
+        pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction'
+        },
+    
+        navigation: {
+        nextEl: '.second-button-swiper2',
+        prevEl: '.first-button-swiper2',
         }
     });
 
@@ -202,14 +216,82 @@ window.addEventListener('DOMContentLoaded', function() {
             console.log(document.querySelector(`[data-target="${info}"]`).classList.add('info-painter-active'))
         })
     })
-    
-    // document.querySelectorAll('.country-block').forEach(function(tabsBtns) {
-    //     tabsBtns.addEventListener('click', function(events){
-    //         const activ = events.currentTarget.dataset.activ
-    //         document.querySelectorAll('.info-painter').forEach(function(tabCons) {
-    //             tabCons.classList.remove('info-painter-active')
-    //         })
-    //         document.querySelector(`[data-target="${activ}"]`).classList.add('info-painter-active')
-    //     })
-    // })
+    //Плавный скролл для кнопок в меню
+    $(function(){
+        $('#first-link').on('click', function(e){
+            $('html,body').stop().animate({ scrollTop: $('#first-section').offset().top }, 1000);
+            e.preventDefault();
+        });
+    });
+    $(function(){
+        $('#second-link').on('click', function(e){
+            $('html,body').stop().animate({ scrollTop: $('#second-section').offset().top }, 1000);
+            e.preventDefault();
+        });
+    });
+    $(function(){
+        $('#third-link').on('click', function(e){
+            $('html,body').stop().animate({ scrollTop: $('#third-section').offset().top }, 1000);
+            e.preventDefault();
+        });
+    });
+    $(function(){
+        $('#fourth-link').on('click', function(e){
+            $('html,body').stop().animate({ scrollTop: $('#fourth-section').offset().top }, 1000);
+            e.preventDefault();
+        });
+    });
+    $(function(){
+        $('#fiveth-link').on('click', function(e){
+            $('html,body').stop().animate({ scrollTop: $('#fiveth-section').offset().top }, 1000);
+            e.preventDefault();
+        });
+    });
+    $(function(){
+        $('#sixth-link').on('click', function(e){
+            $('html,body').stop().animate({ scrollTop: $('#sixth-section').offset().top }, 1000);
+            e.preventDefault();
+        });
+    });
+    $(function(){
+        $('#seventh-link').on('click', function(e){
+            $('html,body').stop().animate({ scrollTop: $('#seventh-section').offset().top }, 1000);
+            e.preventDefault();
+        });
+    });
+    $(function(){
+        $('#eighth-link').on('click', function(e){
+            $('html,body').stop().animate({ scrollTop: $('#seventh-section').offset().top }, 1000);
+            e.preventDefault();
+        });
+    });
+    //Валидация формы
+    var selector = document.querySelector("input[type='tel']");
+    var im = new Inputmask("+7 (999)-999-99-99");
+    im.mask(selector);
+    new JustValidate('.form-for-call', {
+        rules: {
+          name: {
+            required: true,
+            minLength: 2,
+            maxLength: 50
+          },
+          tel: {
+            required: true,
+            function (name, value) {
+                const phone = selector.inputmask.unmaskedvalue()
+                return Number(phone) && phone.length === 10
+            }
+          },
+          mail: {
+            required: true,
+            email: true
+          }
+        },
+        messages: {
+            email: {
+            required: 'Поле обязательно для ввода'
+            }
+        }
+    });
 });

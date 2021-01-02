@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +15,8 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
     <script src="js/select.js"></script>
     <script src="js/accordion.min.js" defer></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/just-validate.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
@@ -27,13 +29,13 @@
                     <div class="black-bar-control">
                         <img src="img/logo.svg" alt="logo" class="logo">
                         <ul class="navigation">
-                            <li class="navigation-children">О нас</li>
-                            <li class="navigation-children">Галерея</li>
-                            <li class="navigation-children">Каталог</li>
-                            <li class="navigation-children">События</li>
-                            <li class="navigation-children">Издания</li>
-                            <li class="navigation-children">Проекты</li>
-                            <li class="navigation-children">Контакты</li>
+                            <li class="navigation-children" id="first-link">О нас</li>
+                            <li class="navigation-children" id="second-link">Галерея</li>
+                            <li class="navigation-children" id="third-link">Каталог</li>
+                            <li class="navigation-children" id="fourth-link">События</li>
+                            <li class="navigation-children" id="fiveth-link">Издания</li>
+                            <li class="navigation-children" id="sixth-link">Проекты</li>
+                            <li class="navigation-children" id="seventh-link">Контакты</li>
                         </ul>
                         <form action="#" class="header-form">
                             <button class="login">Войти</button>
@@ -48,7 +50,7 @@
                             <div class="selects-children">
                                 <button class="selects-children-name children-1" data-path="one" data-painter="six" data-target="six">Реализм</button>
                                 <div class="select-painters" data-target="one">
-                                    <div data-simplebar>
+                                    <div class="select-painters-control" data-simplebar>
                                         <div class="painter-name painter-name1">
                                             <div class="painter-background">Тинторетто</div>
                                         </div>
@@ -61,13 +63,19 @@
                                         <div class="painter-name painter-name4">
                                             <div class="painter-background">Верроккьо</div>
                                         </div>
+                                        <div class="painter-name painter-name11">
+                                            <div class="painter-background">Гоген</div>
+                                        </div>
+                                        <div class="painter-name painter-name12">
+                                            <div class="painter-background">Сёра</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="selects-children">
                                 <button class="selects-children-name children-2"data-path="two" data-painter="seven" data-target="seven">Импрессионизм</button>
                                 <div class="select-painters" data-target="two">
-                                    <div data-simplebar>
+                                    <div class="select-painters-control" data-simplebar>
                                         <div class="painter-name painter-name5">
                                             <div class="painter-background">Моне</div>
                                         </div>
@@ -80,13 +88,19 @@
                                         <div class="painter-name painter-name8">
                                             <div class="painter-background">Ренуар</div>
                                         </div>
+                                        <div class="painter-name painter-name15">
+                                            <div class="painter-background">Малевич</div>
+                                        </div>
+                                        <div class="painter-name painter-name16">
+                                            <div class="painter-background">Пикассо</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="selects-children">
                                 <button class="selects-children-name children-3"data-path="three" data-painter="eight" data-target="eight">Постимпрессионизм</button>
                                 <div class="select-painters" data-target="three">
-                                    <div data-simplebar>
+                                    <div class="select-painters-control" data-simplebar>
                                         <div class="painter-name painter-name9">
                                             <div class="painter-background">Ван Гог</div>
                                         </div>
@@ -99,13 +113,19 @@
                                         <div class="painter-name painter-name12">
                                             <div class="painter-background">Сёра</div>
                                         </div>
+                                        <div class="painter-name painter-name19">
+                                            <div class="painter-background">Северини</div>
+                                        </div>
+                                        <div class="painter-name painter-name20">
+                                            <div class="painter-background">Балла</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="selects-children">
                                 <button class="selects-children-name children-4"data-path="four" data-painter="nine" data-target="nine">Авангард</button>
                                 <div class="select-painters" data-target="four">
-                                    <div data-simplebar>
+                                    <div class="select-painters-control" data-simplebar>
                                         <div class="painter-name painter-name13">
                                             <div class="painter-background">Кандинский</div>
                                         </div>
@@ -118,13 +138,19 @@
                                         <div class="painter-name painter-name16">
                                             <div class="painter-background">Пикассо</div>
                                         </div>
+                                        <div class="painter-name painter-name3">
+                                            <div class="painter-background">Леонардо</div>
+                                        </div>
+                                        <div class="painter-name painter-name4">
+                                            <div class="painter-background">Верроккьо</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="selects-children">
                                 <button class="selects-children-name children-5"data-path="five" data-painter="ten" data-target="ten">Футуризм</button>
                                 <div class="select-painters" data-target="five">
-                                    <div data-simplebar>
+                                    <div class="select-painters-control" data-simplebar>
                                         <div class="painter-name painter-name17">
                                             <div class="painter-background">Карра</div>
                                         </div>
@@ -136,6 +162,12 @@
                                         </div>
                                         <div class="painter-name painter-name20">
                                             <div class="painter-background">Балла</div>
+                                        </div>
+                                        <div class="painter-name painter-name7">
+                                            <div class="painter-background">Мане</div>
+                                        </div>
+                                        <div class="painter-name painter-name8">
+                                            <div class="painter-background">Ренуар</div>
                                         </div>
                                     </div>
                                 </div>
@@ -152,13 +184,13 @@
         <div class="control">
             <h1>Прикоснитесь к прекрасному</h1>
             <p class="paragraph-header">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
-            <button class="button-header">Подписаться на рассылку</button>
+            <button class="button-header" id="eighth-link">Подписаться на рассылку</button>
         </div>
     </header>
     <main class="main-content">
         <section class="first-section">
             <div class="control">
-                <h2 class="section-header">О нас</h2>
+                <h2 class="section-header" id="first-section">О нас</h2>
                 <p class="about-us">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.</p>
             </div>
         </section>
@@ -166,8 +198,8 @@
             <div class="control">
                 <div class="flex-blocks-second">
                     <div class="first-flex-block">
-                        <h2 class="section-header galary">Галерея</h2>
-                        <h3>Фильтровать по:</h3>
+                        <h2 class="section-header galary" id="second-section">Галерея</h2>
+                        <h3 class="filter">Фильтровать по:</h3>
                         <select name="select">
                             <option value="" сlass="select-name">Автор</option>
                             <option value="">Направление</option>
@@ -178,13 +210,13 @@
                     <div class="second-flex-block">
                         <div class="swiper-container swiper-container1">
                             <div class="button-swiper1">
-                                <img src="img/Group 22.png" alt="button" class="first-button-swiper swiper-button-prev">
+                                <img src="img/Group 22.png" alt="button" class="first-button-swiper ">
                                 <div class="swiper-pagination"></div>
-                                <img src="img/Group 23.png" alt="button" class="second-button-swiper swiper-button-next">
+                                <img src="img/Group 23.png" alt="button" class="second-button-swiper ">
                             </div>
                             <div class="swiper-wrapper swiper-block-height">
                                 <!-- Slides -->
-                                <div class="swiper-slide">
+                                <div class="swiper-slide swiper-slide1">
                                     <div class="picture picture11">
                                         <div class="paint-picture">
                                             <div class="hover-search"></div>
@@ -216,7 +248,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide">
+                                <div class="swiper-slide swiper-slide1">
                                     <div class="picture picture17">
                                         <div class="paint-picture">
                                             <div class="hover-search"></div>
@@ -353,7 +385,7 @@
         <section class="third-section">
             <div class="control">
                 <div class="countries">
-                    <h2 class="section-header country-header">Галерея</h2>
+                    <h2 class="section-header country-header" id="third-section">Каталог</h2>
                     <div class="country-block" data-country="first" data-biog="1001" data-activ="f107" data-active="f7"><button class="country-effect" data-target="first"><img src="img/image 4.png" alt="French" class="French country"></button></div>
                     <div class="country-block" data-country="second" data-biog="1002" data-activ="g107"  data-active="g7"><button class="country-effect" data-target="second"><img src="img/image 6.png" alt="Germany" class="Germany country" data-target="seventh"></button></div>
                     <div class="country-block" data-country="third" data-biog="1003" data-activ="i107"  data-active="i7"><button class="country-effect" data-target="third"><img src="img/image 7.png" alt="Italy" class="Italy country" data-target="eighth"></button></div>
@@ -528,7 +560,7 @@
                                         <div class="info-accordion-children">
                                             <button class="name-painter-all" data-painters="10" data-info="110"  data-target="10">Веккьетта</button><br>
                                             <button class="name-painter-all" data-painters="11" data-info="111"  data-target="11">Андреа Верроккьо</button>
-                                            <button class="name-painter-all" data-painters="12" data-info="111"  data-target="12">Доменико Гирландайо</button>
+                                            <button class="name-painter-all" data-painters="12" data-info="112"  data-target="12">Доменико Гирландайо</button>
                                             <button class="name-painter-all" data-painters="13" data-info="113"  data-target="13">Беноццо Гоццоли</button>
                                             <button class="name-painter-all" data-painters="14" data-info="114"  data-target="14">Граначчи, Франческо</button>
                                             <button class="name-painter-all" data-painters="15" data-info="115"  data-target="15">Грегорио ди Чекко</button>
@@ -2358,7 +2390,7 @@
         </section>
         <section class="fourth-section">
             <div class="control">
-                <h2 class="section-header">Галерея</h2>
+                <h2 class="section-header" id="fourth-section">События</h2>
                 <div class="fourth-section-block-first">
                     <div class="fourth-section-children fourth-section-children-first">
                         <p class="mini-info">Музей им. Щусева<br> с 20 марта по 30 апреля</p>
@@ -2395,14 +2427,14 @@
                         <button class="additional-info">Подробнее</button>
                     </div>
                 </div>
-                <button class="fourth-section-button">Все События</button>
+                <button class="fourth-section-button">Все события</button>
             </div>
         </section>
         <section class="fiveth-section">
             <div class="control" >
                 <div class="fiveth-section-flex">
                     <div class="left-colomn">
-                        <h2 class="section-header books">Издания</h2>
+                        <h2 class="section-header books" id="fiveth-section">Издания</h2>
                         <div class="checkbox-block">
                             <span class="check-span">Категории</span> 
                             <label for="check1">
@@ -2469,7 +2501,7 @@
                         <div class="cost-block">
                             <p class="cost-paragraph">Цена</p>
                             <div class="cost-from">
-                                <span>От</span><input type="text" class="cost-input"><span>до</span><input type="text" class="cost-input"><span>рублей</span>
+                                <span class="from">От</span><input type="text" class="cost-input"><span class="to">до</span><input type="text" class="cost-input cost-input2"><span class="ruble">рублей</span>
                             </div>
                         </div>
                     </div>
@@ -2477,18 +2509,18 @@
                         <div class="right-colomn-flex">
                             <div class="swiper-container swiper-container2">
                                 <div class="button-swiper2">
-                                    <img src="img/Group 22.png" alt="button" class="first-button-swiper swiper-button-prev">
-                                    <div class="swiper-pagination"></div>
-                                    <img src="img/Group 23.png" alt="button" class="second-button-swiper swiper-button-next">
+                                    <img src="img/Group 22.png" alt="button" class="first-button-swiper first-button-swiper2">
+                                    <div class="swiper-pagination swiper-pagination2"></div>
+                                    <img src="img/Group 23.png" alt="button" class="second-button-swiper second-button-swiper2">
                                 </div>
                                 <div class="swiper-wrapper">
                                     <!-- Slides -->
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide swiper-slide-add">
                                         <div class="right-colomn-children">
                                             <div class="picture1"></div>
                                             <div class="flex-paragraph">
                                                 <p class="author"><span class="paint-name">Искусство цвета</span><br>
-                                                    Иттен, Иоханнес </p>
+                                                   <span class="painter-name-mini">Иттен, Иоханнес</span></p>
                                                 <p class="cost">620 руб</p>
                                             </div>
                                             <button class="buy-picture">Заказать</button>
@@ -2497,7 +2529,7 @@
                                             <div class="picture2"></div>
                                             <div class="flex-paragraph">
                                                 <p class="author"><span class="paint-name">Типографика</span><br>
-                                                    Рудер, Эмиль </p>
+                                                    <span class="painter-name-mini">Рудер, Эмиль</span></p>
                                                 <p class="cost">2 450 руб</p>
                                             </div>
                                             <button class="buy-picture">Заказать</button>
@@ -2506,18 +2538,18 @@
                                             <div class="picture3"></div>
                                             <div class="flex-paragraph">
                                                 <p class="author"><span class="paint-name">Книга про буквы</span><br>   
-                                                    Гордон, Юрий  </p>
+                                                    <span class="painter-name-mini">Гордон, Юрий</span></p>
                                                 <p class="cost">2 200 руб</p>
                                             </div>
                                             <button class="buy-picture">Заказать</button>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide">
+                                    <div class="swiper-slide swiper-slide-add">
                                         <div class="right-colomn-children">
                                             <div class="picture4"></div>
                                             <div class="flex-paragraph">
                                                 <p class="author"><span class="paint-name">Николай Ильин</span><br> 
-                                                    Кричевский, Владимир </p>
+                                                    <span class="painter-name-mini">Кричевский, Владимир</span></p>
                                                 <p class="cost">1 100 руб</p>
                                             </div>
                                             <button class="buy-picture">Заказать</button>
@@ -2526,7 +2558,7 @@
                                             <div class="picture5"></div>
                                             <div class="flex-paragraph">
                                                 <p class="author"><span class="paint-name">Модульные сетки в граф...</span><br> 
-                                                    Мюллер-Брокманн, Йозеф </p>
+                                                    <span class="painter-name-mini">Мюллер-Брокманн, Йозеф</span></p>
                                                 <p class="cost">1 450 руб</p>
                                             </div>
                                             <button class="buy-picture">Заказать</button>
@@ -2535,7 +2567,7 @@
                                             <div class="picture6"></div>
                                             <div class="flex-paragraph">
                                                 <p class="author"><span class="paint-name">Эволюция графических ст...</span><br>
-                                                    Хеллер, Чваст  </p>
+                                                    <span class="painter-name-mini">Хеллер, Чваст</span></p>
                                                 <p class="cost">3 200 руб</p>
                                             </div>
                                             <button class="buy-picture">Заказать</button>
@@ -2550,12 +2582,11 @@
         </section>
         <section class="sixth-section">
             <div class="control">
-                <h2 class="section-header">Проекты</h2>
-                <p class="projects-paragraph">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное <br> информационно-пропагандистское <img src="img/i.png" alt="i" class="i"> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены <img src="img/i.png" alt="i" class="i"> исключительно в разрезе маркетинговых и финансовых <img src="img/i.png" alt="i" class="i"> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a href="" class="link-blanchard">blanchard-art.ru/projects/about</a></p>
+                <h2 class="section-header" id="sixth-section">Проекты</h2>
+                <p class="projects-paragraph">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное <br> информационно-пропагандистское <span class="i-block1"><img src="img/i.png" alt="i" class="i1" tabindex="0"><span class="tooltip1">Пример современных тенденций - современная методология разработки </span></span> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены <span class="i-block2"><img src="img/i.png" alt="i" class="i2" tabindex="1"><span class="tooltip2">Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции</span></span>исключительно в разрезе маркетинговых и финансовых <span class="i-block2"><img src="img/i.png" alt="i" class="i3" tabindex="2"><span class="tooltip3">В стремлении повысить качество </span></span> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a href="" class="link-blanchard">blanchard-art.ru/projects/about</a></p>
                 <h3 class="partners-header">Партнёры проектов:</h3>
                 <div class="partners-block1">
-                    <div class="swiper-left">
-                    </div>
+                    <div class="swiper-left"></div>
                     <div class="swiper-container swiper-container3">
                         <div class="swiper-wrapper swiper-partners">
                             <div class="swiper-slide">
@@ -2575,14 +2606,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-right">
-                    </div>
+                    <div class="swiper-right"></div>
                 </div>
             </div>
         </section>
         <section>
             <div class="control">
-                <h2 class="section-header">Контакты</h2>
+                <h2 class="section-header" id="seventh-section">Контакты</h2>
             </div>
             <div class="contact-block">
                 <div class="phone">
@@ -2590,13 +2620,13 @@
                         <p class="locate"><span class="locate-H">Шоурум №4</span> <br> Леонтьевский переулок, дом 5, строение 1</p>
                         <p class="call">Заказать обратный звонок</p>
                         <form action="#" class="form-for-call">
-                            <input type="text" placeholder="Имя*" class="name">
-                            <input type="text" placeholder="Телефон*" class="tel">
+                            <input type="text" placeholder="Имя*" data-validate-field="name" name="Имя" class="name">
+                            <input type="tel" placeholder="Телефон*" data-validate-field="tel" name="tel" class="tel">
                             <button type="submit" class="button-call">Заказать</button>
                         </form>
                         <p class="phone-follow">Связаться в один клик</p>
-                        <a href="#"><img src="img/Whatsapp-Icon.svg" alt="Whatsapp-Icon" class="whatsapp"></a>
-                        <a href="#"><img src="img/Telegram_2019_Logo.svg" alt="telegram"></a>
+                        <a href="https://www.whatsapp.com/"><img src="img/Whatsapp-Icon.svg" alt="Whatsapp-Icon" class="whatsapp"></a>
+                        <a href="https://telegram.org/"><img src="img/Telegram_2019_Logo.svg" alt="telegram"></a>
                     </div>
                 </div>
                 <div class="map" id="map"></div>
@@ -2609,9 +2639,9 @@
             <div class="footer-control">
                 <img src="img/logo.svg" alt="logo">
                 <div class="follow">
-                    <a href="#"><img src="img/vk.svg" alt="vk"></a>
-                    <a href="#"><img src="img/instagram.png" alt="instagram" class="follow-children"></a>
-                    <a href="#"><img src="img/fb.svg" alt="FB" class="follow-children"></a>
+                    <a href="https://vk.com"><img src="img/vk.svg" alt="vk"></a>
+                    <a href="https://www.instagram.com/"><img src="img/instagram.png" alt="instagram" class="follow-children"></a>
+                    <a href="https://ru-ru.facebook.com/"><img src="img/fb.svg" alt="FB" class="follow-children"></a>
                 </div>
             </div>
         </div>
