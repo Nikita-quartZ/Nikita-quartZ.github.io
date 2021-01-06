@@ -15,8 +15,21 @@ window.addEventListener('DOMContentLoaded', function() {
         },
     
         navigation: {
-        nextEl: '.second-button-swiper',
-        prevEl: '.first-button-swiper',
+        nextEl: '.second-button-swiper1',
+        prevEl: '.first-button-swiper1',
+        }
+    });
+    var mySwiper = new Swiper('.swiper-container11', {
+        loop: true,
+    
+        pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction'
+        },
+    
+        navigation: {
+        nextEl: '.second-button-swiper2',
+        prevEl: '.first-button-swiper2',
         }
     });
     var mySwiper = new Swiper('.swiper-container2', {
@@ -32,13 +45,46 @@ window.addEventListener('DOMContentLoaded', function() {
         prevEl: '.first-button-swiper2',
         }
     });
-
+    var mySwiper = new Swiper('.swiper-container12', {
+        loop: true,
+    
+        pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction'
+        },
+    
+        navigation: {
+        nextEl: '.second-button-swiper2',
+        prevEl: '.first-button-swiper2',
+        }
+    });
+    var mySwiper = new Swiper('.swiper-container22', {
+        loop: true,
+    
+        pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction'
+        },
+    
+        navigation: {
+        nextEl: '.second-button-swiper21',
+        prevEl: '.first-button-swiper21',
+        }
+    });
     var mySwiper = new Swiper('.swiper-container3', {
         loop: true,
     
         navigation: {
-        nextEl: '.swiper-right',
-        prevEl: '.swiper-left',
+        nextEl: '.swiper-right1',
+        prevEl: '.swiper-left1',
+        }
+    });
+    var mySwiper = new Swiper('.swiper-container31', {
+        loop: true,
+    
+        navigation: {
+        nextEl: '.swiper-right2',
+        prevEl: '.swiper-left2',
         }
     });
     // Javascript для accordion
@@ -48,11 +94,11 @@ window.addEventListener('DOMContentLoaded', function() {
     $("#my-accordion1").accordionjs({
         closeAble   : false,
 
-        closeOther  : false,
+        closeOther  : true,
 
         slideSpeed  : 150,
 
-        activeIndex : false,
+        activeIndex : 1,
 
         openSection: function( section ){},
 
