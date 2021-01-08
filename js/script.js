@@ -32,6 +32,19 @@ window.addEventListener('DOMContentLoaded', function() {
         prevEl: '.first-button-swiper2',
         }
     });
+    var mySwiper = new Swiper('.swiper-container13', {
+        loop: true,
+    
+        pagination: {
+        el: '.swiper-pagination13',
+        type: 'fraction'
+        },
+    
+        navigation: {
+        nextEl: '.second-button-swiper13',
+        prevEl: '.first-button-swiper13',
+        }
+    });
     var mySwiper = new Swiper('.swiper-container2', {
         loop: true,
     
@@ -81,6 +94,28 @@ window.addEventListener('DOMContentLoaded', function() {
     });
     var mySwiper = new Swiper('.swiper-container31', {
         loop: true,
+    
+        navigation: {
+        nextEl: '.swiper-right2',
+        prevEl: '.swiper-left2',
+        }
+    });
+    var mySwiper = new Swiper('.swiper-container33', {
+        loop: true,
+    
+        navigation: {
+        nextEl: '.swiper-right3',
+        prevEl: '.swiper-left3',
+        }
+    });
+    var mySwiper = new Swiper('.swiper-container4', {
+        loop: true,
+
+        pagination: {
+            el: '.swiper-pagination4',
+            type: 'bullets',
+            clickable: 'true'
+            },
     
         navigation: {
         nextEl: '.swiper-right2',
@@ -339,5 +374,12 @@ window.addEventListener('DOMContentLoaded', function() {
             required: 'Поле обязательно для ввода'
             }
         }
+    });
+    //burger
+    document.querySelector('.burger').addEventListener('click', function() {
+        document.querySelector('.menu').classList.add('is-active');
+    });
+    document.querySelector('.menu-close').addEventListener('click', function() {
+        document.querySelector('.menu').classList.remove('is-active');
     });
 });
