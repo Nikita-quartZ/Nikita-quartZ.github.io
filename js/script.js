@@ -203,6 +203,22 @@ window.addEventListener('DOMContentLoaded', function() {
 
         beforeOpenSection: function( section ){},
     });
+    jQuery(document).ready(function($){
+        $("#my-accordion6").accordionjs();
+    });
+    $("#my-accordion6").accordionjs({
+        closeAble   : true,
+
+        closeOther  : true,
+
+        slideSpeed  : 150,
+
+        activeIndex : false,
+
+        openSection: function( section ){},
+
+        beforeOpenSection: function( section ){},
+    });
     //Javascript для Яндекс.Карт
     ymaps.ready(init);
         function init(){

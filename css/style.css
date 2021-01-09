@@ -855,17 +855,9 @@ h1 {
 	font-size: 24px;
 	line-height: 32px;
 }
-.accordionjs .acc_section .acc_head {
-	padding-left: 0;
-}
 .accordionjs .acc_section .acc_content {
 	padding: 24px 0;
 	padding-bottom: 0;
-}
-.accordionjs .acc_section.acc_active > .acc_head {
-	padding-bottom: 42px;
-	border-bottom: 1px solid var(--first-color);
-	background: #FFF;
 }
 .accordionjs .acc_section.acc_active > .acc_content {
 	display: flex;
@@ -895,6 +887,7 @@ h1 {
 	text-decoration: none;
 }
 .accordionjs .acc_section .acc_head {
+	padding-left: 0;
 	background-image: url(../img/Group\ 77.png);
 	background-repeat: no-repeat;
 	background-position: right center;
@@ -905,6 +898,9 @@ h1 {
 	background-image: url(../img/Group\ 21.png);
 }
 .accordionjs .acc_section.acc_active > .acc_head {
+	padding-bottom: 42px;
+	border-bottom: 1px solid var(--first-color);
+	background: #FFF;
 	background-image: url(../img/Group\ 20.png);
 	background-repeat: no-repeat;
 	background-position: right 0px;
@@ -1045,10 +1041,10 @@ label {
     padding-left: 24px;
     cursor: pointer;
 }
-#check1, #check2, #check3, #check4, #check5, #check6, #check7, #check8, #check9, #check10, #check11, #check12, #check13, #check14, #check15, #check16, #check17, #check18, #check19, #check20, #check21, #check22, #check23, #check24 {
+#check1, #check2, #check3, #check4, #check5, #check6, #check7, #check8, #check9, #check10, #check11, #check12, #check13, #check14, #check15, #check16, #check17, #check18, #check19, #check20, #check21, #check22, #check23, #check24, #check25, #check26, #check27, #check28, #check29, #check30, #check31, #check32, #check33, #check34, #check35, #check36{
     display: none;
 }
-#check1 + span, #check2 + span, #check3 + span, #check4 + span, #check5 + span, #check6 + span, #check7 + span, #check8 + span, #check9 + span, #check10 + span, #check11 + span, #check12 + span, #check13 + span, #check14 + span, #check15 + span, #check16 + span, #check17 + span, #check18 + span, #check19 + span, #check20 + span, #check21 + span, #check22 + span, #check23 + span, #check24 + span {
+#check1 + span, #check2 + span, #check3 + span, #check4 + span, #check5 + span, #check6 + span, #check7 + span, #check8 + span, #check9 + span, #check10 + span, #check11 + span, #check12 + span, #check13 + span, #check14 + span, #check15 + span, #check16 + span, #check17 + span, #check18 + span, #check19 + span, #check20 + span, #check21 + span, #check22 + span, #check23 + span, #check24 + span, #check25 + span, #check26 + span, #check27 + span, #check28 + span, #check29 + span, #check30 + span, #check31 + span, #check32 + span, #check33 + span, #check34 + span, #check35 + span, #check36 + span {
     position: absolute;
     top: 9px;
     left: 0px;
@@ -1056,16 +1052,16 @@ label {
 	height: 12px;
     border: 1px solid  var(--second-color);
 }
-#check1:checked + span, #check2:checked + span, #check3:checked + span, #check4:checked + span, #check5:checked + span, #check6:checked + span, #check7:checked + span, #check8:checked + span, #check9:checked + span, #check10:checked + span, #check11:checked + span, #check12:checked + span, #check13:checked + span, #check14:checked + span, #check15:checked + span, #check16:checked + span, #check17:checked + span, #check18:checked + span, #check19:checked + span, #check20:checked + span, #check21:checked + span, #check22:checked + span, #check23:checked + span, #check24:checked + span {
+#check1:checked + span, #check2:checked + span, #check3:checked + span, #check4:checked + span, #check5:checked + span, #check6:checked + span, #check7:checked + span, #check8:checked + span, #check9:checked + span, #check10:checked + span, #check11:checked + span, #check12:checked + span, #check13:checked + span, #check14:checked + span, #check15:checked + span, #check16:checked + span, #check17:checked + span, #check18:checked + span, #check19:checked + span, #check20:checked + span, #check21:checked + span, #check22:checked + span, #check23:checked + span, #check24:checked + span, #check25:checked + span, #check26:checked + span, #check27:checked + span, #check28:checked + span, #check29:checked + span, #check30:checked + span, #check31:checked + span, #check32:checked + span, #check33:checked + span, #check34:checked + span, #check35:checked + span, #check36:checked + span {
 	border: 1px solid var(--first-color);
 	color: var(--first-color);
 }
-#check1 +span:before, #check2 +span:before, #check3 +span:before, #check4 +span:before, #check5 +span:before, #check6 +span:before, #check7 +span:before, #check8 +span:before, #check9 +span:before, #check10 +span:before, #check11 +span:before, #check12 +span:before, #check13 +span:before, #check14 +span:before, #check15 +span:before, #check16 +span:before, #check17 +span:before, #check18 +span:before, #check19 +span:before, #check20 +span:before, #check21 +span:before, #check22 +span:before, #check23 +span:before, #check24 +span:before {
+#check1 +span:before, #check2 +span:before, #check3 +span:before, #check4 +span:before, #check5 +span:before, #check6 +span:before, #check7 +span:before, #check8 +span:before, #check9 +span:before, #check10 +span:before, #check11 +span:before, #check12 +span:before, #check13 +span:before, #check14 +span:before, #check15 +span:before, #check16 +span:before, #check17 +span:before, #check18 +span:before, #check19 +span:before, #check20 +span:before, #check21 +span:before, #check22 +span:before, #check23 +span:before, #check24 +span:before, #check25 +span:before, #check26 +span:before, #check27 +span:before, #check28 +span:before, #check29 +span:before, #check30 +span:before, #check31 +span:before, #check32 +span:before, #check33 +span:before, #check34 +span:before, #check35 +span:before, #check36 +span:before {
     content: '\2022';
     color: var(--first-color);
     position: absolute;
     top: 0;
-    bottom: 1px;
+    bottom: 0px;
 	right: 2px;
     opacity: 0;
     transition: opacity, border .3s ease;
@@ -1073,16 +1069,16 @@ label {
     align-items: center;
     justify-content: center;
 }
-#check1:checked +span:before, #check2:checked +span:before, #check3:checked +span:before, #check4:checked +span:before, #check5:checked +span:before, #check6:checked +span:before, #check7:checked +span:before, #check8:checked +span:before, #check9:checked +span:before, #check10:checked +span:before, #check11:checked +span:before, #check12:checked +span:before, #check13:checked +span:before, #check14:checked +span:before, #check15:checked +span:before, #check16:checked +span:before, #check17:checked +span:before, #check18:checked +span:before, #check19:checked +span:before, #check20:checked +span:before, #check21:checked +span:before, #check22:checked +span:before, #check23:checked +span:before, #check24:checked +span:before {
+#check1:checked +span:before, #check2:checked +span:before, #check3:checked +span:before, #check4:checked +span:before, #check5:checked +span:before, #check6:checked +span:before, #check7:checked +span:before, #check8:checked +span:before, #check9:checked +span:before, #check10:checked +span:before, #check11:checked +span:before, #check12:checked +span:before, #check13:checked +span:before, #check14:checked +span:before, #check15:checked +span:before, #check16:checked +span:before, #check17:checked +span:before, #check18:checked +span:before, #check19:checked +span:before, #check20:checked +span:before, #check21:checked +span:before, #check22:checked +span:before, #check23:checked +span:before, #check24:checked +span:before, #check25:checked +span:before, #check26:checked +span:before, #check27:checked +span:before, #check28:checked +span:before, #check29:checked +span:before, #check30:checked +span:before, #check31:checked +span:before, #check32:checked +span:before, #check33:checked +span:before, #check34:checked +span:before, #check35:checked +span:before, #check36:checked +span:before {
     opacity: 1;
 }
-#check1:active ~ #checks1, #check2:active ~ #checks2, #check3:active ~ #checks3, #check4:active ~ #checks4, #check5:active ~ #checks5, #check6:active ~ #checks6, #check7:active ~ #checks7, #check8:active ~ #checks8, #check9:active ~ #checks9, #check10:active ~ #checks10, #check11:active ~ #checks11, #check12:active ~ #checks12, #check13:active ~ #checks13, #check14:active ~ #checks14, #check15:active ~ #checks15, #check16:active ~ #checks16, #check17:active ~ #checks17, #check18:active ~ #checks18, #check19:active ~ #checks19, #check20:active ~ #checks20, #check21:active ~ #checks21, #check22:active ~ #checks22, #check23:active ~ #checks23, #check24:active ~ #checks24{
+#check1:active ~ #checks1, #check2:active ~ #checks2, #check3:active ~ #checks3, #check4:active ~ #checks4, #check5:active ~ #checks5, #check6:active ~ #checks6, #check7:active ~ #checks7, #check8:active ~ #checks8, #check9:active ~ #checks9, #check10:active ~ #checks10, #check11:active ~ #checks11, #check12:active ~ #checks12, #check13:active ~ #checks13, #check14:active ~ #checks14, #check15:active ~ #checks15, #check16:active ~ #checks16, #check17:active ~ #checks17, #check18:active ~ #checks18, #check19:active ~ #checks19, #check20:active ~ #checks20, #check21:active ~ #checks21, #check22:active ~ #checks22, #check23:active ~ #checks23, #check24:active ~ #checks24, #check25:active ~ #checks25, #check26:active ~ #checks26, #check27:active ~ #checks27, #check28:active ~ #checks28, #check29:active ~ #checks29, #check6:active ~ #checks30, #check31:active ~ #checks31, #check32:active ~ #checks32, #check33:active ~ #checks33, #check34:active ~ #checks34, #check35:active ~ #checks35, #check36:active ~ #checks36 {
 	color: var(--third-color);
 }
-#check1:active ~ span, #check2:active ~ span, #check3:active ~ span, #check4:active ~ span, #check5:active ~ span, #check6:active ~ span, #check7:active ~ span, #check8:active ~ span, #check9:active ~ span, #check10:active ~ span, #check11:active ~ span, #check12:active ~ span, #check13:active ~ span, #check14:active ~ span, #check15:active ~ span, #check16:active ~ span, #check17:active ~ span, #check18:active ~ span, #check19:active ~ span, #check20:active ~ span, #check21:active ~ span, #check22:active ~ span, #check23:active ~ span, #check24:active ~ span {
+#check1:active ~ span, #check2:active ~ span, #check3:active ~ span, #check4:active ~ span, #check5:active ~ span, #check6:active ~ span, #check7:active ~ span, #check8:active ~ span, #check9:active ~ span, #check10:active ~ span, #check11:active ~ span, #check12:active ~ span, #check13:active ~ span, #check14:active ~ span, #check15:active ~ span, #check16:active ~ span, #check17:active ~ span, #check18:active ~ span, #check19:active ~ span, #check20:active ~ span, #check21:active ~ span, #check22:active ~ span, #check23:active ~ span, #check24:active ~ span, #check25:active ~ span, #check26:active ~ span, #check27:active ~ span, #check28:active ~ span, #check29:active ~ span, #check30:active ~ span, #check31:active ~ span, #check32:active ~ span, #check33:active ~ span, #check34:active ~ span, #check35:active ~ span, #check36:active ~ span {
 	border: 1px solid var(--third-color);
 }
-#check1:checked ~ #checks1, #check2:checked ~ #checks2, #check3:checked ~ #checks3, #check4:checked ~ #checks4, #check5:checked ~ #checks5, #check6:checked ~ #checks6, #check7:checked ~ #checks7, #check8:checked ~ #checks8, #check9:checked ~ #checks9, #check10:checked ~ #checks10, #check11:checked ~ #checks11, #check12:checked ~ #checks12, #check13:checked ~ #checks13, #check14:checked ~ #checks14, #check15:checked ~ #checks15, #check16:checked ~ #checks16, #check17:checked ~ #checks17, #check18:checked ~ #checks18, #check19:checked ~ #checks19, #check20:checked ~ #checks20, #check21:checked ~ #checks21, #check22:checked ~ #checks22, #check23:checked ~ #checks23, #check24:checked ~ #checks24 {
+#check1:checked ~ #checks1, #check2:checked ~ #checks2, #check3:checked ~ #checks3, #check4:checked ~ #checks4, #check5:checked ~ #checks5, #check6:checked ~ #checks6, #check7:checked ~ #checks7, #check8:checked ~ #checks8, #check9:checked ~ #checks9, #check10:checked ~ #checks10, #check11:checked ~ #checks11, #check12:checked ~ #checks12, #check13:checked ~ #checks13, #check14:checked ~ #checks14, #check15:checked ~ #checks15, #check16:checked ~ #checks16, #check17:checked ~ #checks17, #check18:checked ~ #checks18, #check19:checked ~ #checks19, #check20:checked ~ #checks20, #check21:checked ~ #checks21, #check22:checked ~ #checks22, #check23:checked ~ #checks23, #check24:checked ~ #checks24, #check25:checked ~ #checks25, #check26:checked ~ #checks26, #check27:checked ~ #checks27, #check28:checked ~ #checks28, #check29:checked ~ #checks29, #check30:checked ~ #checks30, #check31:checked ~ #checks31, #check32:checked ~ #checks32, #check33:checked ~ #checks33, #check34:checked ~ #checks34, #check35:checked ~ #checks35, #check36:checked ~ #checks36 {
 	color: var(--first-color);
 }
 .cost {
@@ -2329,6 +2325,8 @@ label {
 	.swiper-container13 {
 		display: block;
 		height: 367px;
+		width: 290px;
+		margin: 0 auto;
 	}
 	.swiper-container11 {
 		display: none;
@@ -2432,7 +2430,7 @@ label {
 	.fourth-section-children {
 		padding-left: 27px;
 		padding-right: 17px;
-		width: 99.9%;
+		width: 290px;
 	}
 	.event-paragraph {
 		margin-top: 33px;
@@ -2443,6 +2441,7 @@ label {
 	}
 	.fiveth-section {
 		padding-top: 1px;
+		height: 1512px;
 	}
 	.left-colomn2 {
 		display: none;
@@ -2462,10 +2461,7 @@ label {
 	}
 	.swiper-container4 {
 		margin: 0 auto;
-		width: 318px;
-	}
-	.fiveth-section {
-		height: 1512px;
+		width: 290px;
 	}
 	#sixth-section {
 		margin-bottom: 13px;
@@ -2575,5 +2571,60 @@ label {
 		width: 25px;
 		height: 25px;
 		margin-left: 9px;
+	}
+	.picture {
+		background-position: center;
+	}
+	.accordionjs6 .acc_section.acc_active > .acc_head {
+		background-color: rgba(0, 0, 0, 0);
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.accordionjs6 .acc_section .acc_head {
+		background-color: rgba(0, 0, 0, 0);
+		color: #FFF;
+	}
+	.accordionjs6 .acc_section {
+		padding-top: 2px;
+		padding-bottom: 0px;
+	}
+	.acc_head6 {
+		padding-top: 0 !important;
+		padding-bottom: 4px !important;
+		font-size: 16.4px;
+		line-height: 32px;
+	}
+	#fiveth-section {
+		margin-bottom: 13px;
+	}
+	.accordionjs6 .acc_section:last-of-type, .accordionjs .acc_section:last-of-type .acc_content {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		border-top-left-radius: 0px;
+    	border-top-right-radius: 0px;
+	}
+	.accordionjs6 .acc_section .acc_head {
+		background-image: url(../img/Rectangle\ 54.svg);
+		background-size: 12px;
+		background-position: right, 3px;
+	}
+	.accordionjs6 .acc_section .acc_head:hover {
+		background-image: url(../img/Rectangle\ 76.svg);
+	}
+	.accordionjs6 .acc_section.acc_active > .acc_head {
+		background-image: url(../img/Rectangle\ 74.svg);
+		background-size: 12px;
+		background-position: right, 3px;
+		border-bottom: 1px solid #FFF;
+	}
+	.accordionjs6 .acc_section .acc_content {
+		padding-top: 3px;
+	}
+	.label-border6 {
+		padding-bottom: 3px;
+		border-bottom: 1px solid #FFF;
+	}
+	.label-border7 {
+		padding-bottom: 2px;
 	}
 }
