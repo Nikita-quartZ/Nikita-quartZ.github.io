@@ -1748,6 +1748,7 @@ label {
 }
 .swiper-container33 {
 	display: none;
+	margin: 0 auto;
 }
 .locale2 {
 	display: none;
@@ -2457,6 +2458,11 @@ label {
 	}
 	.swiper-container33 {
 		display: block;
+		width: 195px;
+	}
+	.swiper-container4 {
+		margin: 0 auto;
+		width: 318px;
 	}
 	.fiveth-section {
 		height: 1512px;
