@@ -123,9 +123,6 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     });
     // Javascript для accordion
-    jQuery(document).ready(function($){
-        $("#my-accordion1").accordionjs();
-    });
     $("#my-accordion1").accordionjs({
         closeAble   : false,
 
@@ -138,9 +135,6 @@ window.addEventListener('DOMContentLoaded', function() {
         openSection: function( section ){},
 
         beforeOpenSection: function( section ){},
-    });
-    jQuery(document).ready(function($){
-        $("#my-accordion2").accordionjs();
     });
     $("#my-accordion2").accordionjs({
         closeAble   : false,
@@ -155,9 +149,6 @@ window.addEventListener('DOMContentLoaded', function() {
 
         beforeOpenSection: function( section ){},
     });
-    jQuery(document).ready(function($){
-        $("#my-accordion3").accordionjs();
-    });
     $("#my-accordion3").accordionjs({
         closeAble   : false,
 
@@ -171,9 +162,6 @@ window.addEventListener('DOMContentLoaded', function() {
 
         beforeOpenSection: function( section ){},
     });
-    jQuery(document).ready(function($){
-        $("#my-accordion4").accordionjs();
-    });
     $("#my-accordion4").accordionjs({
         closeAble   : false,
 
@@ -181,14 +169,11 @@ window.addEventListener('DOMContentLoaded', function() {
 
         slideSpeed  : 150,
 
-        activeIndex : false,
+        activeIndex : 1,
 
         openSection: function( section ){},
 
         beforeOpenSection: function( section ){},
-    });
-    jQuery(document).ready(function($){
-        $("#my-accordion5").accordionjs();
     });
     $("#my-accordion5").accordionjs({
         closeAble   : false,
@@ -203,20 +188,12 @@ window.addEventListener('DOMContentLoaded', function() {
 
         beforeOpenSection: function( section ){},
     });
-    jQuery(document).ready(function($){
-        $("#my-accordion6").accordionjs();
-    });
     $("#my-accordion6").accordionjs({
-        closeAble   : true,
-
+        closeAble   : false,
         closeOther  : true,
-
         slideSpeed  : 150,
-
         activeIndex : false,
-
         openSection: function( section ){},
-
         beforeOpenSection: function( section ){},
     });
     //Javascript для Яндекс.Карт
@@ -398,4 +375,22 @@ window.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.menu-close').addEventListener('click', function() {
         document.querySelector('.menu').classList.remove('is-active');
     });
+    // Аккордион на мобильной версии
+    document.querySelector('.acc_head6').addEventListener('click', function() {
+        document.querySelector('.div-borders').classList.toggle('div-borders-none');
+    });
+    document.querySelectorAll('.label-bord').forEach(function(tabs) {
+        tabs.addEventListener('click', function(even){
+            const check = even.currentTarget.dataset.check
+
+            console.log(document.querySelector(`[data-target="${check}"]`).classList.add('div-border-active'))
+        })
+    })
+    document.querySelectorAll('.check-button').forEach(function(tabs2) {
+        tabs2.addEventListener('click', function(even2){
+            const chec = even2.currentTarget.dataset.chec
+            
+            console.log(document.querySelector(`[data-target="${chec}"]`).classList.remove('div-border-active'))
+        })
+    })
 });
