@@ -124,7 +124,6 @@
 	font-size: 16px;
 	font-family: 'Open Sans';
 	line-height: 32px;
-	overflow: hidden;
 }
 a {
 	text-decoration: none;
@@ -142,6 +141,7 @@ input, textarea, button {
 	max-width: 1920px;
 	margin: 0 auto;
 	padding: 0 160px;
+	overflow: hidden;
 }
 .header {
 	background-size: cover;
@@ -1190,6 +1190,7 @@ label {
 }
 .author {
 	margin-bottom: -2px;
+	padding-left: 1px;
 }
 .button-swiper2 {
 	color: #FFF;
@@ -1231,6 +1232,7 @@ label {
 	padding-bottom: 1px;
 	cursor: pointer;
 	transition: border .15s linear;
+	margin-left: 1.4px;
 }
 .buy-picture:hover {
 	background: var(--first-color);
@@ -2033,6 +2035,8 @@ label {
 	}
 	.second-flex-block {
 		width: 69.7%;
+		max-width: 647px;
+		margin-left: auto;
 	}
 	.country-block {
 		position: relative;
@@ -2099,6 +2103,7 @@ label {
 	}
 	.swiper-container31 {
 		display: block;
+		max-width: 625px;
 	}
 	.partners {
 		width: 384px;
@@ -2140,6 +2145,10 @@ label {
 	}
 }
 @media (max-width: 1450px) {
+	.right-colomn {
+		max-width: 679px;
+		margin-left: auto;
+	}
 	.accordion-years {
 		padding-left: 25px;
 	}
@@ -2234,7 +2243,12 @@ label {
 		display: block;
 	}
 }
-@media (max-width: 800px) {
+@media (max-width: 975px) {
+	.fourth-section-block-first {
+		max-width: 735px;
+		margin: 0 auto;
+		margin-bottom: 50px;
+	}
 	.first-button-swiper21 {
 		display: block;
 	}
@@ -2262,6 +2276,8 @@ label {
 	.second-flex-block {
 		padding-left: 0;
 		width: 100%;
+		max-width: 668px;
+		margin: 0 auto;
 	}
 	.swiper-container11 {
 		height: 768px;
@@ -2398,7 +2414,6 @@ label {
 		margin: 0 auto;
 	}
 	.button-swiper2 {
-		/* position: absolute; */
 		left: -15px;
 	}
 	.projects-paragraph2 {
@@ -2422,7 +2437,10 @@ label {
 		width: 44%;
 	}
 }
-@media (max-width: 720px) {
+@media (max-width: 740px) {
+	.second-flex-block {
+		max-width: 410px;
+	}
 	.control {
 		padding: 0 15px;
 	}
