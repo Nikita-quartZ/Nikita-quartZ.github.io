@@ -75,7 +75,7 @@ window.addEventListener('DOMContentLoaded', function() {
         loop: true,
     
         pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination2',
         type: 'fraction'
         },
     
@@ -165,11 +165,11 @@ window.addEventListener('DOMContentLoaded', function() {
     $("#my-accordion4").accordionjs({
         closeAble   : false,
 
-        closeOther  : false,
+        closeOther  : true,
 
         slideSpeed  : 150,
 
-        activeIndex : 1,
+        activeIndex : [1 , 8],
 
         openSection: function( section ){},
 
@@ -393,4 +393,49 @@ window.addEventListener('DOMContentLoaded', function() {
             console.log(document.querySelector(`[data-target="${chec}"]`).classList.remove('div-border-active'))
         })
     })
+    // search
+    document.querySelector('.search-open').addEventListener('focus', function() {
+        document.querySelector('.search-div').classList.add('search-div-active');
+        document.querySelector('.search-open').classList.add('search-open-focus');
+    });
+    document.querySelector('.search-open').addEventListener('blur', function() {
+        setTimeout(function blur() {
+            document.querySelector('.search-div').classList.remove('search-div-active');
+            document.querySelector('.search-open').classList.remove('search-open-focus')
+        }, 0);
+    });
+    document.querySelector('.search-input').addEventListener('focus', function() {
+        setTimeout(function blur() {
+            document.querySelector('.search-div').classList.add('search-div-active');
+            document.querySelector('.search-open').classList.add('search-open-focus');
+        }, 1);
+    });
+    document.querySelector('.search-submit').addEventListener('focus', function() {
+        setTimeout(function blur() {
+            document.querySelector('.search-div').classList.add('search-div-active');
+            document.querySelector('.search-open').classList.add('search-open-focus');
+        }, 1);
+    });
+    document.querySelector('.search-input').addEventListener('blur',function() {
+            document.querySelector('.search-div').classList.remove('search-div-active');
+            document.querySelector('.search-open').classList.remove('search-open-focus')
+    });
+    document.querySelector('.search-open2').addEventListener('click', function() {
+        document.querySelector('.search-block').classList.add('search-block-active');
+    });
+    document.querySelector('.search-close2').addEventListener('click', function() {
+        document.querySelector('.search-block').classList.remove('search-block-active');
+    });
+    document.querySelector('.search-open3').addEventListener('click', function() {
+        document.querySelector('.search-block3').classList.add('search-block-active');
+        document.querySelector('.search-mobile').classList.add('search-block-active');
+        document.querySelector('.search-close3').classList.add('search-block-active');
+        document.querySelector('.search-open3').classList.add('search-blocks-disable');
+    });
+    document.querySelector('.search-close3').addEventListener('click', function() {
+        document.querySelector('.search-block3').classList.remove('search-block-active');
+        document.querySelector('.search-mobile').classList.remove('search-block-active');
+        document.querySelector('.search-close3').classList.remove('search-block-active');
+        document.querySelector('.search-open3').classList.remove('search-blocks-disable');
+    });
 });

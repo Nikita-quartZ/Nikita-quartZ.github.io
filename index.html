@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/accordion.css">
     <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/new.scss">
     <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
     <script src="js/select.js"></script>
@@ -56,7 +57,26 @@
                         <form action="#" class="header-form">
                             <button class="login">Войти</button>
                         </form>
-                        <button class="search-open"></button>
+                        <div class="search-open" tabindex="4">
+                            <form class="search-div">
+                                <button class="search-submit"></button>
+                                <input class="search-input" type="text" value="" name="search" id="search">
+                            </form>
+                        </div>
+                        <div class="search-open2"></div>
+                        <form class="search-block">
+                            <button class="search-submit2"></button>
+                            <input class="search-input2" type="text" value="">
+                            <button class="search-close2"></button>
+                        </form>
+                        <div class="search-open3"></div>
+                        <div class="search-block3"></div>
+                        <div class="search-mobile">
+                            <button class="search-submit3"></button>
+                            <input class="search-input3" type="text" value="">
+                        </div>
+                            <button class="search-close3"></button>
+                        
                     </div>
                 </div>
             </div>
@@ -3576,6 +3596,15 @@
                                 </div>
                                 <button class="buy-picture">Заказать</button>
                             </div>
+                            <div class="right-colomn-children">
+                                <div class="picture7 picture-second"></div>
+                                <div class="flex-paragraph">
+                                    <p class="author"><span class="paint-name">Искусство и визуа...</span><br>
+                                        <span class="painter-name-mini">Арнхейм, Рудольф</span></p>
+                                    <p class="cost">2 200 руб</p>
+                                </div>
+                                <button class="buy-picture">Заказать</button>
+                            </div>
                         </div>
                     </div>
                     <div class="right-colomn">
@@ -3642,6 +3671,15 @@
                                                 <p class="author"><span class="paint-name">Эволюция графических ст...</span><br>
                                                     <span class="painter-name-mini">Хеллер, Чваст</span></p>
                                                 <p class="cost">3 200 руб</p>
+                                            </div>
+                                            <button class="buy-picture">Заказать</button>
+                                        </div>
+                                        <div class="right-colomn-children">
+                                            <div class="picture7 picture-second"></div>
+                                            <div class="flex-paragraph">
+                                                <p class="author"><span class="paint-name">Эволюция графических ст...</span><br>
+                                                    <span class="painter-name-mini">Хеллер, Чваст</span></p>
+                                                <p class="cost">2 200 руб</p>
                                             </div>
                                             <button class="buy-picture">Заказать</button>
                                         </div>
@@ -3861,4 +3899,9 @@
         </div>
     </footer>
 </body>
+<script src="js/uisearch.js" defer></script>
+<script src="js/classie.js" defer></script>
+<script defer>
+    new UISearch( document.getElementById('sb-search'));
+</script>
 </html>

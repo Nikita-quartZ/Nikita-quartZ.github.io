@@ -124,6 +124,7 @@
 	font-size: 16px;
 	font-family: 'Open Sans';
 	line-height: 32px;
+	overflow: hidden;
 }
 a {
 	text-decoration: none;
@@ -287,7 +288,7 @@ input, textarea, button {
 	font-size: 24px;
 	line-height: 33px;
 	font-weight: 600;
-	margin-bottom: 20px;
+	margin-bottom: 0px;
 	background-repeat: no-repeat;
 }
 .simplebar-track.simplebar-vertical {
@@ -446,10 +447,10 @@ h1 {
 	border: 3px solid var(--first-color);
 	transition: border .15s linear;
 }
-.button-header:hover {
+#eighth-link:hover {
 	border: 3px solid #D1A9F0;
 }
-.button-header:active {
+#eighth-link:active {
 	background: #7943A4;
 }
 .section-header {
@@ -541,12 +542,12 @@ h1 {
 .choices {
 	background-image: url(../img/Rectangle\ 66.svg);
 	background-repeat: no-repeat;
-	background-position: right 8px center;
+	background-position: right 14px center;
 }
 .choices[data-type*=select-one].is-open:hover {
 	background-image: url(../img/close.svg);
 	background-repeat: no-repeat;
-	background-position: right 8px center;
+	background-position: right 14px center;
 }
 .choices__list--dropdown.is-active {
     border: 1px solid var(--second-color);
@@ -712,7 +713,6 @@ h1 {
 	display: none;
 	position: relative;
 }
-
 .first-button-swiper {
 	margin-right: 13px;
 	position: relative;
@@ -822,7 +822,6 @@ h1 {
 }
 .accordion-years {
 	width: 50%;
-	padding-left: 25px;
 }
 .painter {
 	background-image: url(../img/image3.jpg);
@@ -1162,8 +1161,8 @@ label {
 }
 .picture-second {
 	background-size: cover;
-	width: 290px;
-	height: 320px;
+	width: 350px;
+	height: 390px;
 }
 .picture1 {
 	background-image: url(../img/Rectangle\ 111.jpg);
@@ -1183,8 +1182,14 @@ label {
 .picture6 {
 	background-image: url(../img/Rectangle\ 116.jpg);
 }
+.picture7 {
+	background-image: url(../img/Rectangle\ 110.jpg);
+}
 .author, .cost {
 	color: #FFF;
+}
+.author {
+	margin-bottom: -2px;
 }
 .button-swiper2 {
 	color: #FFF;
@@ -1519,7 +1524,7 @@ label {
 	margin: 0;
 }
 .swiper-container3 {
-	max-width: 1500px;
+	max-width: 1450px;
 }
 #seventh-section {
 	margin-bottom: 16px;
@@ -1546,7 +1551,7 @@ label {
 	height: 40px;
 	border: 1px solid #333333;
 	border-radius: 100px;
-	padding-left: 20px;
+	padding-left: 25px;
 	margin-bottom: 22px;
 	margin-top: 15px;
 }
@@ -1555,7 +1560,7 @@ label {
 	height: 40px;
 	border: 1px solid #333333;
 	border-radius: 100px;
-	padding-left: 20px;
+	padding-left: 25px;
 	margin-bottom: 22px;
 }
 .js-validate-error-field {
@@ -1610,19 +1615,7 @@ label {
 	cursor: pointer;
 	border: none;
 }
-.search-open {
-	background: none;
-	background-image: url(../img/Search.svg);
-	background-repeat: no-repeat;
-	background-position: 0px 1px;
-	background-size: 29.45px, 28.82px;
-	border: none;
-	width: 29.45px;
-	height: 28.82px;
-	margin-left: auto;
-	display: none;
-	cursor: pointer;
-}
+
 .info-accordion-children2 {
 	display: none;
 }
@@ -1788,7 +1781,203 @@ label {
 .projects-paragraph2 {
 	display: none;
 }
+.search-div {
+	display: none;
+	position: absolute;
+	right: 0px;
+}
+.search-div-active {
+	display: flex;
+}
+.search-input {
+	margin-right: 1px;
+	width: 218px;
+	height: 29px;
+	background: none;
+	border: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+	color: #FFF;
+}
+.search-input2 {
+	width: 100%;
+	max-width: 576px;
+	height: 29px;
+	background: none;
+	border: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+	color: #FFF;
+	margin: 0 17px;
+}
+.search-input3 {
+	position: relative;
+	right: 4px;
+	top: 18px;
+	z-index: 100;
+	width: 100%;
+	width: 180px;
+	height: 29px;
+	background: none;
+	border: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+	color: #FFF;
+	margin: 0 17px;
+	font-size: 14px;
+}
+.search-submit {
+	background: none;
+	background-image: url(../img/Search.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 1px;
+	background-size: 29.45px, 28.82px;
+	border: none;
+	width: 29.45px;
+	height: 28.82px;
+	margin-top: 4px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.search-submit2 {
+	background: none;
+	background-image: url(../img/Search.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 1px;
+	background-size: 29.45px, 28.82px;
+	border: none;
+	width: 29.45px;
+	height: 28.82px;
+	cursor: pointer;
+}
+.search-submit3 {
+	position: relative;
+	top: 31px;
+	left: 10px;
+	z-index: 10;
+	background: none;
+	background-image: url(../img/Search.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 1px;
+	background-size: 29.45px, 28.82px;
+	border: none;
+	min-width: 16px;
+	height: 16px;
+	background-size: cover;
+	cursor: pointer;
+}
+.search-close2 {
+	width: 29px;
+	height: 29px;
+	background: none;
+	border: none;
+	background-image: url(../img/X2.svg);
+	background-size: contain;
+}
+.search-close3 {
+	display: none;
+	position: relative;
+	float: right;
+	z-index: 10;
+	width: 15px;
+	height: 15px;
+	background: none;
+	border: none;
+	background-image: url(../img/X.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.search-open {
+	position: relative;
+	background: none;
+	background-image: url(../img/Search.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 1px;
+	background-size: 29.45px, 28.82px;
+	border: none;
+	width: 29.45px;
+	height: 28.82px;
+	margin-left: auto;
+	display: none;
+	cursor: pointer;
+	transition: width .3s linear;
+}
+.search-open2 {
+	position: relative;
+	background: none;
+	background-image: url(../img/Search.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 1px;
+	background-size: 29.45px, 28.82px;
+	border: none;
+	width: 29.45px;
+	height: 28.82px;
+	margin-left: auto;
+	display: none;
+	cursor: pointer;
+}
+.search-open3 {
+	position: relative;
+	background: none;
+	background-image: url(../img/Search.svg);
+	background-repeat: no-repeat;
+	background-position: 0px 1px;
+	background-size: 29.45px, 28.82px;
+	border: none;
+	width: 29.45px;
+	height: 28.82px;
+	margin-left: auto;
+	display: none;
+	cursor: pointer;
+}
+.search-block {
+	display: none;
+	position: absolute;
+	height: 100px;
+	right: 0;
+	left: 0;
+	background-color: #000;
+	align-items: center;
+	padding: 0 50px;
+}
+.search-mobile {
+	display: none;
+	margin: 0 auto;
+}
+.search-block3 {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	height: 103px;
+	right: 0;
+	left: 0;
+	filter: blur(10px);
+	align-items: center;
+	padding: 0 15px;
+	background: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(40px);
+}
+
+.search-block-active {
+	display: flex;
+}
+.search-open-focus {
+	width: 261px;
+	background: #18171B;
+	outline: none;
+	height: 36px;
+}
+.first-button-swiper1 {
+	margin-right: 10px;
+}
+.second-button-swiper1 {
+	margin-left: 10px;
+}
 @media (max-width: 1850px) {
+	.picture-second {
+		width: 290px;
+		height: 320px;
+	}
+	.search-open {
+		display: block;
+	}
 	.control {
 		padding: 0 50px;
 	}
@@ -1805,9 +1994,6 @@ label {
 		background-size: 187.6px, 42px;
 	}
 	.burger {
-		display: block;
-	}
-	.search-open {
 		display: block;
 	}
 	h1 {
@@ -1946,12 +2132,17 @@ label {
 	}
 	.first-button-swiper2 {
 		margin-right: 11px;
+		cursor: pointer;
 	}
 	.second-button-swiper2 {
 		margin-left: 11px;
+		cursor: pointer;
 	}
 }
 @media (max-width: 1450px) {
+	.accordion-years {
+		padding-left: 25px;
+	}
 	.painter {
 		height: 274px;
 	}
@@ -2008,9 +2199,6 @@ label {
 	.tel {
 		width: 334px;
 		height: 40px;
-		border: 1px solid #333333;
-		border-radius: 100px;
-		padding-left: 20px;
 		margin-bottom: 22px;
 	}
 }
@@ -2039,8 +2227,17 @@ label {
 	.header {
 		animation: change-background1024 25s ease infinite;
 	}
+	.search-open {
+		display: none;
+	}
+	.search-open2 {
+		display: block;
+	}
 }
 @media (max-width: 800px) {
+	.first-button-swiper21 {
+		display: block;
+	}
 	.flex-blocks-second {
 		display: block;
 	}
@@ -2201,8 +2398,8 @@ label {
 		margin: 0 auto;
 	}
 	.button-swiper2 {
-		position: relative;
-		right: 33px;
+		/* position: absolute; */
+		left: -15px;
 	}
 	.projects-paragraph2 {
 		padding-right: 10px;
@@ -2264,7 +2461,11 @@ label {
 		width: 20px;
 		height: 15px;
 	}
-	.search-open {
+	.search-open2 {
+		display: none;
+	}
+	.search-open3 {
+		display: block;
 		background-size: contain;
 		width: 16px;
 		height: 16px;
@@ -2733,4 +2934,7 @@ label {
 		font-size: 12px;
 		line-height: 16px;
 	}
+}
+.search-blocks-disable {
+	display: none;
 }
