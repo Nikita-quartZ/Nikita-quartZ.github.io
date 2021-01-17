@@ -87,28 +87,55 @@
 }
 @keyframes change-background1024 {  
 	0% {     
-	  background-image: url(../img/slide\ 1-1x.jpg);
+	  background-image: url(../img/slide\ 1-2x.jpg);
 	  background-size: 1024px 921.6px;
 	}
 	15% {
 	  background-size: 1228.8px 960px;
 	}
 	33% {     
-	  background-image: url(../img/slide\ 2-1x.jpg);
+	  background-image: url(../img/slide\ 2-2x.jpg);
 	  background-size: 1024px 768px;
 	}
 	48% {
 	  background-size: 1228.8px 921.6px;
 	}
 	66% {
-	  background-image: url(../img/slide\ 3-1x.jpg);
+	  background-image: url(../img/slide\ 3-2x.jpg);
 	  background-size: 1024px 768px;
 	 }
 	 81% {
 	  background-size: 1228.8px 921.6px;
 	}
 	100% {     
-	  background-image: url(../img/slide\ 1-1x.jpg);
+	  background-image: url(../img/slide\ 1-2x.jpg);
+	  background-size: 1024px 768px;
+	} 
+}
+@keyframes change-background320 {  
+	0% {     
+	  background-image: url(../img/slide\ 1-3x.jpg);
+	  background-size: 400px 444px;
+	}
+	15% {
+	  background-size: 480px 532.8px;
+	}
+	33% {     
+	  background-image: url(../img/slide\ 2-3x.jpg);
+	  background-size: 480px 532.8px;
+	}
+	48% {
+	  background-size: 400px 444px;
+	}
+	66% {
+	  background-image: url(../img/slide\ 3-3x.jpg);
+	  background-size: 480px 532.8px;
+	 }
+	 81% {
+	  background-size: 400px 444px;
+	}
+	100% {     
+	  background-image: url(../img/slide\ 1-3x.jpg);
 	  background-size: 1024px 768px;
 	} 
 }
@@ -2956,6 +2983,11 @@ label {
 		height: 40px;
 		font-size: 12px;
 		line-height: 16px;
+	}
+}
+@media (max-width: 320px) {
+	.header {
+		animation: change-background320 25s ease infinite;
 	}
 }
 .search-blocks-disable {
