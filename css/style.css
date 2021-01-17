@@ -1814,6 +1814,7 @@ label {
 }
 .projects-paragraph2 {
 	display: none;
+	overflow: hidden;
 }
 .search-div {
 	display: none;
