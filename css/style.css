@@ -112,33 +112,6 @@
 	  background-size: 1024px 768px;
 	} 
 }
-@keyframes change-background320 {  
-	0% {     
-	  background-image: url(../img/slide\ 1-3x.jpg);
-	  background-size: 400px 444px;
-	}
-	15% {
-	  background-size: 480px 532.8px;
-	}
-	33% {     
-	  background-image: url(../img/slide\ 2-3x.jpg);
-	  background-size: 480px 532.8px;
-	}
-	48% {
-	  background-size: 400px 444px;
-	}
-	66% {
-	  background-image: url(../img/slide\ 3-3x.jpg);
-	  background-size: 480px 532.8px;
-	 }
-	 81% {
-	  background-size: 400px 444px;
-	}
-	100% {     
-	  background-image: url(../img/slide\ 1-3x.jpg);
-	  background-size: 1024px 768px;
-	} 
-}
 :root {
 	--first-color:  #9D5CD0;
 	--second-color: #999999;
@@ -2275,6 +2248,12 @@ label {
 	.search-open2 {
 		display: block;
 	}
+	.second-section {
+		background-image: url(../img/Fon\ 2x.jpg);
+	}
+	.fiveth-section {
+		background-image: url(../img/birmingham2.jpg);
+	}
 }
 @media (max-width: 975px) {
 	.fourth-section-block-first {
@@ -2984,11 +2963,6 @@ label {
 		height: 40px;
 		font-size: 12px;
 		line-height: 16px;
-	}
-}
-@media (max-width: 320px) {
-	.header {
-		animation: change-background320 25s ease infinite;
 	}
 }
 .search-blocks-disable {
