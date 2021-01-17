@@ -540,6 +540,7 @@ h1 {
 	content: none;
 }
 .choices {
+	max-width: 400px;
 	background-image: url(../img/Rectangle\ 66.svg);
 	background-repeat: no-repeat;
 	background-position: right 14px center;

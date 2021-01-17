@@ -4,6 +4,12 @@ window.addEventListener('DOMContentLoaded', function() {
         const choices = new Choices(element, {
         searchEnabled: false
     });
+    document.querySelector('.choices__inner').addEventListener('click', function() {
+        document.querySelector('.choices__inner').classList.toggle('choices__inner-active');
+    });
+    document.querySelector('.choices__item--selectable').addEventListener('click', function() {
+        document.querySelector('.choices__inner').classList.toggle('choices__inner-active');
+    });
     // Javascript для swiper
     
     var mySwiper = new Swiper('.swiper-container1', {
@@ -438,4 +444,5 @@ window.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.search-close3').classList.remove('search-block-active');
         document.querySelector('.search-open3').classList.remove('search-blocks-disable');
     });
+    // 
 });
