@@ -225,30 +225,30 @@ window.addEventListener('DOMContentLoaded', function() {
     myMap.geoObjects.add(myPlacemark); 
         }
     //Все события
-    let fourthSectionButton = document.querySelector('.fourth-section-button')
-    let fourthSectionBlockSecond = document.querySelector('.fourth-section-block-second')
+    let fourthSectionButton = document.querySelector('.events__fourth-section-button')
+    let fourthSectionBlockSecond = document.querySelector('.events__fourth-section-block-second')
     fourthSectionButton.addEventListener('click', function(){
         fourthSectionButton.classList.add('is-active-fourth-button')
         fourthSectionBlockSecond.classList.add('is-active-fourth-block')
     })
     //Списки header
-    document.querySelectorAll('.selects-children-name').forEach(function(tabsBtn1) {
+    document.querySelectorAll('.header__list-children-name').forEach(function(tabsBtn1) {
         tabsBtn1.addEventListener('click', function(event1){
             const path = event1.currentTarget.dataset.path
-            document.querySelectorAll('.select-painters').forEach(function(tabCon1) {
-                tabCon1.classList.remove('select-painters-active')
+            document.querySelectorAll('.header__list-painters').forEach(function(tabCon1) {
+                tabCon1.classList.remove('list-painters-active')
             })
-            document.querySelector(`[data-target="${path}"]`).classList.add('select-painters-active')
+            document.querySelector(`[data-target="${path}"]`).classList.add('list-painters-active')
 
             const painter = event1.currentTarget.dataset.painter
-            document.querySelectorAll('.selects-children-name').forEach(function(tabButt) {
-                tabButt.classList.remove('selects-active')
+            document.querySelectorAll('.header__list-children-name').forEach(function(tabButt) {
+                tabButt.classList.remove('list-active')
             })
-            document.querySelector(`[data-target="${painter}"]`).classList.add('selects-active')
+            document.querySelector(`[data-target="${painter}"]`).classList.add('list-active')
         })
     })
     //Табы на разные языки
-    document.querySelectorAll('.country-block').forEach(function(tabsBtn2) {
+    document.querySelectorAll('.catalog__country-block').forEach(function(tabsBtn2) {
         tabsBtn2.addEventListener('click', function(event2){
             const country = event2.currentTarget.dataset.country
             document.querySelectorAll('.country-effect').forEach(function(tabCon2) {
@@ -258,22 +258,22 @@ window.addEventListener('DOMContentLoaded', function() {
         })
     })
     //Смена содержания на другой язык
-    document.querySelectorAll('.country-block').forEach(function(tabsBtn4) {
+    document.querySelectorAll('.catalog__country-block').forEach(function(tabsBtn4) {
         tabsBtn4.addEventListener('click', function(event4){
             const biog = event4.currentTarget.dataset.biog
-            document.querySelectorAll('.foreign-block').forEach(function(tabCon22) {
+            document.querySelectorAll('.catalog__foreign-block').forEach(function(tabCon22) {
                 tabCon22.classList.remove('foreign-block-active')
             })
             document.querySelector(`[data-target="${biog}"]`).classList.add('foreign-block-active')
 
             const activ = event4.currentTarget.dataset.activ
-            document.querySelectorAll('.info-painter').forEach(function(tabCons) {
+            document.querySelectorAll('.catalog__info-painter').forEach(function(tabCons) {
                 tabCons.classList.remove('info-painter-active')
             })
             document.querySelector(`[data-target="${activ}"]`).classList.add('info-painter-active')
 
             const active = event4.currentTarget.dataset.active
-            document.querySelectorAll('.name-painter-all').forEach(function(tabCons1) {
+            document.querySelectorAll('.catalog__name-painter-all').forEach(function(tabCons1) {
                 tabCons1.classList.remove('name-painter-all-active')
             })
             document.querySelector(`[data-target="${active}"]`).classList.add('name-painter-all-active')
@@ -281,16 +281,16 @@ window.addEventListener('DOMContentLoaded', function() {
     })
 
     //Смена художественного деятеля
-    document.querySelectorAll('.name-painter-all').forEach(function(tabsBtn3) {
+    document.querySelectorAll('.catalog__name-painter-all').forEach(function(tabsBtn3) {
         tabsBtn3.addEventListener('click', function(event3){
             const painters = event3.currentTarget.dataset.painters
-            document.querySelectorAll('.name-painter-all').forEach(function(tabCon31) {
+            document.querySelectorAll('.catalog__name-painter-all').forEach(function(tabCon31) {
                 tabCon31.classList.remove('name-painter-all-active')
             })
             document.querySelector(`[data-target="${painters}"]`).classList.add('name-painter-all-active')
 
             const info = event3.currentTarget.dataset.info
-            document.querySelectorAll('.info-painter').forEach(function(tabCon4) {
+            document.querySelectorAll('.catalog__info-painter').forEach(function(tabCon4) {
                 tabCon4.classList.remove('info-painter-active')
             })
             console.log(document.querySelector(`[data-target="${info}"]`).classList.add('info-painter-active'))
@@ -376,14 +376,14 @@ window.addEventListener('DOMContentLoaded', function() {
     });
     //burger
     document.querySelector('.burger').addEventListener('click', function() {
-        document.querySelector('.menu').classList.add('is-active');
+        document.querySelector('.navigation').classList.add('is-active');
     });
-    document.querySelector('.menu-close').addEventListener('click', function() {
-        document.querySelector('.menu').classList.remove('is-active');
+    document.querySelector('.navigation-close').addEventListener('click', function() {
+        document.querySelector('.navigation').classList.remove('is-active');
     });
     // Аккордион на мобильной версии
     document.querySelector('.acc_head6').addEventListener('click', function() {
-        document.querySelector('.div-borders').classList.toggle('div-borders-none');
+        document.querySelector('.publication__div-borders').classList.toggle('div-borders-none');
     });
     document.querySelectorAll('.label-bord').forEach(function(tabs) {
         tabs.addEventListener('click', function(even){
@@ -392,7 +392,7 @@ window.addEventListener('DOMContentLoaded', function() {
             console.log(document.querySelector(`[data-target="${check}"]`).classList.add('div-border-active'))
         })
     })
-    document.querySelectorAll('.check-button').forEach(function(tabs2) {
+    document.querySelectorAll('.publication__check-button').forEach(function(tabs2) {
         tabs2.addEventListener('click', function(even2){
             const chec = even2.currentTarget.dataset.chec
             
@@ -400,49 +400,36 @@ window.addEventListener('DOMContentLoaded', function() {
         })
     })
     // search
-    document.querySelector('.search-open').addEventListener('focus', function() {
+    document.querySelector('.header__search-open').addEventListener('focus', function() {
         document.querySelector('.search-div').classList.add('search-div-active');
-        document.querySelector('.search-open').classList.add('search-open-focus');
+        document.querySelector('.header__search-open').classList.add('search-open-focus');
     });
-    document.querySelector('.search-open').addEventListener('blur', function() {
+    document.querySelector('.header__search-open').addEventListener('blur', function() {
         setTimeout(function blur() {
             document.querySelector('.search-div').classList.remove('search-div-active');
-            document.querySelector('.search-open').classList.remove('search-open-focus')
+            document.querySelector('.header__search-open').classList.remove('search-open-focus')
         }, 0);
     });
     document.querySelector('.search-input').addEventListener('focus', function() {
         setTimeout(function blur() {
             document.querySelector('.search-div').classList.add('search-div-active');
-            document.querySelector('.search-open').classList.add('search-open-focus');
+            document.querySelector('.header__search-open').classList.add('search-open-focus');
         }, 1);
     });
     document.querySelector('.search-submit').addEventListener('focus', function() {
         setTimeout(function blur() {
             document.querySelector('.search-div').classList.add('search-div-active');
-            document.querySelector('.search-open').classList.add('search-open-focus');
+            document.querySelector('.header__search-open').classList.add('search-open-focus');
         }, 1);
     });
     document.querySelector('.search-input').addEventListener('blur',function() {
             document.querySelector('.search-div').classList.remove('search-div-active');
-            document.querySelector('.search-open').classList.remove('search-open-focus')
+            document.querySelector('.header__search-open').classList.remove('search-open-focus')
     });
-    document.querySelector('.search-open2').addEventListener('click', function() {
-        document.querySelector('.search-block').classList.add('search-block-active');
+    document.querySelector('.header__search-open2').addEventListener('click', function() {
+        document.querySelector('.header__search-block').classList.add('search-block-active');
     });
-    document.querySelector('.search-close2').addEventListener('click', function() {
-        document.querySelector('.search-block').classList.remove('search-block-active');
+    document.querySelector('.header__search-close2').addEventListener('click', function() {
+        document.querySelector('.header__search-block').classList.remove('search-block-active');
     });
-    document.querySelector('.search-open3').addEventListener('click', function() {
-        document.querySelector('.search-block3').classList.add('search-block-active');
-        document.querySelector('.search-mobile').classList.add('search-block-active');
-        document.querySelector('.search-close3').classList.add('search-block-active');
-        document.querySelector('.search-open3').classList.add('search-blocks-disable');
-    });
-    document.querySelector('.search-close3').addEventListener('click', function() {
-        document.querySelector('.search-block3').classList.remove('search-block-active');
-        document.querySelector('.search-mobile').classList.remove('search-block-active');
-        document.querySelector('.search-close3').classList.remove('search-block-active');
-        document.querySelector('.search-open3').classList.remove('search-blocks-disable');
-    });
-    // 
 });
