@@ -1807,7 +1807,7 @@ label {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.85);
 	color: var(--fourth-color);
 }
-.search-input2 {
+.header__search-input2 {
 	width: 100%;
 	max-width: 576px;
 	height: 29px;
@@ -1816,21 +1816,6 @@ label {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.85);
 	color: var(--fourth-color);
 	margin: 0 17px;
-}
-.search-input3 {
-	position: relative;
-	right: 4px;
-	top: 18px;
-	z-index: 100;
-	width: 100%;
-	width: 180px;
-	height: 29px;
-	background: none;
-	border: none;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.85);
-	color: var(--fourth-color);
-	margin: 0 17px;
-	font-size: 14px;
 }
 .search-submit {
 	background: none;
@@ -1845,7 +1830,7 @@ label {
 	margin-right: 10px;
 	cursor: pointer;
 }
-.search-submit2 {
+.header__search-submit2 {
 	background: none;
 	background-image: url(../img/Search.svg);
 	background-repeat: no-repeat;
@@ -1856,7 +1841,7 @@ label {
 	height: 28.82px;
 	cursor: pointer;
 }
-.search-close2 {
+.header__search-close2 {
 	width: 29px;
 	height: 29px;
 	background: none;
@@ -1864,7 +1849,7 @@ label {
 	background-image: url(../img/X2.svg);
 	background-size: contain;
 }
-.search-open {
+.header__search-open {
 	position: relative;
 	background: none;
 	background-image: url(../img/Search.svg);
@@ -1879,7 +1864,7 @@ label {
 	cursor: pointer;
 	transition: width .3s linear;
 }
-.search-open2 {
+.header__search-open2 {
 	position: relative;
 	background: none;
 	background-image: url(../img/Search.svg);
@@ -1923,7 +1908,7 @@ label {
 	margin-left: 10px;
 }
 @media (max-width: 1850px) {
-	.navigation {
+	.header__navigation {
 		display: block;
 		position: absolute;
 		z-index: 2;
@@ -1937,13 +1922,13 @@ label {
 		transition: transform .2s ease;
 		transform: translateY(-110%);
 	}
-	.navigation-children {
+	.header__navigation-children {
 		margin-top: 30px;
 	}
-	.navigation.is-active {
+	.header__navigation.is-active {
 		transform: none;
 	}
-	.navigation-close {
+	.header__navigation-close {
 		display: block;
 	}
 	.publication__picture-second {
@@ -1956,26 +1941,26 @@ label {
 	.control {
 		padding: 0 50px;
 	}
-	.logo, .blur-bar, .header-div {
+	.header__logo, .header__blur-bar, .header__header-div {
 		display: none;
 	}
 	.header {
 		height: 768px;
 	}
-	.black-bar {
+	.header__black-bar {
 		background-image: url(../img/logo.svg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 187.6px, 42px;
 	}
-	.burger {
+	.header__burger {
 		display: block;
 	}
-	.main-paragraph {
+	.header__main-paragraph {
 		margin-top: 112px;
 		margin-bottom: -14px;
 	}
-	.paragraph-header {
+	.header__paragraph-header {
 		width: 661px;
 		margin-bottom: 104px;
 	}
@@ -2144,7 +2129,7 @@ label {
 		left: 11px;
 		bottom: 4px;
 	}
-	.main-paragraph {
+	.header__main-paragraph {
 		margin-top: 2px;
 	}
 	.event {
@@ -2209,7 +2194,7 @@ label {
 	.header {
 		animation: change-background1024 25s ease infinite;
 	}
-	.search-open {
+	.header__search-open {
 		display: none;
 	}
 	.search-open2 {
@@ -2481,11 +2466,11 @@ label {
 		align-items: center;
 		margin-left: 30px;
 	}
-	.black-bar {
+	.header__black-bar {
 		background-size: 96.8px, 21.67px;
 		height: 45px;
 	}
-	.black-bar-control {
+	.header__black-bar-control {
 		height: 45px;
 	}
 	.header__burger {
@@ -2497,16 +2482,16 @@ label {
 	.header {
 		height: 355px;
 	}
-	.navigation {
+	.header__navigation {
 		height: 355px;
 		padding: 0 15px;
 	}
-	.navigation-close {
+	.header__navigation-close {
 		width: 15px;
 		height: 15px;
 		margin-top: 15px;
 	}
-	.navigation-children {
+	.header__navigation-children {
 		margin-top: 10px;
 		font-size: 16px;
 	}
@@ -2526,7 +2511,7 @@ label {
 	.login-menu:hover {
 		background-image: url(../img/Vector.svg);
 	}
-	.main-paragraph {
+	.header__main-paragraph {
 		display: block;
 		margin: 0 auto;
 		text-align: center;
@@ -2536,7 +2521,7 @@ label {
 		margin-top: 33px;
 		height: auto;
 	}
-	.paragraph-header {
+	.header__paragraph-header {
 		text-align: center;
 		display: block;
 		width: 265px;
@@ -2546,7 +2531,7 @@ label {
 		margin: 0 auto;
 		margin-top: 14px;
 	}
-	.header-sub {
+	.header__header-sub {
 		display: block;
 		font-size: 12px;
 		line-height: 16px;
