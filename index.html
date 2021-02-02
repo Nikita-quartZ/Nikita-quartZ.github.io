@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/new.scss">
     <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=API&lang=ru_RU"></script>
     <script src="js/select.js"></script>
     <script src="js/accordion.min.js" defer></script>
     <script src="js/inputmask.min.js"></script>
@@ -40,186 +40,187 @@
     <script src="js/script.js"></script>
 </head>
 <body>
-    <main class="main-content">
-        <section class="header">
-            <header class="header__block">
-                <div class="header__black-bar">
-                    <div class="control">
-                        <nav class="header__black-bar-control">
-                            <button class="header__burger"></button>
-                            <img src="img/logo.svg" alt="logo" class="header__logo">
-                            <ul class="header__navigation">
-                                <li class="header__navigation-close"></li>
-                                <li class="header__navigation-children" id="first-link">О нас</li>
-                                <li class="header__navigation-children" id="second-link">Галерея</li>
-                                <li class="header__navigation-children" id="third-link">Каталог</li>
-                                <li class="header__navigation-children" id="fourth-link">События</li>
-                                <li class="header__navigation-children" id="fiveth-link">Издания</li>
-                                <li class="header__navigation-children" id="sixth-link">Проекты</li>
-                                <li class="header__navigation-children" id="seventh-link">Контакты</li>
-                            </ul>
-                            <div class="header__header-div">
-                                <button class="header__login">Войти</button>
-                            </div>
-                            <div class="header__search-open" tabindex="4">
-                                <div class="search-div">
-                                    <button class="search-submit"></button>
-                                    <input class="search-input" type="text" value="" name="search" id="search">
-                                </div>
-                            </div>
-                            <div class="header__search-open2"></div>
-                            <div class="header__search-block">
-                                <button class="header__search-submit2"></button>
-                                <input class="header__search-input2" type="text" value="">
-                                <button class="header__search-close2"></button>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-                <div class="header__blur-bar">
-                    <div class="control">
-                        <div class="header__block-list">
-                            <div class="header__list">
-                                <div class="header__list-children">
-                                    <button class="header__list-children-name children-1" data-path="one" data-painter="six" data-target="six">Реализм</button>
-                                    <div class="header__list-painters" data-target="one">
-                                        <div class="header__list-painters-control" data-simplebar>
-                                            <div class="header__painter-nam painter-name1">
-                                                <div class="header__painter-background">Тинторетто</div>
-                                            </div>
-                                            <div class="header__painter-nam painter-name2">
-                                                <div class="header__painter-background">Фридрих</div>
-                                            </div>
-                                            <div class="header__painter-nam painter-name3">
-                                                <div class="header__painter-background">Леонардо</div>
-                                            </div>
-                                            <div class="header__painter-nam painter-name4">
-                                                <div class="header__painter-background">Верроккьо</div>
-                                            </div>
-                                            <div class="header__painter-nam painter-name11">
-                                                <div class="header__painter-background">Гоген</div>
-                                            </div>
-                                            <div class="header__painter-nam painter-name12">
-                                                <div class="header__painter-background">Сёра</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="header__list-children">
-                                    <button class="header__list-children-name children-2" data-path="two" data-painter="seven" data-target="seven">Импрессионизм</button>
-                                    <div class="header__list-painters" data-target="two">
-                                        <div class="header__list-painters-control" data-simplebar>
-                                            <div class="header__painter-nam painter-name5">
-                                                <div class="header__painter-background">Моне</div>
-                                            </div>
-                                            <div class="header__painter-nam painter-name6">
-                                                <div class="header__painter-background">Сислей</div>
-                                            </div>
-                                            <div class="header__painter-nam painter-name7">
-                                                <div class="header__painter-background">Мане</div>
-                                            </div>
-                                            <div class="header__painter-nam painter-name8">
-                                                <div class="header__painter-background">Ренуар</div>
-                                            </div>
-                                            <div class="header__painter-nam painter-name15">
-                                                <div class="header__painter-background">Малевич</div>
-                                            </div>
-                                            <div class="header__painter-nam painter-name16">
-                                                <div class="header__painter-background">Пикассо</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="header__list-children">
-                                    <button class="header__list-children-name children-3" data-path="three" data-painter="eight" data-target="eight">Постимпрессионизм</button>
-                                    <div class="header__list-painters" data-target="three">
-                                        <div class="header__list-painters-control" data-simplebar>
-                                            <div class="header__painter-nam painter-name9">
-                                                <div class="header__painter-background">Ван Гог</div>
-                                            </div>
-                                            <div class="header__painter-nam painter-name10">
-                                                <div class="header__painter-background">Сезанн</div>
-                                            </div>
-                                            <div class="header__painter-nam painter-name11">
-                                                <div class="header__painter-background">Гоген</div>
-                                            </div>
-                                            <div class="header__painter-nam painter-name12">
-                                                <div class="header__painter-background">Сёра</div>
-                                            </div>
-                                            <div class="header__painter-nam painter-name19">
-                                                <div class="header__painter-background">Северини</div>
-                                            </div>
-                                            <div class="header__painter-nam painter-name20">
-                                                <div class="header__painter-background">Балла</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="header__list-children">
-                                    <button class="header__list-children-name children-4" data-path="four" data-painter="nine" data-target="nine">Авангард</button>
-                                    <div class="header__list-painters" data-target="four">
-                                        <div class="header__list-painters-control" data-simplebar>
-                                            <div class="header__painter-nam painter-name13">
-                                                <div class="header__painter-background">Кандинский</div>
-                                            </div>
-                                            <div class="header__painter-nam painter-name14">
-                                                <div class="header__painter-background">Маринетти</div>
-                                            </div>
-                                            <div class="header__painter-nam painter-name15">
-                                                <div class="header__painter-background">Малевич</div>
-                                            </div>
-                                            <div class="header__painter-nam painter-name16">
-                                                <div class="header__painter-background">Пикассо</div>
-                                            </div>
-                                            <div class="header__painter-nam painter-name3">
-                                                <div class="header__painter-background">Леонардо</div>
-                                            </div>
-                                            <div class="header__painter-nam painter-name4">
-                                                <div class="header__painter-background">Верроккьо</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="header__list-children">
-                                    <button class="header__list-children-name children-5" data-path="five" data-painter="ten" data-target="ten">Футуризм</button>
-                                    <div class="header__list-painters" data-target="five">
-                                        <div class="header__list-painters-control" data-simplebar>
-                                            <div class="header__painter-nam painter-name17">
-                                                <div class="header__painter-background">Карра</div>
-                                            </div>
-                                            <div class="header__painter-nam painter-name18">
-                                                <div class="header__painter-background">Прателла</div>
-                                            </div>
-                                            <div class="header__painter-nam painter-name19">
-                                                <div class="header__painter-background">Северини</div>
-                                            </div>
-                                            <div class="header__painter-nam painter-name20">
-                                                <div class="header__painter-background">Балла</div>
-                                            </div>
-                                            <div class="header__painter-nam painter-name7">
-                                                <div class="header__painter-background">Мане</div>
-                                            </div>
-                                            <div class="header__painter-nam painter-name8">
-                                                <div class="header__painter-background">Ренуар</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <form class="header__input-block" action="#">
-                                <button class="header__button-search" type="submit"></button>
-                                <input type="text" placeholder="Поиск по сайту" class="header__header-input">
-                            </form>
+    <div class="header">
+        <header class="header__block">
+            <div class="header__black-bar">
+                <div class="control">
+                    <nav class="header__black-bar-control">
+                        <button class="header__burger"></button>
+                        <img src="img/logo.svg" alt="logo" class="header__logo">
+                        <ul class="header__navigation">
+                            <li class="header__navigation-children" id="first-link">О нас</li>
+                            <li class="header__navigation-children" id="second-link">Галерея</li>
+                            <li class="header__navigation-children" id="third-link">Каталог</li>
+                            <li class="header__navigation-children" id="fourth-link">События</li>
+                            <li class="header__navigation-children" id="fiveth-link">Издания</li>
+                            <li class="header__navigation-children" id="sixth-link">Проекты</li>
+                            <li class="header__navigation-children" id="seventh-link">Контакты</li>
+                        </ul>
+                        <div class="header__header-div">
+                            <button class="header__login">Войти</button>
                         </div>
+                        <div class="header__search-open" tabindex="4">
+                            <div class="search-div">
+                                <button class="search-submit"></button>
+                                <input class="search-input" type="text" value="" name="search" id="search">
+                            </div>
+                        </div>
+                        <div class="header__search-open2"></div>
+                        <div class="header__search-block">
+                            <button class="header__search-submit2"></button>
+                            <input class="header__search-input2" type="text" value="">
+                            <button class="header__search-close2"></button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="header__blur-bar">
+                <div class="control">
+                    <div class="header__block-list">
+                        <div class="header__list">
+                            <div class="header__list-children">
+                                <button class="header__list-children-name children-1" data-path="one" data-painter="six" data-target="six">Реализм</button>
+                                <div class="header__list-painters" data-target="one">
+                                    <div class="header__list-painters-control" data-simplebar>
+                                        <div class="header__painter-nam painter-name1">
+                                            <div class="header__painter-background">Тинторетто</div>
+                                        </div>
+                                        <div class="header__painter-nam painter-name2">
+                                            <div class="header__painter-background">Фридрих</div>
+                                        </div>
+                                        <div class="header__painter-nam painter-name3">
+                                            <div class="header__painter-background">Леонардо</div>
+                                        </div>
+                                        <div class="header__painter-nam painter-name4">
+                                            <div class="header__painter-background">Верроккьо</div>
+                                        </div>
+                                        <div class="header__painter-nam painter-name11">
+                                            <div class="header__painter-background">Гоген</div>
+                                        </div>
+                                        <div class="header__painter-nam painter-name12">
+                                            <div class="header__painter-background">Сёра</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__list-children">
+                                <button class="header__list-children-name children-2" data-path="two" data-painter="seven" data-target="seven">Импрессионизм</button>
+                                <div class="header__list-painters" data-target="two">
+                                    <div class="header__list-painters-control" data-simplebar>
+                                        <div class="header__painter-nam painter-name5">
+                                            <div class="header__painter-background">Моне</div>
+                                        </div>
+                                        <div class="header__painter-nam painter-name6">
+                                            <div class="header__painter-background">Сислей</div>
+                                        </div>
+                                        <div class="header__painter-nam painter-name7">
+                                            <div class="header__painter-background">Мане</div>
+                                        </div>
+                                        <div class="header__painter-nam painter-name8">
+                                            <div class="header__painter-background">Ренуар</div>
+                                        </div>
+                                        <div class="header__painter-nam painter-name15">
+                                            <div class="header__painter-background">Малевич</div>
+                                        </div>
+                                        <div class="header__painter-nam painter-name16">
+                                            <div class="header__painter-background">Пикассо</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__list-children">
+                                <button class="header__list-children-name children-3" data-path="three" data-painter="eight" data-target="eight">Постимпрессионизм</button>
+                                <div class="header__list-painters" data-target="three">
+                                    <div class="header__list-painters-control" data-simplebar>
+                                        <div class="header__painter-nam painter-name9">
+                                            <div class="header__painter-background">Ван Гог</div>
+                                        </div>
+                                        <div class="header__painter-nam painter-name10">
+                                            <div class="header__painter-background">Сезанн</div>
+                                        </div>
+                                        <div class="header__painter-nam painter-name11">
+                                            <div class="header__painter-background">Гоген</div>
+                                        </div>
+                                        <div class="header__painter-nam painter-name12">
+                                            <div class="header__painter-background">Сёра</div>
+                                        </div>
+                                        <div class="header__painter-nam painter-name19">
+                                            <div class="header__painter-background">Северини</div>
+                                        </div>
+                                        <div class="header__painter-nam painter-name20">
+                                            <div class="header__painter-background">Балла</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__list-children">
+                                <button class="header__list-children-name children-4" data-path="four" data-painter="nine" data-target="nine">Авангард</button>
+                                <div class="header__list-painters" data-target="four">
+                                    <div class="header__list-painters-control" data-simplebar>
+                                        <div class="header__painter-nam painter-name13">
+                                            <div class="header__painter-background">Кандинский</div>
+                                        </div>
+                                        <div class="header__painter-nam painter-name14">
+                                            <div class="header__painter-background">Маринетти</div>
+                                        </div>
+                                        <div class="header__painter-nam painter-name15">
+                                            <div class="header__painter-background">Малевич</div>
+                                        </div>
+                                        <div class="header__painter-nam painter-name16">
+                                            <div class="header__painter-background">Пикассо</div>
+                                        </div>
+                                        <div class="header__painter-nam painter-name3">
+                                            <div class="header__painter-background">Леонардо</div>
+                                        </div>
+                                        <div class="header__painter-nam painter-name4">
+                                            <div class="header__painter-background">Верроккьо</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__list-children">
+                                <button class="header__list-children-name children-5" data-path="five" data-painter="ten"
+                                data-target="ten">Футуризм</button>
+                                <div class="header__list-painters" data-target="five">
+                                    <div class="header__list-painters-control" data-simplebar>
+                                        <div class="header__painter-nam painter-name17">
+                                            <div class="header__painter-background">Карра</div>
+                                        </div>
+                                        <div class="header__painter-nam painter-name18">
+                                            <div class="header__painter-background">Прателла</div>
+                                        </div>
+                                        <div class="header__painter-nam painter-name19">
+                                            <div class="header__painter-background">Северини</div>
+                                        </div>
+                                        <div class="header__painter-nam painter-name20">
+                                            <div class="header__painter-background">Балла</div>
+                                        </div>
+                                        <div class="header__painter-nam painter-name7">
+                                            <div class="header__painter-background">Мане</div>
+                                        </div>
+                                        <div class="header__painter-nam painter-name8">
+                                            <div class="header__painter-background">Ренуар</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="header__input-block" action="#">
+                            <button class="header__button-search" type="submit"></button>
+                            <input type="text" placeholder="Поиск по сайту" class="header__header-input">
+                        </form>
                     </div>
                 </div>
-            </header>
-            <div class="control">
-                <h1 class="header__main-paragraph">Прикоснитесь к прекрасному</h1>
-                <p class="header__paragraph-header">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
-                <button class="header__header-sub" id="eighth-link">Подписаться на рассылку</button>
             </div>
-        </section>
+        </header>
+        <div class="control">
+            <h2 class="header__main-paragraph">Прикоснитесь к прекрасному</h2>
+            <p class="header__paragraph-header">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт
+                предпосылки для новых предложений.</p>
+            <button class="header__header-sub" id="eighth-link">Подписаться на рассылку</button>
+        </div>
+    </div>
+    <main class="main-content">
         <section class="about-us">
             <div class="control">
                 <h2 class="section-header" id="first-section">О нас</h2>
@@ -3752,7 +3753,7 @@
         </section>
         <section class="projects">
             <div class="control">
-                <h2 class="section-header" id="sixth-section">Проекты</h2>
+                <h2 class="section-header sixth-section" id="sixth-section">Проекты</h2>
                 <p class="projects__projects-paragraph projects-paragraph1">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное<br> информационно-пропагандистское <span class="i-block1" tabindex="0"><span class="tooltip1"> Пример современных тенденций - современная методология разработки </span></span> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены <span class="i-block2" tabindex="1"><span class="tooltip2">Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции</span></span> исключительно в разрезе маркетинговых и финансовых <span class="i-block3" tabindex="2"><span class="tooltip3">В стремлении повысить качество </span></span> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a href="#" class="projects__link-blanchard">blanchard-art.ru/projects/about</a></p>
                 <p class="projects__projects-paragraph projects-paragraph2">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское <span class="i-block1" tabindex="0"><span class="tooltip1"> Пример современных тенденций - современная методология разработки </span></span> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены <span class="i-block2" tabindex="1"><span class="tooltip2">Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции</span></span> исключительно в разрезе маркетинговых и финансовых <span class="i-block3" tabindex="2"><span class="tooltip3">В стремлении повысить качество </span></span> предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a href="#" class="projects__link-blanchard">blanchard-art.ru/projects/about</a></p>
                 <h3 class="projects__partners-header">Партнёры проектов:</h3>

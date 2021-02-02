@@ -146,7 +146,7 @@ input, textarea, button {
 .header {
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 800px;
+	min-height: 800px;
 	color: white;
 	font-size: 18px;
 	line-height: 25px;
@@ -154,11 +154,11 @@ input, textarea, button {
 	background-position: center;
 }
 .header__black-bar {
-	height: 100px;
+	min-height: 100px;
 	background-color: black;
 }
 .header__blur-bar {
-	height: 70px;
+	min-height: 70px;
 	background-color: rgba(0, 0, 0, 0.4);
 }
 .header__navigation {
@@ -196,7 +196,7 @@ input, textarea, button {
 	margin-right: 180px;
 }
 .header__black-bar-control {
-	height: 100px;
+	min-height: 100px;
 	display: flex;
 	align-items: center;
 }
@@ -232,7 +232,7 @@ input, textarea, button {
 .header__block-list {
 	display: flex;
 	padding-top: 21px;
-	height: 70px;
+	min-height: 70px;
 }
 .header__list-children {
 	margin-right: 97px;
@@ -455,12 +455,12 @@ input, textarea, button {
 	line-height: 30px;
 	display: block;
 	width: 579px;
-	height: 90px;
+	min-height: 90px;
 	margin-bottom: 92px;
 }
 .header__header-sub {
 	width: 314px;
-	height: 70px;
+	min-height: 70px;
 	font-size: 18px;
 	line-height: 25px;
 	background: var(--first-color);
@@ -480,11 +480,15 @@ input, textarea, button {
 }
 .section-header {
 	margin-top: 80px;
-	margin-bottom: 17px;
+	margin-bottom: 16px;
 	font-size: 48px;
 	line-height: 65px;
 	color: #333333;
 	font-weight: normal;
+}
+.sixth-section {
+	margin-top: 83px;
+	margin-bottom: 16px;
 }
 .fourth-section {
 	margin-top: 62px;
@@ -505,7 +509,7 @@ input, textarea, button {
 	background-image: url(../img/Fon\ 1x.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 995px;
+	min-height: 995px;
 }
 .galery__flex-blocks-second {
 	display: flex;
@@ -763,7 +767,7 @@ input, textarea, button {
 	cursor: pointer;
 }
 .swiper-block-height {
-	height: 750px;
+	min-height: 750px;
 }
 .pagination {
 	margin-left: 10px;
@@ -774,8 +778,8 @@ input, textarea, button {
 .catalog__countries {
 	display: flex;
 	align-items: center;
-	margin-top: 80px;
-	margin-bottom: 1px;
+	margin-top: 82px;
+	margin-bottom: 4px;
 }
 .catalog__countries-block {
 	display: flex;
@@ -784,6 +788,7 @@ input, textarea, button {
 .country-header {
 	margin-top: 0;
 	margin-bottom: 0;
+	padding-bottom: 7px;
 }
 .country-effect {
 	width: 46px;
@@ -985,7 +990,7 @@ input, textarea, button {
 }
 .events__fourth-section-button {
 	width: 188px;
-	height: 59px;
+	min-height: 59px;
 	margin: 0 auto;
 	display: block;
 	border: 2px solid var(--first-color);
@@ -1054,7 +1059,7 @@ input, textarea, button {
 	background-image: url(../img/birmingham.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 766px;
+	min-height: 766px;
 	padding-top: 80px;
 }
 .publication__flex {
@@ -1210,6 +1215,7 @@ label {
 	background-size: cover;
 	width: 350px;
 	height: 390px;
+	margin-bottom: 20px;
 }
 .projects__sixth-section {
 	overflow: hidden;
@@ -1268,11 +1274,8 @@ label {
 	margin: 0;
 	display: flex;
 	justify-content: space-between;
-	margin-top: 19px;
 }
 .publication__buy-picture {
-	width: 120px;
-	height: 40px;
 	font-size: 16px;
 	line-height: 22px;
 	font-weight: bold;
@@ -1322,9 +1325,8 @@ label {
 	right: 5px;
 }
 .projects__projects-paragraph {
-	margin-top: 20px;
 	max-width: 1080px;
-	margin-bottom: 20px;
+	margin-bottom: 19px;
 }
 .i-block1, .i-block2, .i-block3 {
 	display: inline-block;
@@ -1412,7 +1414,7 @@ label {
 	text-decoration: none;
 }
 .projects__partners-header {
-	margin-top: 15px;
+	margin: 0;
 	margin-bottom: 23px;
 	font-weight: 600;
 	font-size: 24px;
@@ -1486,7 +1488,6 @@ label {
 	height: 30px;
 	background-image: url(../img/Group\ 31.png);
 }
-
 .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
 	content: none;
 	outline: none;
@@ -1497,7 +1498,7 @@ label {
 }
 .contact__contact-block {
 	display: flex;	
-	height: 700px;
+	min-height: 700px;
 }
 .contact__phone {
 	width: 37%;
@@ -1518,11 +1519,11 @@ label {
 }
 .footer {
 	background-color: black;
-	height: 140px;
+	min-height: 140px;
 }
 .footer-control {
 	display: flex;
-	height: 140px;
+	min-height: 140px;
 	align-items: center;
 	justify-content: space-between;
 }
@@ -1580,9 +1581,6 @@ label {
 .swiper-container3 {
 	max-width: 1450px;
 }
-.section-header {
-	margin-bottom: 16px;
-}
 .events__title {
 	margin-top: 65px;
 }
@@ -1596,9 +1594,10 @@ label {
 	margin-bottom: 27px;
 }
 .contact__call {
+	margin: 0;
 	font-size: 24px;
 	line-height: 32px;
-	margin-bottom: 3px;
+	margin-bottom: 16px;
 }
 .contact__form-for-call {
 	display: flex;
@@ -1610,8 +1609,7 @@ label {
 	border: 1px solid #333333;
 	border-radius: 100px;
 	padding-left: 25px;
-	margin-bottom: 22px;
-	margin-top: 15px;
+	margin-bottom: 23px;
 }
 .contact__tel {
 	width: 400px;
@@ -1629,7 +1627,7 @@ label {
 }
 .contact__button-call {
 	width: 157px;
-	height: 59px;
+	min-height: 59px;
 	border: 2px solid var(--first-color);
 	border-radius: 100px;
 	background: none;
@@ -1770,23 +1768,6 @@ label {
 .header-form-menu {
 	position: absolute;
 	bottom: 50px;
-}
-.login-menu {
-	width: 257px;
-	height: 60px;
-	border: 2px solid var(--first-color);
-	border-radius: 100px;
-	color: var(--fourth-color);
-	background: none;
-	background-image: url(../img/Vector.svg);
-	background-repeat: no-repeat;
-	background-position: 82px 22px;
-	transition:  color .15s ease;
-	transition:  background-image .15s linear;
-}
-.login-menu:hover {
-	color: var(--first-color);
-	background-image: url(../img/Vector.png);
 }
 .swiper-left3 {
 	display: none;
@@ -1932,32 +1913,44 @@ label {
 	margin-left: 10px;
 }
 @media (max-width: 1850px) {
+	.contact__call {
+		margin-bottom: 4px;
+	}
+	.swiper-block-height {
+		height: auto;
+	}
+	.galery__second-paragraph {
+		bottom: -10px;
+		width: 284px;
+	}
 	.header__navigation {
 		display: block;
 		position: absolute;
 		z-index: 2;
-		height: 768px;
+		min-height: 768px;
 		top: 0;
 		left: 0;
 		right: 0;
 		background-color: rgba(0, 0, 0, 0.9);
 		margin: 0;
 		padding: 0 50px;
+		padding-top: 80px;
 		transition: transform .2s ease;
 		transform: translateY(-110%);
 	}
 	.header__navigation-children {
-		margin-top: 30px;
+		margin-bottom: 30px;
 	}
 	.is-active {
 		transform: none;
 	}
-	.header__navigation-close {
+	/* .header__navigation-close {
 		display: block;
-	}
+	} */
 	.publication__picture-second {
 		width: 290px;
 		height: 320px;
+		margin-bottom: 2px;
 	}
 	.header__search-open {
 		display: block;
@@ -1969,7 +1962,7 @@ label {
 		display: none;
 	}
 	.header {
-		height: 768px;
+		min-height: 768px;
 	}
 	.header__black-bar {
 		background-image: url(../img/logo.svg);
@@ -1982,7 +1975,6 @@ label {
 	}
 	.header__main-paragraph {
 		margin-top: 112px;
-
 	}
 	.header__paragraph-header {
 		width: 661px;
@@ -1995,7 +1987,7 @@ label {
 		display: block;
 	}
 	.swiper-slide12 {
-		height: 594px;
+		min-height: 594px;
 	}
 	.swiper-container1 {
 		display: none;
@@ -2006,7 +1998,7 @@ label {
 		margin-bottom: 34px;
 	}
 	.galery {
-		height: 839px;
+		min-height: 839px;
 	}
 	.galery__second-paragraph {
 		bottom: 145px;
@@ -2048,10 +2040,10 @@ label {
 		display: none;
 	}
 	.publication {
-		height: 687px;
+		min-height: 687px;
 	}
 	.publication__right-colomn-children {
-		height: 500px;
+		min-height: 500px;
 		width: 290px;
 	}
 	.publication__left-colomn {
@@ -2059,9 +2051,6 @@ label {
 	}
 	.publication__right-colomn {
 		width: 73.4%;
-	}
-	.publication__flex-paragraph {
-		margin-top: 8px;
 	}
 	.publication__cost-from {
 		position: relative;
@@ -2257,7 +2246,7 @@ label {
 		display: none;
 	}
 	.galery {
-		height: 1169px;
+		min-height: 1169px;
 	}
 	.about-us {
 		margin-bottom: 69px;
@@ -2272,7 +2261,7 @@ label {
 		margin: 0 auto;
 	}
 	.swiper-container11 {
-		height: 768px;
+		min-height: 768px;
 	}
 	.button-swiper1 {
 		margin-top: 83px;
@@ -2389,14 +2378,15 @@ label {
 	.cost-paragraph768 {
 		display: block;
 		margin-left: 0;
-		margin-bottom: 12px;
+		margin: 0;
+		line-height: 45px;
 	}
 	.cost-from768 {
 		display: flex;
 		margin-left: 0;
 	}
 	.publication {
-		height: 1048px;
+		min-height: 1048px;
 	}
 	.publication__right-colomn-flex {
 		padding-left: 0;
@@ -2432,9 +2422,6 @@ label {
 	}
 	.contact__map {
 		width: 44%;
-	}
-	.catalog__painter-name {
-		margin-top: 1px;
 	}
 	.catalog__painter {
 		margin-bottom: 37px;
@@ -2522,10 +2509,10 @@ label {
 	}
 	.header__black-bar {
 		background-size: 96px, 21px;
-		height: 45px;
+		min-height: 45px;
 	}
 	.header__black-bar-control {
-		height: 45px;
+		min-height: 45px;
 	}
 	.header__burger {
 		background-size: contain;
@@ -2534,10 +2521,10 @@ label {
 		height: 15px;
 	}
 	.header {
-		height: 355px;
+		min-height: 355px;
 	}
 	.header__navigation {
-		height: 355px;
+		min-height: 355px;
 		padding: 0 15px;
 	}
 	.header__navigation-close {
@@ -2552,18 +2539,6 @@ label {
 	.header-form-menu {
 		position: absolute;
 		bottom: 27px;
-	}
-	.login-menu {
-		width: 115px;
-		height: 40px;
-		font-weight: 600;
-		font-size: 12px;
-		line-height: 16px;
-		background-size: 9px 9px;
-		background-position: 22px 14px;
-	}
-	.login-menu:hover {
-		background-image: url(../img/Vector.svg);
 	}
 	.header__main-paragraph {
 		position: static;
@@ -2591,7 +2566,7 @@ label {
 		font-size: 12px;
 		line-height: 16px;
 		width: 200px;
-		height: 40px;
+		min-height: 40px;
 		margin: 0 auto;
 		margin-top: 15px;
 	}
@@ -2602,7 +2577,6 @@ label {
 		margin-bottom: 11px;
 	}
 	.about-us__paragraph {
-		margin-top: 0px;
 		line-height: 28px;
 		margin-bottom: 15px;
 	}
@@ -2624,7 +2598,7 @@ label {
 	}
 	.swiper-container13 {
 		display: block;
-		height: 367px;
+		min-height: 367px;
 		width: 290px;
 		margin: 0 auto;
 	}
@@ -2647,7 +2621,7 @@ label {
 		justify-content: space-between;
 	}
 	.galery {
-		height: 961px;
+		min-height: 961px;
 	}
 	.country {
 		width: 32px;
@@ -2660,12 +2634,15 @@ label {
 	.catalog__countries-block {
 		position: relative;
 		right: 7px;
+		margin-bottom: 0;
 	}
 	.catalog__countries {
 		margin-bottom: 17px;
+		margin-top: 78px;
 	}
 	.country-header {
-		margin-bottom: 3px;
+		margin-bottom: 0px;
+		padding: 0;
 	}
 	.catalog__country-block:first-of-type {
 		margin-left: 0px;
@@ -2677,8 +2654,8 @@ label {
 		display: none;
 	}
 	.acc_head {
-	font-size: 18px;
-	line-height: 32px;
+		font-size: 18px;
+		line-height: 32px;
 	}
 	.accordionjs .acc_section {
 		padding: 15px 0;
@@ -2706,6 +2683,9 @@ label {
 		padding-bottom: 1px;
 		background-size: 30px;
 		background-position: right 7px;
+	}
+	.galary-name {
+		margin-top: 45px;
 	}
 	.catalog__info-painter {
 		margin-top: 30px;
@@ -2824,7 +2804,7 @@ label {
 	}
 	.contact__map {
 		width: 100%;
-		height: 320px;
+		min-height: 320px;
 	}
 	.locale2 {
 		display: block;
@@ -2941,7 +2921,7 @@ label {
 		width: 100%;
 		display: block;
 		margin-top: 20px;
-		margin-bottom: 2px;
+		margin-bottom: 1px;
 	}
 	.cost-from320 {
 		display: flex;
@@ -2952,7 +2932,9 @@ label {
 	}
 	.cost-paragraph320 {
 		display: block;
-		margin-left: 0
+		margin-left: 0;
+		margin-top: 32px;
+		margin-bottom: 0;
 	}
 	.publication__cost-input {
 		width: 73px;
@@ -2982,7 +2964,7 @@ label {
 	.publication__right-colomn-children {
 		width: 50%;
 		padding-right: 15px;
-		height: 304px;
+		min-height: 304px;
 	}
 	.right-colomn-children4 {
 		width: 50%;
@@ -3007,7 +2989,7 @@ label {
 	}
 	.publication__buy-picture {
 		width: 130px;
-		height: 40px;
+		min-height: 40px;
 		font-size: 12px;
 		line-height: 16px;
 	}
