@@ -525,8 +525,8 @@ input, textarea, button {
 	background-image: url(../img/Group\ 22.svg);
 }
 .galery__first-flex-block {
-	 width: 25%;
-	 position: relative;
+	width: 25%;
+	position: relative;
 }
 .galery__second-flex-block {
 	width: 75%;
@@ -606,7 +606,7 @@ input, textarea, button {
 	padding-right: 15px;
 	display: inline-block;
 	position: absolute;
-	bottom: -10px;
+	bottom: 50px;
 	letter-spacing: 0.35px;
 }
 .galery__picture {
@@ -1059,7 +1059,7 @@ input, textarea, button {
 	background-image: url(../img/birmingham.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 766px;
+	height: 766px;
 	padding-top: 80px;
 }
 .publication__flex {
@@ -1256,6 +1256,9 @@ label {
 	display: flex;
 	align-items: center;
 }
+.swiper-slide1 {
+	height: 810px;
+}
 .swiper-pagination2 {
 	position: relative;
 	top: 0 !important;
@@ -1287,6 +1290,7 @@ label {
 	cursor: pointer;
 	transition: border .15s linear;
 	margin-left: 1px;
+	padding: 7px 19px;
 }
 .publication__buy-picture:hover {
 	background: var(--first-color);
@@ -1627,7 +1631,7 @@ label {
 }
 .contact__button-call {
 	width: 157px;
-	min-height: 59px;
+	padding: 15px 0;
 	border: 2px solid var(--first-color);
 	border-radius: 100px;
 	background: none;
@@ -1740,6 +1744,7 @@ label {
 }
 .swiper-container13 {
 	display: none;
+	height: 368px;
 }
 .fourth-section4 {
 	display: none;
@@ -1950,7 +1955,7 @@ label {
 	.publication__picture-second {
 		width: 290px;
 		height: 320px;
-		margin-bottom: 2px;
+		margin-bottom: 8px;
 	}
 	.header__search-open {
 		display: block;
@@ -1998,7 +2003,8 @@ label {
 		margin-bottom: 34px;
 	}
 	.galery {
-		min-height: 839px;
+		height: 839px;
+		min-height: 0;
 	}
 	.galery__second-paragraph {
 		bottom: 145px;
@@ -2040,7 +2046,7 @@ label {
 		display: none;
 	}
 	.publication {
-		min-height: 687px;
+		height: 687px;
 	}
 	.publication__right-colomn-children {
 		min-height: 500px;
@@ -2246,7 +2252,7 @@ label {
 		display: none;
 	}
 	.galery {
-		min-height: 1169px;
+		height: 1169px;
 	}
 	.about-us {
 		margin-bottom: 69px;
@@ -2585,9 +2591,6 @@ label {
 		line-height: 28px;
 		margin-bottom: 43px;
 	}
-	.galery__flex-blocks-second {
-		padding-top: 1px;
-	}
 	.galery__filter {
 		width: 240px;
 		margin-top: 0px;
@@ -2621,7 +2624,7 @@ label {
 		justify-content: space-between;
 	}
 	.galery {
-		min-height: 961px;
+		height: 961px;
 	}
 	.country {
 		width: 32px;
@@ -2837,7 +2840,7 @@ label {
 	}
 	.contact__button-call {
 		width: 128px;
-		height: 40px;
+		padding: 10px 0;
 		font-size: 12px;
 		line-height: 16px;
 		margin-bottom: 18px;
@@ -2960,11 +2963,13 @@ label {
 	.publication__picture-second {
 		width: 130px;
 		height: 143px;
+		margin-bottom: 2px;
 	}
 	.publication__right-colomn-children {
 		width: 50%;
 		padding-right: 15px;
-		min-height: 304px;
+		height: 304px;
+		min-height: 0;
 	}
 	.right-colomn-children4 {
 		width: 50%;
