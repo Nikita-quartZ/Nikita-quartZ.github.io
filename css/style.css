@@ -257,11 +257,11 @@ input, textarea, button {
 	color: var(--first-color);
 	background-image: url(../img/RectangleUpp.svg);
 }
-.list-children-name:hover {
+.header__list-children-name:hover {
 	color: var(--first-color);
 	background-image: url(../img/Rectangle\ 76.svg);
 }
-.list-children-name:active {
+.header__list-children-name:active {
 	color: var(--third-color);
 	background-image: url(../img/Rectangle\ 74.svg);
 }
