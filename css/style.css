@@ -175,6 +175,7 @@ input, textarea, button {
 	color: var(--third-color);
 }
 .header__navigation-children {
+	margin-right: 62px;
 	cursor: pointer;
 	font-weight: 600;
 	font-size: 18px;
