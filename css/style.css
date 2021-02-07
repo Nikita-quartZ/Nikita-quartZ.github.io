@@ -146,7 +146,6 @@ input, textarea, button {
 .header {
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-height: 800px;
 	color: white;
 	font-size: 18px;
 	line-height: 25px;
@@ -165,19 +164,22 @@ input, textarea, button {
 	display: flex;
 	padding: 0;
 }
+.header__navigation-link {
+	color: var(--fourth-color);
+	transition: color .15s linear;
+}
+.header__navigation-link:hover {
+	color: var(--first-color);
+}
+.header__navigation-link:active {
+	color: var(--third-color);
+}
 .header__navigation-children {
 	margin-right: 62px;
 	cursor: pointer;
-	transition: color .15s linear;
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 25px;
-}
-.header__navigation-children:hover {
-	color: var(--first-color);
-}
-.header__navigation-children:active {
-	color: var(--third-color);
 }
 .header__navigation-childen:last-child {
 	margin-right: 0;
@@ -231,7 +233,7 @@ input, textarea, button {
 }
 .header__block-list {
 	display: flex;
-	padding-top: 21px;
+	align-items: center;
 	min-height: 70px;
 }
 .header__list-children {
@@ -284,6 +286,7 @@ input, textarea, button {
 }
 .header__list-painters {
 	position: absolute;
+	z-index: 10;
 	top: 170px;
 	width: 300px;
 	height: 300px;
@@ -320,7 +323,7 @@ input, textarea, button {
 	width: 2px;
 }
 .simplebar-scrollbar {
-	background-color: var(--fourth-color);
+	background-color: var(--first-color);
 	width: 2px;
 }
 .header__painter-background:hover {
@@ -470,6 +473,7 @@ input, textarea, button {
 	font-weight: bold;
 	cursor: pointer;
 	border: 3px solid var(--first-color);
+	margin-bottom: 122px;
 	transition: border .15s linear;
 }
 .header__header-sub:hover {
@@ -479,6 +483,8 @@ input, textarea, button {
 	background: var(--third-color);
 }
 .section-header {
+	position: relative;
+	right: 4px;
 	margin-top: 80px;
 	margin-bottom: 16px;
 	font-size: 48px;
@@ -509,7 +515,7 @@ input, textarea, button {
 	background-image: url(../img/Fon\ 1x.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 995px;
+	padding-bottom: 21px;
 }
 .galery__flex-blocks-second {
 	display: flex;
@@ -766,9 +772,6 @@ input, textarea, button {
 	height: 30px;
 	cursor: pointer;
 }
-.swiper-block-height {
-	min-height: 750px;
-}
 .pagination {
 	margin-left: 10px;
 	margin-right: 10px;
@@ -802,7 +805,7 @@ input, textarea, button {
 	background-color: var(--fourth-color);
 }
 .catalog__country-block:first-of-type {
-	margin-left: 33px;
+	margin-left: 30px;
 }
 .catalog__country-block {
 	width: 66px;
@@ -947,11 +950,10 @@ input, textarea, button {
 .events__fourth-section-children {
 	width: 100%;
 	max-width: 500px;
-	min-height: 700px;
 	border: 1px solid #CACACA;
 	padding: 50px 50px;
 	padding-top: 316px;
-	padding-bottom: 75px;
+	padding-bottom: 91px;
 	position: relative;
 	background-size: contain;
 }
@@ -1059,8 +1061,8 @@ input, textarea, button {
 	background-image: url(../img/birmingham.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 766px;
 	padding-top: 80px;
+	padding-bottom: 51px;
 }
 .publication__flex {
 	display: flex;
@@ -1074,7 +1076,7 @@ input, textarea, button {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: auto;
-	margin-top: 20px;
+	margin-top: 15px;
 }
 .publication__check-span {
 	font-weight: 600;
@@ -1501,8 +1503,7 @@ label {
 	outline: none;
 }
 .contact__contact-block {
-	display: flex;	
-	min-height: 700px;
+	display: flex;
 }
 .contact__phone {
 	width: 37%;
@@ -1523,11 +1524,11 @@ label {
 }
 .footer {
 	background-color: black;
-	min-height: 140px;
+	height: 140px;
 }
 .footer-control {
 	display: flex;
-	min-height: 140px;
+	height: 140px;
 	align-items: center;
 	justify-content: space-between;
 }
@@ -1919,7 +1920,7 @@ label {
 }
 @media (max-width: 1850px) {
 	.contact__call {
-		margin-bottom: 4px;
+		margin-bottom: 2px;
 	}
 	.swiper-block-height {
 		height: auto;
@@ -1952,6 +1953,9 @@ label {
 	/* .header__navigation-close {
 		display: block;
 	} */
+	.header__header-sub {
+		margin-bottom: 90px;
+	}
 	.publication__picture-second {
 		width: 290px;
 		height: 320px;
@@ -1965,9 +1969,6 @@ label {
 	}
 	.header__logo, .header__blur-bar, .header__header-div {
 		display: none;
-	}
-	.header {
-		min-height: 768px;
 	}
 	.header__black-bar {
 		background-image: url(../img/logo.svg);
@@ -2004,10 +2005,9 @@ label {
 	}
 	.galery {
 		height: 839px;
-		min-height: 0;
 	}
 	.galery__second-paragraph {
-		bottom: 145px;
+		bottom: 23px;
 		width: 284px;
 	}
 	.galery__first-flex-block {
@@ -2045,12 +2045,12 @@ label {
 	.publication__cost-block {
 		display: none;
 	}
-	.publication {
-		height: 687px;
-	}
 	.publication__right-colomn-children {
-		min-height: 500px;
 		width: 290px;
+		height: 513px;
+	}
+	.publication__checkbox-block {
+		margin-top: 20px;
 	}
 	.publication__left-colomn {
 		width: 26.6%;
@@ -2196,9 +2196,9 @@ label {
 @media (max-width: 1130px) {
 	.events__fourth-section-children {
 		padding-top: 0px;
+		padding-bottom: 71px;
 		max-width: 290px;
 		height: 100%;
-		min-height: 683px;
 		background:none;
 	}
 	.events__event-paragraph {
@@ -2214,7 +2214,7 @@ label {
 		display: block;
 		width: auto;
 		height: 198px;
-		margin-bottom: 18px;
+		margin-bottom: 22px;
 		background-size: cover;
 	}
 }
@@ -2227,12 +2227,16 @@ label {
 	}
 	.publication {
 		background-image: url(../img/birmingham2.jpg);
+		padding-bottom: 0px;
 	}
 }
 @media (max-width: 975px) {
-	.header__search-open {
-		display: none;
+	.publication__checkbox-block {
+		margin-top: 15px;
 	}
+	/* .header__search-open {
+		display: none;
+	} */
 	.header__search-open2 {
 		display: block;
 	}
@@ -2266,6 +2270,9 @@ label {
 		max-width: 668px;
 		margin: 0 auto;
 	}
+	.header__header-sub {
+		margin-bottom: 115px;
+	}
 	.swiper-container11 {
 		min-height: 768px;
 	}
@@ -2296,6 +2303,7 @@ label {
 		flex-direction: column-reverse;
 	}
 	.catalog__info-painter {
+		margin-top: 33px;
 		width: 100%;
 		padding-right: 0;
 	}
@@ -2322,11 +2330,9 @@ label {
 	.accordionjs .acc_section {
 		padding: 30px 0;
 	}
-	.catalog__info-painter {
-		margin-top: 28px;
-	}
 	.catalog__painter {
 		height: 419px;
+		margin-bottom: 30px;
 	}
 	.fourth-section {
 		margin-top: 70px;
@@ -2339,12 +2345,13 @@ label {
 	}
 	.events__fourth-section-children {
 		max-width: 318px;
+		padding-bottom: 106px;
 	}
 	.events__event-paragraph {
 		max-width: 243px;
 	}
 	.events__additional-info {
-		bottom: 47px;
+		bottom: 51px;
 	}
 	.events__fourth-section-button {
 		margin-bottom: 83px;
@@ -2391,9 +2398,6 @@ label {
 		display: flex;
 		margin-left: 0;
 	}
-	.publication {
-		min-height: 1048px;
-	}
 	.publication__right-colomn-flex {
 		padding-left: 0;
 	}
@@ -2428,9 +2432,6 @@ label {
 	}
 	.contact__map {
 		width: 44%;
-	}
-	.catalog__painter {
-		margin-bottom: 37px;
 	}
 	.event {
 		padding-right: 40px;
@@ -2526,9 +2527,6 @@ label {
 		width: 20px;
 		height: 15px;
 	}
-	.header {
-		min-height: 355px;
-	}
 	.header__navigation {
 		min-height: 355px;
 		padding: 0 15px;
@@ -2567,6 +2565,9 @@ label {
 		margin: 0 auto;
 		margin-top: 14px;
 	}
+	.header {
+		min-height: 355px;
+	}
 	.header__header-sub {
 		display: block;
 		font-size: 12px;
@@ -2575,6 +2576,7 @@ label {
 		min-height: 40px;
 		margin: 0 auto;
 		margin-top: 15px;
+		margin-bottom: 50px;
 	}
 	.section-header {
 		font-size: 28px;
@@ -2584,12 +2586,12 @@ label {
 	}
 	.about-us__paragraph {
 		line-height: 28px;
-		margin-bottom: 15px;
+		margin-bottom: 17px;
 	}
 	.about-us {
 		font-size: 14px;
 		line-height: 28px;
-		margin-bottom: 43px;
+		margin-bottom: 38px;
 	}
 	.galery__filter {
 		width: 240px;
@@ -2640,8 +2642,8 @@ label {
 		margin-bottom: 0;
 	}
 	.catalog__countries {
-		margin-bottom: 17px;
-		margin-top: 78px;
+		margin-bottom: 20px;
+		margin-top: 82px;
 	}
 	.country-header {
 		margin-bottom: 0px;
@@ -2659,6 +2661,14 @@ label {
 	.acc_head {
 		font-size: 18px;
 		line-height: 32px;
+	}
+	.events__mini-info {
+		left: -10px;
+	}
+	.swiper-pagination4 {
+		margin-top: 0px;
+		position: relative;
+		bottom: 23px !important;
 	}
 	.accordionjs .acc_section {
 		padding: 15px 0;
@@ -2688,7 +2698,7 @@ label {
 		background-position: right 7px;
 	}
 	.galary-name {
-		margin-top: 45px;
+		margin-top: 50px;
 	}
 	.catalog__info-painter {
 		margin-top: 30px;
@@ -2714,12 +2724,13 @@ label {
 	}
 	.fourth-section4 {
 		display: block;
+		margin-bottom: 17px;
 	}
 	.events__mini-picture {
 		margin-bottom: 20px;
 	}
 	.events__fourth-section-children {
-		width: 290px;
+		padding-bottom: 70px;
 	}
 	.events__event-paragraph {
 		margin-top: 38px;
@@ -2730,9 +2741,6 @@ label {
 		margin-top: 0;
 		padding-left: 28px;
 		padding-right: 0;
-	}
-	.fourth-section4 {
-		margin-bottom: 38px;
 	}
 	.publication {
 		padding-top: 1px;
@@ -2807,7 +2815,7 @@ label {
 	}
 	.contact__map {
 		width: 100%;
-		min-height: 320px;
+		height: 320px;
 	}
 	.locale2 {
 		display: block;
@@ -2986,11 +2994,10 @@ label {
 	}
 	 .publication__painter-name-mini {
 		display: block;
-		margin-top: 4px;
 	}
 	.publication__cost {
 		display: block;
-		margin-bottom: 11px;
+		margin-bottom: 8px;
 	}
 	.publication__buy-picture {
 		width: 130px;

@@ -1,4 +1,22 @@
 window.addEventListener('DOMContentLoaded', function() {
+    // Аккордион на мобильной версии
+    document.querySelector('.acc_head6').addEventListener('click', function() {
+        document.querySelector('.publication__div-borders').classList.toggle('div-borders-none');
+    });
+    document.querySelectorAll('.label-bord').forEach(function(tabs) {
+        tabs.addEventListener('click', function(even){
+            const check = even.currentTarget.dataset.check
+
+            console.log(document.querySelector(`[data-target="${check}"]`).classList.add('div-border-active'))
+        })
+    })
+    document.querySelectorAll('.publication__check-button').forEach(function(tabs2) {
+        tabs2.addEventListener('click', function(even2){
+            const chec = even2.currentTarget.dataset.chec
+            
+            console.log(document.querySelector(`[data-target="${chec}"]`).classList.remove('div-border-active'))
+        })
+    })
     // Javascript для select
     const element = document.querySelector('select');
         const choices = new Choices(element, {
@@ -149,7 +167,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
         slideSpeed  : 150,
 
-        activeIndex : false,
+        activeIndex : 1,
 
         openSection: function( section ){},
 
@@ -162,7 +180,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
         slideSpeed  : 150,
 
-        activeIndex : false,
+        activeIndex : 1,
 
         openSection: function( section ){},
 
@@ -188,7 +206,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
         slideSpeed  : 150,
 
-        activeIndex : false,
+        activeIndex : 1,
 
         openSection: function( section ){},
 
@@ -354,7 +372,7 @@ window.addEventListener('DOMContentLoaded', function() {
     });
     // Аккордион на мобильной версии
     document.querySelector('.acc_head6').addEventListener('click', function() {
-        document.querySelector('.publication__div-borders').classList.toggle('div-borders-none');
+        document.querySelector('.publication__div-borders').classList.add('div-borders-none');
     });
     document.querySelectorAll('.label-bord').forEach(function(tabs) {
         tabs.addEventListener('click', function(even){
@@ -371,39 +389,39 @@ window.addEventListener('DOMContentLoaded', function() {
         })
     })
     // search
-    document.querySelector('.header__search-open').addEventListener('focus', function() {
-        document.querySelector('.search-div').classList.add('search-div-active');
-        document.querySelector('.header__search-open').classList.add('search-open-focus');
-    });
-    document.querySelector('.header__search-open').addEventListener('blur', function() {
-        setTimeout(function blur() {
-            document.querySelector('.search-div').classList.remove('search-div-active');
-            document.querySelector('.header__search-open').classList.remove('search-open-focus')
-        }, 0);
-    });
-    document.querySelector('.search-input').addEventListener('focus', function() {
-        setTimeout(function blur() {
-            document.querySelector('.search-div').classList.add('search-div-active');
-            document.querySelector('.header__search-open').classList.add('search-open-focus');
-        }, 1);
-    });
-    document.querySelector('.search-submit').addEventListener('focus', function() {
-        setTimeout(function blur() {
-            document.querySelector('.search-div').classList.add('search-div-active');
-            document.querySelector('.header__search-open').classList.add('search-open-focus');
-        }, 1);
-    });
-    document.querySelector('.search-input').addEventListener('blur',function() {
-            document.querySelector('.search-div').classList.remove('search-div-active');
-            document.querySelector('.header__search-open').classList.remove('search-open-focus')
-    });
-    document.querySelector('.header__search-open2').addEventListener('click', function() {
-        document.querySelector('.header__search-block').classList.add('search-block-active');
-    });
-    document.querySelector('.header__search-close2').addEventListener('click', function() {
-        document.querySelector('.header__search-block').classList.remove('search-block-active');
-    });
-    //Валидация формы
+    // document.querySelector('.header__search-open').addEventListener('focus', function() {
+    //     document.querySelector('.search-div').classList.add('search-div-active');
+    //     document.querySelector('.header__search-open').classList.add('search-open-focus');
+    // });
+    // document.querySelector('.header__search-open').addEventListener('blur', function() {
+    //     setTimeout(function blur() {
+    //         document.querySelector('.search-div').classList.remove('search-div-active');
+    //         document.querySelector('.header__search-open').classList.remove('search-open-focus')
+    //     }, 0);
+    // });
+    // document.querySelector('.search-input').addEventListener('focus', function() {
+    //     setTimeout(function blur() {
+    //         document.querySelector('.search-div').classList.add('search-div-active');
+    //         document.querySelector('.header__search-open').classList.add('search-open-focus');
+    //     }, 1);
+    // });
+    // document.querySelector('.search-submit').addEventListener('focus', function() {
+    //     setTimeout(function blur() {
+    //         document.querySelector('.search-div').classList.add('search-div-active');
+    //         document.querySelector('.header__search-open').classList.add('search-open-focus');
+    //     }, 1);
+    // });
+    // document.querySelector('.search-input').addEventListener('blur',function() {
+    //         document.querySelector('.search-div').classList.remove('search-div-active');
+    //         document.querySelector('.header__search-open').classList.remove('search-open-focus')
+    // });
+    // document.querySelector('.header__search-open2').addEventListener('click', function() {
+    //     document.querySelector('.header__search-block').classList.add('search-block-active');
+    // });
+    // document.querySelector('.header__search-close2').addEventListener('click', function() {
+    //     document.querySelector('.header__search-block').classList.remove('search-block-active');
+    // });
+    // Валидация формы
     var selector = document.querySelector("input[type='tel']");
     var im = new Inputmask("+7 (999)-999-99-99");
     im.mask(selector);
