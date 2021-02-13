@@ -457,8 +457,9 @@ button {
 	}
 	.first-section__radial {
 		position: static;
-		width: 320px;
+		width: 290px;
 		height: 100%;
+		margin: 0 auto;
 	}
 	.first-section__right-colomn {
 		width: 100%;
@@ -481,6 +482,8 @@ button {
 	.first-section__main-paragraph {
 		font-size: 30px;
 		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 10px;
 	}
 	.first-section__paragraph {
 		text-align: center;
@@ -488,7 +491,7 @@ button {
 		margin-bottom: 50px;
 	}
 	.first-section {
-		min-height: 650px;
+		min-height: 550px;
 	}
 	.first-section__button {
 		font-size: 14px;
@@ -504,7 +507,7 @@ button {
 		font-size: 16px;
 	}
 	.program__radial {
-		width: 320px;
+		width: 290px;
 		height: 320px;
 	}
 	.program__girl {
@@ -517,6 +520,7 @@ button {
 		font-size: 14px;
 	}
 	.program-content {
+		width: 95%;
 		padding: 20px 15px;
 	}
 	.program__day {
@@ -540,7 +544,9 @@ button {
 	.cost__block {
 		width: 100%;
 		height: 450px;
+		margin: 0 auto;
 		margin-bottom: 30px;
+		max-width: 500px;
 	}
 	.cost__name {
 		font-size: 22px;
