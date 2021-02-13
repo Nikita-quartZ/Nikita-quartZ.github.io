@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.scss">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="control"> 
+            <nav class="header__nav">
+                <li class="header__list">
+                    <ul class="header__list-children"><a href="" id="first-link">Учитель</a></ul>
+                    <ul class="header__list-children"><a href="" id="second-link">Программа</a></ul>
+                    <ul class="header__list-children"><a href="" id="third-link">Тарифы</a></ul>
+                </li>
+                <div class="header__call">
+                    <a href="tel:+88000000000" class="header__tel">8 (800) 000-00-00</a>
+                    <p class="header__call-paragraph">Заказать обратный звонок</p>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content">
+        <section class="first-section">
+            <div class="control">
+                <div class="first-section__flex-block">
+                    <div class="first-section__left-colomn">
+                        <h1 class="first-section__main-paragraph">Восстановление мышц тазового дна</h1>
+                    <p class="first-section__paragraph">Старт 15 февраля</p>
+                    <button class="first-section__button" id="button-link">Узнать подробнее</button>
+                    </div>
+                    <div class="first-section__right-colomn">
+                        <div class="first-section__radial">
+                            <div class="first-section__girl"></div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <section class="teacher">
+            <div class="control">
+                <h3 class="header-paragraph teacher__header" id="first-section">Учитель</h3>
+                <div class="teacher__paragraph">
+                    Меня зовут Анастасия Романова, я инструктор Умного фитнеса, йоги и йогатерапии. Я уже более 6 лет занимаюсь оздоровительными практиками. А началось все после рождения младшего сына и желания восстановиться после родов. Я начала заниматься йогой каждый день всего по 15 минут и уже через месяц почувствовала свое тело совершенно по-другому. Это стало отправной точкой к более активным занятиям и углубленному изучению восстановительных практик.
+                    Сейчас я активно изучаю Умный фитнес и внедряю его в работу своего онлайн-клуба 
+                    "Здоровая спина". В моей профессии нельзя останавливаться, нужно быть постоянно в тонусе и узнавать новые методы и способы восстановления здоровья.
+                    Моя МИССИЯ мотивировать женщин заниматься своим здоровьем, а также научить их адаптировать занятия под любой график.
+                </div>
+            </div>
+        </section>
+        <section class="program">
+            <div class="control">
+                <h3 class="header-paragraph program__header" id="second-section">Программа</h3>
+                <div class="program__flex-block">
+                    <div class="program__left-colomn">
+                        <div class="program__radial">
+                            <div class="program__girl"></div>
+                        </div>
+                    </div>
+                    <div class="program__right-colomn">
+                        <li class="program__list">
+                            <ul class="program__list-children"><button class="program__button program__button-active" data-week="button-week1" data-content="content-week1" data-target="button-week1">1 неделя</button></ul>
+                            <ul class="program__list-children"><button class="program__button" data-week="button-week2" data-content="content-week2" data-target="button-week2">2 неделя</button></ul>
+                            <ul class="program__list-children"><button class="program__button" data-week="button-week3" data-content="content-week3" data-target="button-week3">Последующие недели</button></ul>
+                        </li>
+                        <div class="program__bar"></div>
+                        <div class="program-content display-block" data-target="content-week1">
+                            <p class="program__events"><span class="program__day">1 день.</span>Экспресс-тестирование.</p>
+                            <p class="program__events"><span class="program__day">2 день.</span>Упражнения для восстановления функций кишечника.</p>
+                            <p class="program__events"><span class="program__day">3 день.</span>Дыхательные упражнения.</p>
+                            <p class="program__events"><span class="program__day">4 день.</span>Экспресс-Переобучение тела.</p>
+                            <p class="program__event"><span class="program__day">5 день.</span>Экспресс-Стопы.</p>
+                        </div>
+                        <div class="program-content" data-target="content-week2">
+                            <p class="program__events"><span class="program__day">1 день.</span>Восстановление наклона таза .</p>
+                            <p class="program__events"><span class="program__day">2 день.</span>МФР.</p>
+                            <p class="program__events"><span class="program__day">3 день.</span>Упражнения по мышечным цепям.</p>
+                            <p class="program__events"><span class="program__day">4 день.</span>Здоровая спина.</p>
+                            <p class="program__event"><span class="program__day">5 день.</span>Дыхание.</p>
+                        </div>
+                        <div class="program-content" data-target="content-week3">
+                            <p class="program__events"><span class="program__day">1 день.</span>Видео-урок.</p>
+                            <p class="program__events"><span class="program__day">2 день.</span>Локальная работа с МТД.</p>
+                            <p class="program__events"><span class="program__day">3 день.</span>Видео-урок.</p>
+                            <p class="program__events"><span class="program__day">4 день.</span>Локальная работа с МТД.</p>
+                            <p class="program__event"><span class="program__day">5 день.</span>Видео-урок.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cost">
+            <div class="control">
+                <h3 class="header-paragraph cost__header" id="third-section">Тарифы</h3>
+                <div class="cost__flex-paragraph">
+                    <div class="cost__block">
+                        <div class="cost__block-headers">
+                            <p class="cost__name">Пакет "Базовый"</p>
+                        </div>
+                        <div class="cost__cost-block">
+                            <div class="cost__line"></div>
+                            <div class="cost__non-cost">3000 р</div>
+                            <div class="cost__cost">2500 р</div>
+                        </div>
+                        <div class="cost__content">
+                            <div class="cost__paragraphs">
+                                <p>- Практикум 2 месяца</p>
+                                <p>- более 1 месяц доступа</p>
+                                <p>- Чат поддержки</p>
+                            </div>
+                            <button class="cost__button">Приобрести</button>
+                        </div>
+                    </div>
+                    <div class="cost__block">
+                        <div class="cost__block-headers">
+                            <p class="cost__name">Пакет "Стандарт"</p>
+                        </div>
+                        <div class="cost__cost-block">
+                            <div class="cost__line"></div>
+                            <div class="cost__non-cost">4000 р</div>
+                            <div class="cost__cost">3000 р</div>
+                        </div>
+                        <div class="cost__content">
+                            <div class="cost__paragraphs cost__paragraphs2">
+                                <p>- Практикум 2 месяца</p>
+                                <p>- более 1 месяц доступа</p>
+                                <p>- Чат поддержки</p>
+                                <p>- 1 месяц в онлайн-клубе «Здоровая спина» (можно активировать в любое время)</p>
+                            </div>
+                            <button class="cost__button">Приобрести</button>
+                        </div>
+                    </div>
+                    <div class="cost__block">
+                        <div class="cost__block-headers">
+                            <p class="cost__name">Пакет "Продвинутый"</p>
+                        </div>
+                        <div class="cost__cost-block">
+                            <div class="cost__line"></div>
+                            <div class="cost__non-cost">5000 р</div>
+                            <div class="cost__cost">3500 р</div>
+                        </div>
+                        <div class="cost__content">
+                            <div class="cost__paragraphs cost__paragraphs3">
+                                <p>- Практикум 2 месяца</p>
+                                <p>- 1 месяц доступа</p>
+                                <p>- Чат поддержки</p>
+                                <p>- 2 месяц в онлайн-клубе «Здоровая спина» (можно активировать в любое время)</p>
+                            </div>
+                            <button class="cost__button">Приобрести</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="control footer__flex">
+            <div class="footer__call">
+                <a href="tel:+88000000000" class="footer__tel">8 (800) 000-00-00</a>
+                <p class="footer__call-paragraph">Заказать обратный звонок</p>
+            </div>
+            <div class="footer__links">
+                <a href="#" class="footer__link-block footer__link1"></a>
+                <a href="#" class="footer__link-block footer__link2"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
