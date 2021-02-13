@@ -293,7 +293,7 @@ button {
 	margin-right: 10px;
 }
 .program__girl {
-	background-image: url(../img/section-2.png);
+	background-image: url(../img/section-22.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 750px;
@@ -502,6 +502,8 @@ button {
 	}
 	.header-paragraph {
 		font-size: 30px;
+		text-align: center;
+		display: block;
 	}
 	.teacher__paragraph {
 		font-size: 16px;
