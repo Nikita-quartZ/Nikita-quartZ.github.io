@@ -344,6 +344,17 @@ button {
 .cost__paragraphs {
 	padding: 0 50px;
 	text-align: left;
+	margin-bottom: 240px;
+}
+.cost__paragraphs2 {
+	padding: 0 50px;
+	text-align: left;
+	margin-bottom: 145px;
+}
+.cost__paragraphs3 {
+	padding: 0 50px;
+	text-align: left;
+	margin-bottom: 145px;
 }
 .cost__line {
 	height: 3px;
