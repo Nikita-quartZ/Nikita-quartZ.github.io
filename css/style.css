@@ -191,9 +191,10 @@ button {
 	color: var(--first-color);
 	margin-bottom: 40px;
 	font-weight: 400;
+	line-height: 80px;
 }
 .teacher {
-	background-color: var(--first-color);
+	background: linear-gradient(160deg, rgba(157,92,208,1) 0%, var(--second-color) 100%);
 	padding-top: 80px;
 	min-height: 410px;
 	padding-bottom: 80px;
@@ -212,9 +213,12 @@ button {
 	margin-bottom: 80px;
 }
 .teacher__paragraph {
-	font-size: 18px;
+	font-size: 20px;
 	line-height: 32px;
 	color: var(--fourth-color);
+}
+.teacher__paragraphs {
+	margin-bottom: 25px;
 }
 .program__flex-block {
 	display: flex;
@@ -293,7 +297,7 @@ button {
 	margin-right: 10px;
 }
 .program__girl {
-	background-image: url(../img/section-22.png);
+	background-image: url(../img/section-23.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 750px;
@@ -394,6 +398,18 @@ button {
 	background: none;
 	color: var(--third-color);
 	border-color: var(--second-color);
+}
+.cost__button-paragraph {
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+	display: none;
+}
+.is-active {
+	display: block;
+}
+.is-none {
+	display: none;
 }
 .cost__name {
 	text-align: center;

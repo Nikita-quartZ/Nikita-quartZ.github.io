@@ -41,10 +41,16 @@ window.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
         });
     });
-    // jQuery(document).ready(function() {
-    //     jQuery('.post').addClass("hidden").viewportChecker({
-    //     classToAdd: 'visible animated fadeIn',
-    //     offset: 100
-    //     });
-    // });
+    document.querySelector('.cost__button1').addEventListener('click', function() {
+        document.querySelector('.cost__button1').classList.add('is-none')
+        document.querySelector('.cost__button-paragraph1').classList.add('is-active')
+    })
+    document.querySelector('.cost__button2').addEventListener('click', function() {
+        document.querySelector('.cost__button2').classList.add('is-none')
+        document.querySelector('.cost__button-paragraph2').classList.add('is-active')
+    })
+    document.querySelector('.cost__button3').addEventListener('click', function() {
+        document.querySelector('.cost__button3').classList.add('is-none')
+        document.querySelector('.cost__button-paragraph3').classList.add('is-active')
+    })
 })
