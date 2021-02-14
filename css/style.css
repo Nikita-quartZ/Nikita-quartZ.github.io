@@ -312,11 +312,24 @@ button {
 	width: 31%;
 	height: 700px;
 	box-shadow: 0 0 10px rgb(192, 192, 192);
+	transition: transform .3s ease;
+}
+.cost__block-bas {
+	background: linear-gradient(rgb(139, 139, 139), var(--fourth-color));
+}
+.cost__block-normal {
+	background: linear-gradient(var(--second-color), var(--fourth-color));
+}
+.cost__block-vip {
+	background: linear-gradient(var(--first-color), var(--fourth-color));
+}
+.cost__block:hover {
+	transform: scale(1.05);
 }
 .cost__block-headers {
 	height: 15%;
 	font-size: 32px;
-	color: var(--first-color);
+	color: var(--fourth-color);
 	font-weight: 600;
 	display: flex;
 	align-items: center;
@@ -339,7 +352,7 @@ button {
 .cost__cost {
 	font-size: 38px;
 	text-align: center;
-	color: var(--first-color);
+	color: var(--fourth-color);
 }
 .cost__paragraphs {
 	padding: 0 50px;
@@ -378,7 +391,7 @@ button {
 	display: block;
 }
 .cost__button:hover {
-	background: var(--fourth-color);
+	background: none;
 	color: var(--third-color);
 	border-color: var(--second-color);
 }
@@ -431,6 +444,9 @@ button {
 	background-image: url(../img/instagram.png);
 }
 @media (max-width: 1300px) {
+	.cost__block:hover {
+		transform: scale(1);
+	}
 	.program__flex-block {
 		flex-direction: column;
 		align-items: center;
