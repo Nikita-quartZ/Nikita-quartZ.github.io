@@ -1138,7 +1138,7 @@ label {
     content: '\2022';
     color: var(--first-color);
     position: absolute;
-    top: -11px;
+    top: -12px;
 	right: 2px;
     opacity: 0;
     transition: opacity, border .3s ease;

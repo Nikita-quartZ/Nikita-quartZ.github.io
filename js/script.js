@@ -420,33 +420,4 @@ window.addEventListener('DOMContentLoaded', function() {
     // document.querySelector('.header__search-close2').addEventListener('click', function() {
     //     document.querySelector('.header__search-block').classList.remove('search-block-active');
     // });
-    // Валидация формы
-    var selector = document.querySelector("input[type='tel']");
-    var im = new Inputmask("+7 (999)-999-99-99");
-    im.mask(selector);
-    new JustValidate('.form-for-call', {
-        rules: {
-          name: {
-            required: true,
-            minLength: 2,
-            maxLength: 50
-          },
-          tel: {
-            required: true,
-            function (name, value) {
-                const phone = selector.inputmask.unmaskedvalue()
-                return Number(phone) && phone.length === 10
-            }
-          },
-          mail: {
-            required: true,
-            email: true
-          }
-        },
-        messages: {
-            email: {
-            required: 'Поле обязательно для ввода'
-            }
-        }
-    });
 });
