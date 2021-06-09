@@ -162,7 +162,7 @@ window.addEventListener('DOMContentLoaded', function() {
     $("#my-accordion2").accordionjs({
         closeAble   : false,
 
-        closeOther  : false,
+        closeOther  : true,
 
         slideSpeed  : 150,
 
@@ -175,7 +175,7 @@ window.addEventListener('DOMContentLoaded', function() {
     $("#my-accordion3").accordionjs({
         closeAble   : false,
 
-        closeOther  : false,
+        closeOther  : true,
 
         slideSpeed  : 150,
 
@@ -201,7 +201,7 @@ window.addEventListener('DOMContentLoaded', function() {
     $("#my-accordion5").accordionjs({
         closeAble   : false,
 
-        closeOther  : false,
+        closeOther  : true,
 
         slideSpeed  : 150,
 
