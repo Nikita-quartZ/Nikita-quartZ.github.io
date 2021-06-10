@@ -153,11 +153,9 @@ input, textarea, button {
 	background-position: center;
 }
 .header__black-bar {
-	height: 100px;
 	background-color: black;
 }
 .header__blur-bar {
-	height: 70px;
 	background-color: rgba(0, 0, 0, 0.4);
 }
 .header__navigation {
@@ -197,9 +195,9 @@ input, textarea, button {
 }
 .header__logo {
 	margin-right: 180px;
+	padding: 30px 0;
 }
 .header__black-bar-control {
-	height: 100px;
 	display: flex;
 	align-items: center;
 }
@@ -226,7 +224,7 @@ input, textarea, button {
 .login-img {
 	margin-left: auto;
 }
-.header__header-div {
+.header__login {
 	margin-left: auto;
 }
 .header__list {
@@ -901,7 +899,8 @@ input, textarea, button {
 	border: none;
 	border-top: 1px solid #CACACA;
 	border-bottom: 1px solid  #CACACA;
-	padding: 30px 0;
+	padding-bottom: 30px;
+	padding-top: 31px;
 }
 .acc_head {
 	font-weight: 600;
@@ -910,14 +909,19 @@ input, textarea, button {
 }
 .accordionjs .acc_section .acc_content {
 	padding: 24px 0;
-	padding-bottom: 0;
+	padding-top: 23px;
+	padding-bottom: 0px;
 }
 .accordionjs .acc_section.acc_active > .acc_content {
 	display: flex;
 }
 .catalog__info-accordion-children {
-	width: 208px;
-	margin-right: 50px;
+	width: 197px;
+	margin-right: 58px;
+}
+.catalog__info-accordion-children:nth-child(2) {
+	width: 187px;
+	margin-right: 51px;
 }
 .catalog__name-painter-all {
 	padding: 0;
@@ -1016,7 +1020,7 @@ input, textarea, button {
 	border-radius: 100px;
 	color: var(--first-color);
 	background: none;
-	margin-bottom: 78px;
+	margin-bottom: 82px;
 	padding-bottom: 2px;
 	cursor: pointer;
 	transition: border .15s linear;
@@ -1527,7 +1531,7 @@ label {
 	max-width: 680px;
 	padding-left: 160px;
 	padding-top: 124px;
-	min-height: 695px;
+	min-height: 699px;
 }
 .contact__map {
 	width: 63%;
@@ -1599,8 +1603,8 @@ label {
 	max-width: 1450px;
 }
 .events__title {
-	padding-top: 69px;
-	margin-bottom: 18px;
+	padding-top: 64px;
+	margin-bottom: 14px;
 }
 .contact__locate-H {
 	font-size: 24px;
@@ -2015,7 +2019,7 @@ label {
 	.control {
 		padding: 0 50px;
 	}
-	.header__logo, .header__blur-bar, .header__header-div {
+	.header__logo, .header__blur-bar, .header__login {
 		display: none;
 	}
 	.header__black-bar {

@@ -314,6 +314,15 @@ window.addEventListener('DOMContentLoaded', function() {
         })
     })
     //Плавный скролл для кнопок в меню
+
+    // $(function scrollClick(butt, sect){
+    //         $(butt).on('click', function(e){
+    //             $('html,body').stop().animate({ scrollTop: $(sect).offset().top }, 1000);
+    //             e.preventDefault();
+    //         });
+    // });
+    // scrollClick('#first-link', '#first-section')
+    
     $(function(){
         $('#first-link').on('click', function(e){
             $('html,body').stop().animate({ scrollTop: $('#first-section').offset().top }, 1000);
