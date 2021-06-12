@@ -29,6 +29,15 @@ window.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.choices__inner').classList.toggle('choices__inner-active');
     });
     // Javascript для swiper
+    if (document.documentElement.clientWidth > 740 && document.documentElement.clientWidth < 1850) {
+        document.getElementById("swiper-block-height11").classList.remove("swiper-wrapper");
+        document.getElementById("swiper-block-height12").classList.add("swiper-wrapper");
+        document.getElementById("swiper-block-height13").classList.remove("swiper-wrapper");
+    } else if (document.documentElement.clientWidth <= 740){
+        document.getElementById("swiper-block-height12").classList.remove("swiper-wrapper");
+        document.getElementById("swiper-block-height12").classList.remove("swiper-wrapper");
+        document.getElementById("swiper-block-height13").classList.add("swiper-wrapper");
+    };
     var mySwiper = new Swiper('.swiper-container1', {
         loop: true,
     
@@ -40,32 +49,6 @@ window.addEventListener('DOMContentLoaded', function() {
         navigation: {
         nextEl: '.second-button-swiper1',
         prevEl: '.first-button-swiper1',
-        }
-    });
-    var mySwiper = new Swiper('.swiper-container11', {
-        loop: true,
-    
-        pagination: {
-        el: '.swiper-pagination',
-        type: 'fraction'
-        },
-    
-        navigation: {
-        nextEl: '.second-button-swiper2',
-        prevEl: '.first-button-swiper2',
-        }
-    });
-    var mySwiper = new Swiper('.swiper-container13', {
-        loop: true,
-    
-        pagination: {
-        el: '.swiper-pagination13',
-        type: 'fraction'
-        },
-    
-        navigation: {
-        nextEl: '.second-button-swiper13',
-        prevEl: '.first-button-swiper13',
         }
     });
     var mySwiper = new Swiper('.swiper-container2', {
@@ -146,79 +129,27 @@ window.addEventListener('DOMContentLoaded', function() {
         }
     });
     // Javascript для accordion
-    $("#my-accordion1").accordionjs({
-        closeAble   : false,
+    function accordionFunc(section){
+        $(section).accordionjs({
+            closeAble   : false,
 
-        closeOther  : true,
+            closeOther  : true,
 
-        slideSpeed  : 150,
+            slideSpeed  : 150,
 
-        activeIndex : 1,
+            activeIndex : 1,
 
-        openSection: function( section ){},
+            openSection: function( section ){},
 
-        beforeOpenSection: function( section ){},
-    });
-    $("#my-accordion2").accordionjs({
-        closeAble   : false,
-
-        closeOther  : true,
-
-        slideSpeed  : 150,
-
-        activeIndex : 1,
-
-        openSection: function( section ){},
-
-        beforeOpenSection: function( section ){},
-    });
-    $("#my-accordion3").accordionjs({
-        closeAble   : false,
-
-        closeOther  : true,
-
-        slideSpeed  : 150,
-
-        activeIndex : 1,
-
-        openSection: function( section ){},
-
-        beforeOpenSection: function( section ){},
-    });
-    $("#my-accordion4").accordionjs({
-        closeAble   : false,
-
-        closeOther  : true,
-
-        slideSpeed  : 150,
-
-        activeIndex : [1 , 8],
-
-        openSection: function( section ){},
-
-        beforeOpenSection: function( section ){},
-    });
-    $("#my-accordion5").accordionjs({
-        closeAble   : false,
-
-        closeOther  : true,
-
-        slideSpeed  : 150,
-
-        activeIndex : 1,
-
-        openSection: function( section ){},
-
-        beforeOpenSection: function( section ){},
-    });
-    $("#my-accordion6").accordionjs({
-        closeAble   : false,
-        closeOther  : true,
-        slideSpeed  : 150,
-        activeIndex : false,
-        openSection: function( section ){},
-        beforeOpenSection: function( section ){},
-    });
+            beforeOpenSection: function( section ){},
+        });
+    }
+    accordionFunc("#my-accordion1")
+    accordionFunc("#my-accordion2")
+    accordionFunc("#my-accordion3")
+    accordionFunc("#my-accordion4")
+    accordionFunc("#my-accordion5")
+    accordionFunc("#my-accordion6")
     //Javascript для Яндекс.Карт
     ymaps.ready(init);
         function init(){
@@ -314,64 +245,23 @@ window.addEventListener('DOMContentLoaded', function() {
         })
     })
     //Плавный скролл для кнопок в меню
-
-    // $(function scrollClick(butt, sect){
-    //         $(butt).on('click', function(e){
-    //             $('html,body').stop().animate({ scrollTop: $(sect).offset().top }, 1000);
-    //             e.preventDefault();
-    //         });
-    // });
-    // scrollClick('#first-link', '#first-section')
-    
-    $(function(){
-        $('#first-link').on('click', function(e){
-            $('html,body').stop().animate({ scrollTop: $('#first-section').offset().top }, 1000);
-            e.preventDefault();
+    function scrollClick(butt, sect){
+        $(function (){
+                $(butt).on('click', function(e){
+                    $('html,body').stop().animate({ scrollTop: $(sect).offset().top }, 1000);
+                    e.preventDefault();
+                });
         });
-    });
-    $(function(){
-        $('#second-link').on('click', function(e){
-            $('html,body').stop().animate({ scrollTop: $('#second-section').offset().top }, 1000);
-            e.preventDefault();
-        });
-    });
-    $(function(){
-        $('#third-link').on('click', function(e){
-            $('html,body').stop().animate({ scrollTop: $('#third-section').offset().top }, 1000);
-            e.preventDefault();
-        });
-    });
-    $(function(){
-        $('#fourth-link').on('click', function(e){
-            $('html,body').stop().animate({ scrollTop: $('#fourth-section').offset().top }, 1000);
-            e.preventDefault();
-        });
-    });
-    $(function(){
-        $('#fiveth-link').on('click', function(e){
-            $('html,body').stop().animate({ scrollTop: $('#fiveth-section').offset().top }, 1000);
-            e.preventDefault();
-        });
-    });
-    $(function(){
-        $('#sixth-link').on('click', function(e){
-            $('html,body').stop().animate({ scrollTop: $('#sixth-section').offset().top }, 1000);
-            e.preventDefault();
-        });
-    });
-    $(function(){
-        $('#seventh-link').on('click', function(e){
-            $('html,body').stop().animate({ scrollTop: $('#seventh-section').offset().top }, 1000);
-            e.preventDefault();
-        });
-    });
-    $(function(){
-        $('#eighth-link').on('click', function(e){
-            $('html,body').stop().animate({ scrollTop: $('#seventh-section').offset().top }, 1000);
-            e.preventDefault();
-        });
-    });
-    //burger
+    }
+    scrollClick('#first-link', '#first-section')
+    scrollClick('#second-link', '#second-section')
+    scrollClick('#third-link', '#third-section')
+    scrollClick('#fourth-link', '#fourth-section')
+    scrollClick('#fiveth-link', '#fiveth-section')
+    scrollClick('#sixth-link', '#sixth-section')
+    scrollClick('#seventh-link', '#seventh-section')
+    scrollClick('#eighth-link', '#seventh-section')
+    // //burger
     document.querySelector('.header__burger').addEventListener('click', function() {
         document.querySelector('.header__navigation').classList.add('is-active');
     });

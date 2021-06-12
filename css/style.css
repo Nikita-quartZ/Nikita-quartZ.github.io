@@ -251,6 +251,7 @@ input, textarea, button {
 	cursor: pointer;
 	transition: color .1s linear;
 	padding: 0;
+	padding-right: 14px;
 }
 .list-active {
 	color: var(--first-color);
@@ -268,21 +269,13 @@ input, textarea, button {
 	color: var(--first-color);
 	background-image: url(../img/RectangleUpp.svg);
 }
-.children-1 {
-	width: 89px;
-}
-.children-2 {
-	width: 159px;
-}
 .children-3 {
-	width: 198px;
+	padding-right: 16px;
+	margin-right: 3px;
 }
 .children-4 {
-	width: 100px;
-}
-.children-5 {
-	width: 100px;
-}
+	padding-right: 17px;
+} 
 .header__list-painters {
 	position: absolute;
 	z-index: 10;
@@ -692,6 +685,12 @@ input, textarea, button {
 }
 .picture28 {
 	background-image: url(../img/Rectangle\ 76.jpg);
+}
+.picture29 {
+	background-image: url(../img/Rectangle\ 68.jpg);
+}
+.picture30 {
+	background-image: url(../img/Rectangle\ 69.jpg);
 }
 .picture35 {
 	background-image: url(../img/Rectangle\ 87.jpg);
@@ -1970,6 +1969,9 @@ label {
 .header__non-main-paragraph {
 	display: none;
 }
+.swiper-container1 {
+	max-height: 970px;
+}
 @media (max-width: 1850px) {
 	.contact__call {
 		margin-bottom: 2px;
@@ -2046,9 +2048,6 @@ label {
 	}
 	.swiper-slide12 {
 		min-height: 594px;
-	}
-	.swiper-container1 {
-		display: none;
 	}
 	.galery__picture {
 		width: 280px;
