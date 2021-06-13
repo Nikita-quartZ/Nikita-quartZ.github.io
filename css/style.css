@@ -710,11 +710,6 @@ input, textarea, button {
 .picture40 {
 	background-image: url(../img/Rectangle\ 85.jpg);
 }
-.swiper-slide {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
 .galery__button-swiper1 {
 	height: 30px;
 	width: 150px;
@@ -1278,9 +1273,6 @@ label {
 	margin-bottom: 30px;
 	display: flex;
 	align-items: center;
-}
-.swiper-slide1 {
-	height: 810px;
 }
 .swiper-pagination2 {
 	position: relative;
@@ -1969,19 +1961,15 @@ label {
 .header__non-main-paragraph {
 	display: none;
 }
-.swiper-container1 {
-	max-height: 970px;
-}
 @media (max-width: 1850px) {
+	.header__black-bar-control {
+		padding: 36px 0;
+	}
 	.contact__call {
 		margin-bottom: 2px;
 	}
 	.swiper-block-height {
 		height: auto;
-	}
-	.galery__second-paragraph {
-		bottom: -10px;
-		width: 284px;
 	}
 	.header__navigation {
 		display: block;
@@ -2039,9 +2027,6 @@ label {
 	.header__paragraph-header {
 		width: 661px;
 		margin-bottom: 104px;
-	}
-	.swiper-slide1 {
-		display: none;
 	}
 	.swiper-container11 {
 		display: block;

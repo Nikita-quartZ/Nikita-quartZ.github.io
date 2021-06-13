@@ -29,18 +29,10 @@ window.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.choices__inner').classList.toggle('choices__inner-active');
     });
     // Javascript для swiper
-    if (document.documentElement.clientWidth > 740 && document.documentElement.clientWidth < 1850) {
-        document.getElementById("swiper-block-height11").classList.remove("swiper-wrapper");
-        document.getElementById("swiper-block-height12").classList.add("swiper-wrapper");
-        document.getElementById("swiper-block-height13").classList.remove("swiper-wrapper");
-    } else if (document.documentElement.clientWidth <= 740){
-        document.getElementById("swiper-block-height12").classList.remove("swiper-wrapper");
-        document.getElementById("swiper-block-height12").classList.remove("swiper-wrapper");
-        document.getElementById("swiper-block-height13").classList.add("swiper-wrapper");
-    };
     var mySwiper = new Swiper('.swiper-container1', {
         loop: true,
-    
+        slidesPerView: 3,
+        spaceBetween: 50,
         pagination: {
         el: '.swiper-pagination',
         type: 'fraction'
@@ -49,11 +41,22 @@ window.addEventListener('DOMContentLoaded', function() {
         navigation: {
         nextEl: '.second-button-swiper1',
         prevEl: '.first-button-swiper1',
-        }
+        },
+        breakpoints: {
+            1850: {
+              slidesPerView: 3
+            },
+            740: {
+              slidesPerView: 2
+            },
+            320: {
+                slidesPerView: 1
+            }
+          }
     });
     var mySwiper = new Swiper('.swiper-container2', {
         loop: true,
-    
+        spaceBetween: 50,
         pagination: {
         el: '.swiper-pagination',
         type: 'fraction'
@@ -66,7 +69,7 @@ window.addEventListener('DOMContentLoaded', function() {
     });
     var mySwiper = new Swiper('.swiper-container12', {
         loop: true,
-    
+        spaceBetween: 50,
         pagination: {
         el: '.swiper-pagination',
         type: 'fraction'
@@ -79,7 +82,7 @@ window.addEventListener('DOMContentLoaded', function() {
     });
     var mySwiper = new Swiper('.swiper-container22', {
         loop: true,
-    
+        spaceBetween: 50,
         pagination: {
         el: '.swiper-pagination2',
         type: 'fraction'
@@ -92,7 +95,7 @@ window.addEventListener('DOMContentLoaded', function() {
     });
     var mySwiper = new Swiper('.swiper-container3', {
         loop: true,
-    
+        spaceBetween: 50,
         navigation: {
         nextEl: '.swiper-right1',
         prevEl: '.swiper-left1',
