@@ -1675,8 +1675,44 @@ label {
 	line-height: 32px;
 	margin-bottom: 15px;
 }
+.contact__licks {
+	display: flex;
+}
 .contact__whatsapp {
+	cursor: pointer;
+	border: none;
+	margin-right: 18px;
+	background: url(../img/Group104.svg);
+	background-size: contain;
+	width: 40px;
+	height: 40px;
+	transition: background .15s linear;
+}
+.contact__whatsapp:hover {
+	background: url(../img/Group103.svg);
+}
+.contact__whatsapp:active {
+	background: url(../img/Group102.svg);
+}
+.contact__telegram {
+	cursor: pointer;
+	border: none;
 	margin-right: 15px;
+	background: url(../img/Group105.svg);
+	background-size: contain;
+	width: 40px;
+	height: 40px;
+	transition: background .15s linear;
+}
+.contact__telegram:hover {
+	background: url(../img/Group101.svg);
+}
+.contact__telegram:active {
+	background: url(../img/Group100.svg);
+}
+.contact__link-telegram {
+	display: block;
+	height: 40px;
 }
 .swiper-container11 {
 	display: none;
