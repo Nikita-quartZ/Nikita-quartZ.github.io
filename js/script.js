@@ -30,32 +30,34 @@ window.addEventListener('DOMContentLoaded', function() {
     });
     // Javascript для swiper
     var mySwiper = new Swiper('.swiper-container1', {
-        loop: true,
+        loop: false,
         slidesPerView: 3,
         spaceBetween: 50,
         pagination: {
         el: '.swiper-pagination',
         type: 'fraction'
         },
-    
         navigation: {
         nextEl: '.second-button-swiper1',
         prevEl: '.first-button-swiper1',
         },
         breakpoints: {
             1850: {
-              slidesPerView: 3
+              slidesPerView: 3,
+              slidesPerGroup: 3
             },
             740: {
-              slidesPerView: 2
+              slidesPerView: 2,
+              slidesPerGroup: 2
             },
             320: {
                 slidesPerView: 1
+                ,slidesPerGroup: 1
             }
-          }
+        }
     });
     var mySwiper = new Swiper('.swiper-container2', {
-        loop: true,
+        loop: false,
         spaceBetween: 50,
         pagination: {
         el: '.swiper-pagination',
@@ -65,56 +67,42 @@ window.addEventListener('DOMContentLoaded', function() {
         navigation: {
         nextEl: '.second-button-swiper2',
         prevEl: '.first-button-swiper2',
-        }
-    });
-    var mySwiper = new Swiper('.swiper-container12', {
-        loop: true,
-        spaceBetween: 50,
-        pagination: {
-        el: '.swiper-pagination',
-        type: 'fraction'
         },
-    
-        navigation: {
-        nextEl: '.second-button-swiper2',
-        prevEl: '.first-button-swiper2',
-        }
-    });
-    var mySwiper = new Swiper('.swiper-container22', {
-        loop: true,
-        spaceBetween: 50,
-        pagination: {
-        el: '.swiper-pagination2',
-        type: 'fraction'
-        },
-    
-        navigation: {
-        nextEl: '.second-button-swiper21',
-        prevEl: '.first-button-swiper21',
+        breakpoints: {
+            1850: {
+              slidesPerView: 3,
+              slidesPerGroup: 3
+            },
+            740: {
+              slidesPerView: 2,
+              slidesPerGroup: 2
+            },
+            320: {
+                slidesPerView: 1
+                ,slidesPerGroup: 1
+            }
         }
     });
     var mySwiper = new Swiper('.swiper-container3', {
-        loop: true,
+        loop: false,
         spaceBetween: 50,
         navigation: {
         nextEl: '.swiper-right1',
         prevEl: '.swiper-left1',
-        }
-    });
-    var mySwiper = new Swiper('.swiper-container31', {
-        loop: true,
-    
-        navigation: {
-        nextEl: '.swiper-right2',
-        prevEl: '.swiper-left2',
-        }
-    });
-    var mySwiper = new Swiper('.swiper-container33', {
-        loop: true,
-    
-        navigation: {
-        nextEl: '.swiper-right3',
-        prevEl: '.swiper-left3',
+        },
+        breakpoints: {
+            1850: {
+              slidesPerView: 3,
+              slidesPerGroup: 3
+            },
+            740: {
+              slidesPerView: 2,
+              slidesPerGroup: 2
+            },
+            320: {
+                slidesPerView: 1
+                ,slidesPerGroup: 1
+            }
         }
     });
     var mySwiper = new Swiper('.swiper-container4', {
@@ -265,12 +253,12 @@ window.addEventListener('DOMContentLoaded', function() {
     scrollClick('#seventh-link', '#seventh-section')
     scrollClick('#eighth-link', '#seventh-section')
     // //burger
-    document.querySelector('.header__burger').addEventListener('click', function() {
-        document.querySelector('.header__navigation').classList.add('is-active');
-    });
-    document.querySelector('.header__navigation-close').addEventListener('click', function() {
-        document.querySelector('.header__navigation').classList.remove('is-active');
-    });
+    // document.querySelector('.header__burger').addEventListener('click', function() {
+    //     document.querySelector('.header__navigation').classList.add('is-active');
+    // });
+    // document.querySelector('.header__navigation-close').addEventListener('click', function() {
+    //     document.querySelector('.header__navigation').classList.remove('is-active');
+    // });
     // Аккордион на мобильной версии
     document.querySelector('.acc_head6').addEventListener('click', function() {
         document.querySelector('.publication__div-borders').classList.add('div-borders-none');

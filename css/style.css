@@ -507,7 +507,7 @@ input, textarea, button {
 	background-image: url(../img/Fon\ 1x.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding-bottom: 21px;
+	padding-bottom: 31px;
 }
 .galery__flex-blocks-second {
 	display: flex;
@@ -604,7 +604,7 @@ input, textarea, button {
 	padding-right: 15px;
 	display: inline-block;
 	position: absolute;
-	bottom: 50px;
+	bottom: 40px;
 	letter-spacing: 0.35px;
 }
 .galery__picture {
@@ -1055,11 +1055,12 @@ input, textarea, button {
 }
 .events__additional-info {
 	position: absolute;
-	bottom: 42px;
-	left: 45px;
+	bottom: 40px;
+	left: 49px;
 	border: none;
 	color: var(--first-color);
-	padding-bottom: 3px;
+	padding: 0;
+	padding-bottom: 5px;
 	border-bottom: 1px solid var(--first-color);
 	background: none;
 	cursor: pointer;
@@ -1228,6 +1229,7 @@ label {
 }
 .swiper-slide-add {
 	max-width: 1150px !important;
+	display: flex;
 }
 .publication__picture-second {
 	background-size: cover;
@@ -1554,34 +1556,40 @@ label {
 .swiper-pagination-fraction {
 	bottom: 0;
 }
-.swiper-left1, .swiper-left2, .swiper-left3 {
+.swiper-left1 {
 	float: left;
 	outline: none;
 	cursor: pointer;
 	min-width: 30px;
 	height: 30px;
-	background-image: url(../img/Group\ 31.png);
+	background-image: url(../img/Group32.svg);
 	transition: background-image .15s linear;
 }
-.swiper-left1:hover, .swiper-left2:hover, .swiper-left3:hover {
-	background-image: url(../img/Group\ 12.png);
+.swiper-left1:hover {
+	background-image: url(../img/Group96.svg);
 }
-.swiper-left1:active, .swiper-left2:active, .swiper-left2:active {
-	background-image: url(../img/Group\ 11.png);
+.swiper-left1:active {
+	background-image: url(../img/Group94.svg);
 }
-.swiper-right1, .swiper-right2, .swiper-right3 {
+.swiper-button-disabled.swiper-left1 {
+	background-image: url(../img/Group92.svg);
+}
+.swiper-right1 {
 	outline: none;
 	cursor: pointer;
 	min-width: 30px;
 	height: 30px;
-	background-image: url(../img/Group\ 32.png);
+	background-image: url(../img/Group31.svg);
 	transition: background-image .15s linear;
 }
-.swiper-right1:hover, .swiper-right2:hover, .swiper-right3:hover {
-	background-image: url(../img/Group\ 2.png);
+.swiper-right1:hover {
+	background-image: url(../img/Group95.svg);
 }
-.swiper-right1:active, .swiper-right2:active, .swiper-right3:active {
-	background-image: url(../img/Group\ 1.png);
+.swiper-right1:active{
+	background-image: url(../img/Group93.svg);
+}
+.swiper-button-disabled.swiper-right1 {
+	background-image: url(../img/Group91.svg);
 }
 .projects__partners-block1 {
 	display: flex;
@@ -1959,7 +1967,49 @@ label {
 	margin: 0;
 }
 .header__non-main-paragraph {
-	display: none;
+	position: absolute;
+	left: 9999px;
+}
+.button-swiper-all-left {
+	border: none;
+	background: url(../img/Group22.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 30px;
+	height: 30px;
+	transition: background 0.15s linear;
+}
+.button-swiper-all-left:hover {
+	background: url(../img/Group87.svg);
+}
+.button-swiper-all-left:active {
+	background: url(../img/Group85.svg);
+}
+.button-swiper-all-right {
+	border: none;
+	background: url(../img/Group23.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 30px;
+	height: 30px;
+	transition: background 0.15s linear;
+}
+.button-swiper-all-right:hover {
+	background: url(../img/Group86.svg);
+}
+.button-swiper-all-right:active {
+	background: url(../img/Group84.svg);
+}
+.swiper-button-disabled.button-swiper-all-left {
+	background: url(../img/Group90.svg);
+}
+.swiper-button-disabled.button-swiper-all-right {
+	border: none;
+	background: url(../img/Group89.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 30px;
+	height: 30px;
 }
 @media (max-width: 1850px) {
 	.header__black-bar-control {
