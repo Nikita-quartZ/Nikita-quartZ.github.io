@@ -155,7 +155,7 @@ input, textarea, button {
 .header__black-bar {
 	background-color: black;
 }
-.header__blur-bar {
+.header__add-art {
 	background-color: rgba(0, 0, 0, 0.4);
 }
 .header__navigation {
@@ -249,7 +249,7 @@ input, textarea, button {
 	background-repeat: no-repeat;
 	background-position: right 10px;
 	cursor: pointer;
-	transition: color .1s linear;
+	transition: color .1s linear, background .1s linear;
 	padding: 0;
 	padding-right: 14px;
 }
@@ -309,6 +309,9 @@ input, textarea, button {
 	font-weight: 600;
 	margin-bottom: 20px;
 	background-repeat: no-repeat;
+}
+.header__painter-nam:last-child {
+	margin-bottom: 0;
 }
 .simplebar-track.simplebar-vertical {
 	background-color: black;
@@ -438,9 +441,8 @@ input, textarea, button {
 	line-height: 84px;
 	display: inline-block;
 	width: 597px;
-	max-height: 184px;
 	margin: 0;
-	margin-bottom: 72px;
+	margin-bottom: 18px;
 	padding-top: 70px;
 }
 .header__paragraph-header {
@@ -465,8 +467,10 @@ input, textarea, button {
 	font-weight: bold;
 	cursor: pointer;
 	border: 3px solid var(--first-color);
-	margin-bottom: 122px;
 	transition: border .15s linear;
+}
+.add-control {
+	padding-bottom: 123px;
 }
 .header__header-sub:hover {
 	border: 3px solid #D1A9F0;
@@ -1355,7 +1359,7 @@ label {
  .i-block1:focus, .i-block2:focus, .i-block3:focus {
 	background-image: url(../img/i.png);
 }
-.tooltip1 {
+.tooltip {
 	background-image: url(../img/Rectangle\ 42-3.png);
 	background-repeat: no-repeat;
 	position: absolute;
@@ -1374,37 +1378,17 @@ label {
 }
 .tooltip2 {
 	background-image: url(../img/Rectangle\ 42-1.png);
-	background-repeat: no-repeat;
-	position: absolute;
 	bottom: 16px;
 	left: -127px;
 	width: 264px;
 	height: 80px;
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 16px;
-	color: var(--fourth-color);
-	opacity: 0;
-	text-align: center;
-	padding-top: 7px;
-	transition: opacity .15s linear;
 }
 .tooltip3 {
 	background-image: url(../img/Rectangle\ 42-2.png);
-	background-repeat: no-repeat;
-	position: absolute;
 	bottom: 23px;
 	left: -110px;
 	width: 242px;
 	height: 42px;
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 16px;
-	color: var(--fourth-color);
-	opacity: 0;
-	padding-left: 14px;
-	padding-top: 7px;
-	transition: opacity .15s linear;
 }
 .i-block1:hover .tooltip1, .i-block1:focus .tooltip1 {
 	opacity: 1;
@@ -2004,7 +1988,7 @@ label {
 }
 .header__non-main-paragraph {
 	position: absolute;
-	left: 9999px;
+	right: 9999px;
 }
 .button-swiper-all-left {
 	border: none;
@@ -2095,7 +2079,7 @@ label {
 	.control {
 		padding: 0 50px;
 	}
-	.header__logo, .header__blur-bar, .header__login {
+	.header__logo, .header__add-art, .header__login {
 		display: none;
 	}
 	.header__black-bar {
