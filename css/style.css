@@ -261,7 +261,7 @@ input, textarea, button {
 	color: var(--first-color);
 	background-image: url(../img/Rectangle\ 76.svg);
 }
-.header__list-children-name:active {
+.header__list-children-name:focus {
 	color: var(--third-color);
 	background-image: url(../img/Rectangle\ 74.svg);
 }
@@ -286,7 +286,7 @@ input, textarea, button {
 	padding: 40px 19px 40px 40px;
 	display: none;
 }
-.list-painters-active {
+.children-1:focus + .list-painters-active1, .children-2:focus + .list-painters-active2, .children-3:focus + .list-painters-active3, .children-4:focus + .list-painters-active4, .children-5:focus + .list-painters-active5 {
 	display: block;
 }
 .header__list-painters-control {
@@ -300,6 +300,7 @@ input, textarea, button {
 	background-repeat: no-repeat;
 }
 .header__painter-nam {
+	cursor: pointer;
 	display: flex;
 	align-items: center;
 	width: 220px;

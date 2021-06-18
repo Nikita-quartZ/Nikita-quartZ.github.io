@@ -170,22 +170,6 @@ window.addEventListener('DOMContentLoaded', function() {
         fourthSectionButton.classList.add('is-active-fourth-button')
         fourthSectionBlockSecond.classList.add('is-active-fourth-block')
     })
-    //Списки header
-    // document.querySelectorAll('.header__list-children-name').forEach(function(tabsBtn1) {
-    //     tabsBtn1.addEventListener('click', function(event1){
-    //         const path = event1.currentTarget.dataset.path
-    //         document.querySelectorAll('.header__list-painters').forEach(function(tabCon1) {
-    //             tabCon1.classList.remove('list-painters-active')
-    //         })
-    //         document.querySelector(`[data-target="${path}"]`).classList.add('list-painters-active')
-
-    //         const painter = event1.currentTarget.dataset.painter
-    //         document.querySelectorAll('.header__list-children-name').forEach(function(tabButt) {
-    //             tabButt.classList.remove('list-active')
-    //         })
-    //         document.querySelector(`[data-target="${painter}"]`).classList.add('list-active')
-    //     })
-    // })
     //Табы на разные языки
     document.querySelectorAll('.catalog__country-block').forEach(function(tabsBtn2) {
         tabsBtn2.addEventListener('click', function(event2){
