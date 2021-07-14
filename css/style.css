@@ -211,7 +211,7 @@ input, textarea, button {
 	border: none;
 	cursor: pointer;
 	text-align: right;
-	background-image: url(../img/Vector.svg);
+	background-image: url(../img/Vector1.svg);
 	background-repeat: no-repeat;
 	background-position: 2px 5px;
 	transition:  color .15s ease;
@@ -219,7 +219,7 @@ input, textarea, button {
 }
 .header__login:hover {
 	color: var(--first-color);
-	background-image: url(../img/Vector.png);
+	background-image: url(../img/Vector.svg);
 }
 .login-img {
 	margin-left: auto;
@@ -525,6 +525,12 @@ input, textarea, button {
 	display: flex;
 	color: var(--fourth-color);
 }
+.gallery__flexblock {
+	height: 100%;
+	max-height: 682px;
+	display: flex;
+	flex-direction: column-reverse;
+}
 .choices__list--dropdown .choices__item--selectable.is-highlighted {
 	background: rgba(194, 131, 243, 0.4);
 }
@@ -597,7 +603,7 @@ input, textarea, button {
 	margin: 0;
 	padding: 0;
 	padding-right: 15px;
-	/* letter-spacing: 0.35px; */
+	font-weight: 600;
 	display: block;
 }
 .choices[data-type*=select-one].is-open:hover {
@@ -636,7 +642,7 @@ input, textarea, button {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
-	background-image: url(../img/Group\ 12-2.png);
+	background-image: url(../img/Group\ 12-2.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -967,20 +973,21 @@ input, textarea, button {
 }
 .accordionjs .acc_section .acc_head {
 	padding-left: 0;
-	background-image: url(../img/Group\ 77.png);
+	background-image: url(../img/Group\ 76.svg);
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: right center;
-	transition: color, background-image .3s linear;
+	transition: color .3s linear, background-image .3s linear;
 }
 .accordionjs .acc_section .acc_head:hover {
 	color: var(--first-color);
-	background-image: url(../img/Group\ 21.png);
+	background-image: url(../img/Group\ 21.svg);
 }
 .accordionjs .acc_section.acc_active > .acc_head {
 	padding-bottom: 42px;
 	border-bottom: 1px solid var(--first-color);
 	background: var(--fourth-color);
-	background-image: url(../img/Group\ 20.png);
+	background-image: url(../img/Group\ 20.svg);
 	background-repeat: no-repeat;
 	background-position: right 0px;
 	color: var(--first-color);
@@ -1379,19 +1386,19 @@ label {
 	top: 3px;
 	width: 16px;
 	height: 16px;
-	background-image: url(../img/i-2.png);
+	background-image: url(../img/i-2.svg);
 	cursor: pointer;
 	transition: background-image .15s linear;
 	outline: none;
 }
 .i-block1:hover, .i-block2:hover, .i-block3:hover {
-	background-image: url(../img/i-3.png);
+	background-image: url(../img/i-3.svg);
 }
  .i-block1:focus, .i-block2:focus, .i-block3:focus {
-	background-image: url(../img/i.png);
+	background-image: url(../img/i.svg);
 }
 .tooltip {
-	background-image: url(../img/Rectangle\ 42-3.png);
+	background-image: url(../img/Rectangle\ 42-3.svg);
 	background-repeat: no-repeat;
 	position: absolute;
 	bottom: 24px;
@@ -1408,14 +1415,14 @@ label {
 	transition: opacity .15s linear;
 }
 .tooltip2 {
-	background-image: url(../img/Rectangle\ 42-1.png);
+	background-image: url(../img/Rectangle\ 42-1.svg);
 	bottom: 16px;
 	left: -127px;
 	width: 264px;
 	height: 80px;
 }
 .tooltip3 {
-	background-image: url(../img/Rectangle\ 42-2.png);
+	background-image: url(../img/Rectangle\ 42-2.svg);
 	bottom: 23px;
 	left: -110px;
 	width: 242px;
@@ -1512,11 +1519,6 @@ label {
 }
 .partners9:hover {
 	background-image: url(../img/Group\ 272.png);
-}
-.swiper-left1, .swiper-left2, .swiper-left2 {
-	width: 30px;
-	height: 30px;
-	background-image: url(../img/Group\ 31.png);
 }
 .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
 	content: none;
@@ -1740,7 +1742,7 @@ label {
 	width: 36px;
 	height: 28px;
 	background: none;
-	background-image: url(../img/Burger.png);
+	background-image: url(../img/Burger.svg);
 	display: none;
 	cursor: pointer;
 	border: none;
@@ -2032,7 +2034,7 @@ label {
 	transition: background .3s linear;
 }
 .button-swiper-all-left:hover {
-	background: url(../img/Group87.svg);
+	background: url(../img/Group12.svg);
 }
 .button-swiper-all-left:active {
 	background: url(../img/Group85.svg);
@@ -2047,7 +2049,7 @@ label {
 	transition: background .3s linear;
 }
 .button-swiper-all-right:hover {
-	background: url(../img/Group86.svg);
+	background: url(../img/Group2.svg);
 }
 .button-swiper-all-right:active {
 	background: url(../img/Group84.svg);
