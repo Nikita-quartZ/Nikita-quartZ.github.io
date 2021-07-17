@@ -227,7 +227,7 @@ input, textarea, button {
 .header__login {
 	margin-left: auto;
 }
-.header__painters {
+.header__painters-list {
 	display: flex;
 }
 .header__block-list {
@@ -298,6 +298,7 @@ input, textarea, button {
 	font-weight: 600;
 	margin: 0px;
 	background-repeat: no-repeat;
+	margin-bottom: 7px;
 }
 .header__painter-nam {
 	cursor: pointer;
@@ -527,7 +528,7 @@ input, textarea, button {
 }
 .gallery__flexblock {
 	height: 100%;
-	max-height: 682px;
+	padding-bottom: 118px;
 	display: flex;
 	flex-direction: column-reverse;
 }
@@ -544,12 +545,12 @@ input, textarea, button {
 	width: 25%;
 	position: relative;
 	height: 800px;
+	margin-right: 50px;
 }
 .gallery__second-block {
 	width: 75%;
 	display: flex;
 	flex-wrap: wrap;
-	padding-left: 50px;
 }
 .galary-name {
 	color: var(--fourth-color);
@@ -623,10 +624,10 @@ input, textarea, button {
 	color: #c9f;
 }
 .gallery__second-login:hover {
-	text-decoration: underline;
+	border-bottom: 1px solid #c9f;
 }
 .gallery__second-login:active {
-	text-decoration: none;
+	border-bottom: 1px solid var(--third-color);
 	color: var(--third-color);
 }
 .gallery__picture {
@@ -792,6 +793,7 @@ input, textarea, button {
 	padding-bottom: 7px;
 }
 .country-effect {
+	cursor: pointer;
 	width: 46px;
 	height: 46px;
 	border-radius: 50%;
@@ -801,8 +803,24 @@ input, textarea, button {
 	justify-content: center;
 	align-items: center;
 	background-color: var(--fourth-color);
+	background-repeat: no-repeat;
+	background-position: center;
 }
-
+.French {
+	background-image: url(../img/image4.svg);
+}
+.Germany {
+	background-image: url(../img/image6.svg);
+}
+.Italy {
+	background-image: url(../img/image7.svg);
+}
+.Russia {
+	background-image: url(../img/image8.svg);
+}
+.Belgium {
+	background-image: url(../img/image5.svg);
+}
 .catalog__country-block {
 	width: 66px;
 	height: 66px;
@@ -810,6 +828,9 @@ input, textarea, button {
 	justify-content: center;
 	align-items: center;
 	margin-right: 30px;
+}
+.catalog__country-block:last-child {
+	margin: 0;
 }
 .catalog__big-block {
 	width: 275px;
@@ -903,8 +924,8 @@ input, textarea, button {
 	margin-bottom: 20px;
 }
 .date {
+	display: block;
 	margin: 0;
-	padding-top: 7px;
 	margin-bottom: 7px;
 	font-size: 12px;
 	line-height: 16px;
@@ -940,32 +961,34 @@ input, textarea, button {
 	display: flex;
 }
 .catalog__info-accordion-children {
-	width: 197px;
-	margin-right: 58px;
+	padding: 0;
+	width: 205px;
+	margin-right: 50px;
 }
 .catalog__info-accordion-children:nth-child(2) {
-	width: 187px;
-	margin-right: 51px;
+	width: 193px;
+	margin-right: 45px;
 }
 .catalog__name-painter-all {
 	padding: 0;
 	border: none;
 	background: var(--fourth-color);
-	cursor: pointer;
 }
 .catalog__painter-paragraph {
 	margin: 0;
 }
 .name-painter-all-active {
 	color: var(--first-color);
-	font-weight: 600;
 }
-.catalog__name-painter-all:hover {
-	text-decoration: underline;
+.catalog__name-personal {
+	cursor: pointer;
+}
+.catalog__name-personal:hover {
+	border-bottom: 1px solid var(--first-color);
 	color: var(--first-color);
 }
-.catalog__name-painter-all1:active {
-	text-decoration: none;
+.catalog__name-personal:active {
+	border-bottom: none;
 	color: var(--third-color);
 }
 .name-painter-all-active:hover {
@@ -1080,7 +1103,7 @@ input, textarea, button {
 	letter-spacing: 0.25px;
 	margin-bottom: 2px;
 }
-.catalog__paragraph-br-not, .publication__paragraph-br-not {
+.publication__paragraph-br-not {
 	display: block;
 }
 .event {
@@ -1627,6 +1650,7 @@ label {
 	line-height: 32px;
 	font-weight: 600;
 	display: block;
+	margin-bottom: 2px;
 }
 .contact__locate {
 	margin: 0;
@@ -1696,7 +1720,7 @@ label {
 .contact__licks {
 	display: flex;
 }
-.contact__whatsapp {
+.contact__link-whatsapp {
 	cursor: pointer;
 	border: none;
 	margin-right: 18px;
@@ -1706,13 +1730,13 @@ label {
 	height: 40px;
 	transition: background .15s linear;
 }
-.contact__whatsapp:hover {
+.contact__link-whatsapp:hover {
 	background: url(../img/Group103.svg);
 }
-.contact__whatsapp:active {
+.contact__link-whatsapp:active {
 	background: url(../img/Group102.svg);
 }
-.contact__telegram {
+.contact__link-telegram {
 	cursor: pointer;
 	border: none;
 	margin-right: 15px;
@@ -1722,15 +1746,11 @@ label {
 	height: 40px;
 	transition: background .15s linear;
 }
-.contact__telegram:hover {
+.contact__link-telegram:hover {
 	background: url(../img/Group101.svg);
 }
-.contact__telegram:active {
+.contact__link-telegram:active {
 	background: url(../img/Group100.svg);
-}
-.contact__link-telegram {
-	display: block;
-	height: 40px;
 }
 .swiper-container11 {
 	display: none;
@@ -2056,6 +2076,7 @@ label {
 }
 .swiper-button-disabled.button-swiper-all-left {
 	background: url(../img/Group90.svg);
+	cursor: default;
 }
 .swiper-button-disabled.button-swiper-all-right {
 	border: none;

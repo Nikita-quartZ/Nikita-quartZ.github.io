@@ -236,6 +236,7 @@ window.addEventListener('DOMContentLoaded', function() {
     scrollClick('#sixth-link', '#sixth-section')
     scrollClick('#seventh-link', '#seventh-section')
     scrollClick('#eighth-link', '#seventh-section')
+    scrollClick('.catalog__link', '#second-section')
     // //burger
     // document.querySelector('.header__burger').addEventListener('click', function() {
     //     document.querySelector('.header__navigation').classList.add('is-active');
