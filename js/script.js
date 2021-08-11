@@ -237,6 +237,59 @@ window.addEventListener('DOMContentLoaded', function() {
     scrollClick('#seventh-link', '#seventh-section')
     scrollClick('#eighth-link', '#seventh-section')
     scrollClick('.catalog__link', '#second-section')
+    // Табы в header
+    document.querySelectorAll('.header__painters-children-name').forEach(function(tabsBtn3) {
+        tabsBtn3.addEventListener('click', function(event3){
+            const painter = event3.currentTarget.dataset.painter
+            let booll = 0
+            if (document.querySelector(`[data-target="${painter}"]`).classList.contains('list-painters-active')) {
+                booll = 1
+            } else {
+                booll = 0
+            }
+            document.querySelectorAll('.header__list-painters').forEach(function(tabCon31) {
+                tabCon31.classList.remove('list-painters-active')
+            })
+            if (booll == 0) {
+                document.querySelector(`[data-target="${painter}"]`).classList.add('list-painters-active')
+            }
+        })
+    })
+    document.querySelectorAll('.header__painters-children-name').forEach(function(tabsBtn6) {
+        tabsBtn6.addEventListener('click', function(event6){
+            const paint = event6.currentTarget.dataset.paint
+            let booll = 0
+            if (document.querySelector(`[data-target="${paint}"]`).classList.contains('header__painters-active')) {
+                booll = 1
+            } else {
+                booll = 0
+            }
+            document.querySelectorAll('.header__painters-children-name').forEach(function(tabCon31) {
+                tabCon31.classList.remove('header__painters-active')
+            })
+            if (booll == 0) {
+                document.querySelector(`[data-target="${paint}"]`).classList.add('header__painters-active')
+            }
+        })
+    })
+    document.querySelectorAll('.header__painters-children-name').forEach(function(tabsBtn7) {
+        tabsBtn7.addEventListener('click', function(event7){
+            const focu = event7.currentTarget.dataset.focu
+            let booll = 0
+            if (document.querySelector(`[data-target="${focu}"]`).classList.contains('header__painters-focus-block-active')) {
+                booll = 1
+            } else {
+                booll = 0
+            }
+            document.querySelectorAll('.header__painters-focus-block').forEach(function(tabCon31) {
+                tabCon31.classList.remove('header__painters-focus-block-active')
+            })
+            if (booll == 0) {
+                document.querySelector(`[data-target="${focu}"]`).classList.add('header__painters-focus-block-active')
+            }
+        })
+    })
+    document.querySelector("#checks1").focus();
     // //burger
     // document.querySelector('.header__burger').addEventListener('click', function() {
     //     document.querySelector('.header__navigation').classList.add('is-active');
