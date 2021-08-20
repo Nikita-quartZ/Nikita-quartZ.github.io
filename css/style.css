@@ -1315,7 +1315,7 @@ label {
 	align-items: center;
 }
 #check1, #check2, #check3, #check4, #check5, #check6, #check7, #check8, #check9, #check10, #check11, #check12, #check13, #check14, #check15, #check16, #check17, #check18, #check19, #check20, #check21, #check22, #check23, #check24, #check25, #check26, #check27, #check28, #check29, #check30, #check31, #check32, #check33, #check34, #check35, #check36{
-    display: none;
+    opacity: 0;
 }
 #check1 + span, #check2 + span, #check3 + span, #check4 + span, #check5 + span, #check6 + span, #check7 + span, #check8 + span, #check9 + span, #check10 + span, #check11 + span, #check12 + span, #check13 + span, #check14 + span, #check15 + span, #check16 + span, #check17 + span, #check18 + span, #check19 + span, #check20 + span, #check21 + span, #check22 + span, #check23 + span, #check24 + span, #check25 + span, #check26 + span, #check27 + span, #check28 + span, #check29 + span, #check30 + span, #check31 + span, #check32 + span, #check33 + span, #check34 + span, #check35 + span, #check36 + span, .publication__fake-checkbox {
     position: absolute;
@@ -1353,14 +1353,13 @@ label {
 #check1:checked ~ #checks1, #check2:checked ~ #checks2, #check3:checked ~ #checks3, #check4:checked ~ #checks4, #check5:checked ~ #checks5, #check6:checked ~ #checks6, #check7:checked ~ #checks7, #check8:checked ~ #checks8, #check9:checked ~ #checks9, #check10:checked ~ #checks10, #check11:checked ~ #checks11, #check12:checked ~ #checks12, #check13:checked ~ #checks13, #check14:checked ~ #checks14, #check15:checked ~ #checks15, #check16:checked ~ #checks16, #check17:checked ~ #checks17, #check18:checked ~ #checks18, #check19:checked ~ #checks19, #check20:checked ~ #checks20, #check21:checked ~ #checks21, #check22:checked ~ #checks22, #check23:checked ~ #checks23, #check24:checked ~ #checks24, #check25:checked ~ #checks25, #check26:checked ~ #checks26, #check27:checked ~ #checks27, #check28:checked ~ #checks28, #check29:checked ~ #checks29, #check30:checked ~ #checks30, #check31:checked ~ #checks31, #check32:checked ~ #checks32, #check33:checked ~ #checks33, #check34:checked ~ #checks34, #check35:checked ~ #checks35, #check36:checked ~ #checks36 {
 	color: var(--first-color);
 }
+#check1:focus ~ #checks1, #check2:focus ~ #checks2, #check3:focus ~ #checks3, #check4:focus ~ #checks4, #check5:focus ~ #checks5, #check6:focus ~ #checks6, #check7:focus ~ #checks7, #check8:focus ~ #checks8, #check9:focus ~ #checks9, #check10:focus ~ #checks10, #check11:focus ~ #checks11, #check12:focus ~ #checks12, #check13:focus ~ #checks13, #check14:focus ~ #checks14, #check15:focus ~ #checks15, #check16:focus ~ #checks16, #check17:focus ~ #checks17, #check18:focus ~ #checks18, #check19:focus ~ #checks19, #check20:focus ~ #checks20, #check21:focus ~ #checks21, #check22:focus ~ #checks22, #check23:focus ~ #checks23, #check24:focus ~ #checks24, #check25:focus ~ #checks25, #check26:focus ~ #checks26, #check27:focus ~ #checks27, #check28:focus ~ #checks28, #check29:focus ~ #checks29, #check30:focus ~ #checks30, #check31:focus ~ #checks31, #check32:focus ~ #checks32, #check33:focus ~ #checks33, #check34:focus ~ #checks34, #check35:focus ~ #checks35, #check36:focus ~ #checks36 {
+	color: var(--first-color);
+}
 #check1:hover ~ #checks1, #check2:hover ~ #checks2, #check3:hover ~ #checks3, #check4:hover ~ #checks4, #check5:hover ~ #checks5, #check6:hover ~ #checks6, #check7:hover ~ #checks7, #check8:hover ~ #checks8, #check9:hover ~ #checks9, #check10:hover ~ #checks10, #check11:hover ~ #checks11, #check12:hover ~ #checks12, #check13:hover ~ #checks13, #check14:hover ~ #checks14, #check15:hover ~ #checks15, #check16:hover ~ #checks16, #check17:hover ~ #checks17, #check18:hover ~ #checks18, #check19:hover ~ #checks19, #check20:hover ~ #checks20, #check21:hover ~ #checks21, #check22:hover ~ #checks22, #check23:hover ~ #checks23, #check24:hover ~ #checks24, #check25:hover ~ #checks25, #check26:hover ~ #checks26, #check27:hover ~ #checks27, #check28:hover ~ #checks28, #check29:hover ~ #checks29, #check30:hover ~ #checks30, #check31:hover ~ #checks31, #check32:hover ~ #checks32, #check33:hover ~ #checks33, #check34:hover ~ #checks34, #check35:hover ~ #checks35, #check36:hover ~ #checks36 {
 	color: var(--first-color);
 }
-.publication__label:focus, #checks2:focus, #checks3:focus, #checks4:focus, #checks5:focus, #checks6:focus, #checks7:focus, #checks8:focus, #checks9:focus, #checks10:focus, #checks11:focus, #checks12:focus, #checks13:focus, #checks14:focus, #checks15:focus, #checks16:focus, #checks17:focus, #checks18:focus, #checks19:focus, #checks20:focus, #checks21:focus, #checks22:focus, #checks23:focus, #checks24:focus, #checks25:focus, #checks26:focus, #checks27:focus, #checks28:focus, #checks29:focus, #checks30:focus, #checks31:focus, #checks32:focus, #checks33:focus, #checks34:focus, #checks35:focus, #checks36:focus {
-	color: var(--first-color);
-	outline: none;
-}
-.publication__label:focus #check-block1, .publication__label:focus #check-block2, .publication__label:focus #check-block3, .publication__label:focus #check-block4, .publication__label:focus #check-block5, .publication__label:focus #check-block6, .publication__label:focus #check-block7, .publication__label:focus #check-block8, .publication__label:focus #check-block9, .publication__label:focus #check-block10, .publication__label:focus #check-block11, .publication__label:focus #check-block12, .publication__label:focus #check-block13, .publication__label:focus #check-block14, .publication__label:focus #check-block15, .publication__label:focus #check-block16, .publication__label:focus #check-block17, .publication__label:focus #check-block18, .publication__label:focus #check-block19, .publication__label:focus #check-block20, .publication__label:focus #check-block21, .publication__label:focus #check-block22, .publication__label:focus #check-block23, .publication__label:focus #check-block24, .publication__label:focus #check-block25, .publication__label:focus #check-block26, .publication__label:focus #check-block27, .publication__label:focus #check-block28, .publication__label:focus #check-block29, .publication__label:focus #check-block30, .publication__label:focus #check-block31, .publication__label:focus #check-block32, .publication__label:focus #check-block33, .publication__label:focus #check-block34, .publication__label:focus #check-block35, .publication__label:focus #check-block36 {
+#check1:focus + #check-block1, #check2:focus + #check-block2, #check3:focus + #check-block3, #check4:focus + #check-block4, #check5:focus + #check-block5, #check6:focus + #check-block6, #check7:focus + #check-block7, #check8:focus + #check-block8, #check9:focus + #check-block9, #check10:focus + #check-block10, #check11:focus + #check-block11, #check12:focus + #check-block12, #check13:focus + #check-block13, #check14:focus + #check-block14, #check15:focus + #check-block15, #check16:focus + #check-block16, #check17:focus + #check-block17, #check18:focus + #check-block18, #check19:focus + #check-block19, #check20:focus + #check-block20, #check21:focus + #check-block21, #check22:focus + #check-block22, #check23:focus + #check-block23, #check24:focus + #check-block24, #check25:focus + #check-block25, #check26:focus + #check-block26, #check27:focus + #check-block27, #check28:focus + #check-block28, #check29:focus + #check-block29, #check30:focus + #check-block30, #check31:focus + #check-block31, #check32:focus + #check-block32, #check33:focus + #check-block33, #check34:focus + #check-block34, #check35:focus + #check-block35, #check36:focus + #check-block36 {
 	border: 1px solid var(--first-color);
 }
 #checks25, #checks26, #checks27, #checkss28, #checks29, #checks30, #checks31, #checks32, #checks33, #checks34, #checks35, #checks36 {
@@ -1427,8 +1426,6 @@ label {
 	max-width: 1200px;
 }
 .publication__right-colomn-flex {
-	display: flex;
-	justify-content: space-between;
 	padding-left: 50px;
 }
 .publication__right-colomn-children {
@@ -1475,6 +1472,7 @@ label {
 .publication__author {
 	margin: 0;
 	padding-left: 1px;
+	height: 61px;
 }
 .publication__button-swiper2 {
 	color: var(--fourth-color);
@@ -1486,6 +1484,7 @@ label {
 	align-items: center;
 }
 .swiper-pagination2 {
+	width: 49px;
 	position: relative;
 	top: 0 !important;
 	left: -3px;
@@ -1751,9 +1750,9 @@ label {
 .follow-children {
 	margin-left: 14px;
 }
-.swiper-pagination {
+.gallery__swiper-pagination {
 	position: relative;
-	top: 3px;
+	left: 8px;
 	width: 50px;
 }
 .swiper-pagination-fraction {
@@ -1877,14 +1876,29 @@ label {
 	transition: background .15s linear;
 	cursor: pointer;
 }
-.contact__button-call:hover, .contact__button-call:focus {
+.contact__button-call:hover {
 	background: var(--first-color);
 	color: var(--fourth-color);
+}
+.contact__button-call:focus {
+	border: 2px solid var(--third-color);
+
 }
 .contact__button-call:active {
 	border: 2px solid #D1A9F0;
 	background: var(--third-color);
 	color: var(--fourth-color);
+}
+.contact__focus-button {
+	width: 165px;
+	height: 67px;
+	padding: 2px;
+	border: 2px solid rgba(0, 0, 0, 0);
+	border-radius: 33px;
+	transition: border .3s linear;
+}
+.contact__focus-button-active {
+	border: 2px solid var(--first-color);
 }
 .contact__phone-follow {
 	margin: 0;

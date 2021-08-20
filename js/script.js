@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', function() {
         slidesPerView: 3,
         spaceBetween: 50,
         pagination: {
-        el: '.swiper-pagination',
+        el: '.gallery__swiper-pagination',
         type: 'fraction'
         },
         navigation: {
@@ -348,4 +348,10 @@ window.addEventListener('DOMContentLoaded', function() {
     // document.querySelector('.header__search-close2').addEventListener('click', function() {
     //     document.querySelector('.header__search-block').classList.remove('search-block-active');
     // });
+    document.querySelector('.contact__button-call').addEventListener("focus", () => {
+        document.querySelector(".contact__focus-button").classList.add("contact__focus-button-active")
+    })
+    document.querySelector('.contact__button-call').addEventListener("blur", () => {
+        document.querySelector(".contact__focus-button").classList.remove("contact__focus-button-active")
+    })
 });
