@@ -354,4 +354,10 @@ window.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.contact__button-call').addEventListener("blur", () => {
         document.querySelector(".contact__focus-button").classList.remove("contact__focus-button-active")
     })
+    document.querySelector('.events__fourth-section-button').addEventListener("focus", () => {
+        document.querySelector(".events__focus-button").classList.add("contact__focus-button-active")
+    })
+    document.querySelector('.events__fourth-section-button').addEventListener("blur", () => {
+        document.querySelector(".events__focus-button").classList.remove("contact__focus-button-active")
+    })
 });

@@ -727,6 +727,7 @@ input, textarea, button {
 	width: 350px;
 	height: 350px;
 	background-size: cover;
+	position: relative;
 }
 .gallery__hover-search {
 	transition: background-color .15s linear;
@@ -743,9 +744,16 @@ input, textarea, button {
 	width: 100%;
 	height: 100%;
 	padding: 25px;
+	position: absolute;
+	top: 0;
+	cursor: pointer;
 }
 .gallery__picture:active .gallery__paint-picture{
 	background-color: rgba(194, 131, 243, 0.4);
+}
+.gallery__picture-all {
+	width: 350px;
+	height: 350px;
 }
 .picture11 {
 	background-image: url(../img/Rectangle\ 70.jpg);
@@ -1168,7 +1176,7 @@ input, textarea, button {
 .events__fourth-section-block-first {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 50px;
+	margin-bottom: 48px;
 }
 .events__fourth-section-block-second {
 	justify-content: space-between;
@@ -1187,25 +1195,22 @@ input, textarea, button {
 	border-radius: 100px;
 	color: var(--first-color);
 	background: none;
-	margin-bottom: 82px;
 	padding-bottom: 2px;
 	cursor: pointer;
 	transition: border .15s linear;
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 25px;
+	transition: color .3s linear;
+	transition: background .3s linear;
 }
 .events__fourth-section-button:hover {
-	border: 2px solid #D1A9F0;
-}
-.events__fourth-section-button:focus {
+	background-color: var(--first-color);
 	color: var(--fourth-color);
-	background: var(--first-color);
-	border: 2px solid var(--first-color);
 }
 .events__fourth-section-button:active {
 	background: var(--third-color);
-	color: var(--fourth-color);
+	border: 2px solid #D1A9F0
 }
 .is-active-fourth-button {
 	display: none;
@@ -1435,6 +1440,12 @@ label {
 .swiper-slide-add {
 	max-width: 1150px !important;
 	display: flex;
+}
+.swiper-container1 {
+	width: 100%;
+}
+.swiper-container {
+	overflow: hidden;
 }
 .publication__picture-second {
 	background-size: cover;
@@ -1897,8 +1908,21 @@ label {
 	border-radius: 33px;
 	transition: border .3s linear;
 }
+.events__focus-button {
+	width: 196px;
+	height: 67px;
+	padding: 2px;
+	border: 2px solid rgba(0, 0, 0, 0);
+	border-radius: 33px;
+	transition: border .3s linear;
+	margin: 0 auto;
+	margin-bottom: 74px;
+}
 .contact__focus-button-active {
 	border: 2px solid var(--first-color);
+}
+.contact__focus-button-active {
+	border: 2px solid #C283F3;
 }
 .contact__phone-follow {
 	margin: 0;
