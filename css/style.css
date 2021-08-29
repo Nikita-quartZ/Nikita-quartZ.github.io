@@ -1941,31 +1941,35 @@ label {
 	background-size: contain;
 	width: 40px;
 	height: 40px;
-	transition: background .15s linear;
+	transition: opacity .15s linear;
 }
 .contact__link-whatsapp:hover, .contact__link-whatsapp:focus {
-	background: url(../img/Group103.svg);
+	opacity: 0.5;
 	outline: none;
 }
 .contact__link-whatsapp:active {
-	background: url(../img/Group102.svg);
+	opacity: 1;
+}
+.contact__link-whatsapp:active svg .path1 {
+	stroke-width: 1px;
+	stroke: var(--first-color);
 }
 .contact__link-telegram {
 	cursor: pointer;
 	border: none;
 	margin-right: 15px;
-	background: url(../img/Group105.svg);
-	background-size: contain;
-	width: 40px;
-	height: 40px;
-	transition: background .15s linear;
+	transition: opacity .15s linear;
 }
 .contact__link-telegram:hover, .contact__link-telegram:focus {
+	opacity: 0.5;
 	outline: none;
-	background: url(../img/Group101.svg);
 }
 .contact__link-telegram:active {
-	background: url(../img/Group100.svg);
+	opacity: 1;
+}
+.contact__link-telegram:active svg .path1 {
+	stroke-width: 1px;
+	stroke: var(--first-color);
 }
 .swiper-container11 {
 	display: none;
@@ -2228,30 +2232,17 @@ label {
 	width: 45px;
 	height: 45px;
 	margin-right: 20px;
-	transition: background 0.15s linear;
+	transition: background .15s linear;
 	outline: none;
 }
-.footer__follow-children1 {
-	background: url(../img/vk.svg);
-}.footer__follow-children2 {
-	background: url(../img/instagram.svg);
-}.footer__follow-children3 {
-	background: url(../img/fb.svg);
-	width: 46px;
+.footer__follow-children svg path{
+	transition: fill .15s linear;
 }
-.footer__follow-children1:hover, .footer__follow-children1:focus {
-	background: url(../img/vk1.svg);
-}.footer__follow-children2:hover, .footer__follow-children2:focus {
-	background: url(../img/instagram2.svg);
-}.footer__follow-children3:hover, .footer__follow-children3:focus {
-	background: url(../img/fb1.svg);
+.footer__follow-children:hover svg path, .footer__follow-children:focus svg path{
+	fill: var(--fourth-color);
 }
-.footer__follow-children1:active {
-	background: url(../img/vk2.svg);
-}.footer__follow-children2:active {
-	background: url(../img/instagram3.svg);
-}.footer__follow-children3:active {
-	background: url(../img/fb2.svg);
+.footer__follow-children:active svg path{
+	fill: var(--first-color);
 }
 .footer__follow-children:last-child {
 	margin: 0;
@@ -2262,51 +2253,70 @@ label {
 }
 .button-swiper-all-left {
 	border: none;
-	background: url(../img/Group22.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
+	background: none;
+	padding: 0;
 	width: 30px;
 	height: 30px;
-	transition: background .3s linear;
+	cursor: pointer;
 }
-.button-swiper-all-left:hover {
-	background: url(../img/Group12.svg);
+.button-swiper-all-left:hover svg path{
+	fill: var(--first-color);
 }
-.button-swiper-all-left:focus {
-	background: url(../img/Frame2.svg);
+.button-swiper-all-left:focus svg .path2{
+	stroke: black;
+	stroke-width: 2px;
 }
-.button-swiper-all-left:active {
-	background: url(../img/Group85.svg);
+.button-swiper-all-left:active svg .path2{
+	stroke: black;
+	stroke-width: 2px;
 }
 .button-swiper-all-right {
 	border: none;
-	background: url(../img/Group23.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
+	background: none;
+	padding: 0;
 	width: 30px;
 	height: 30px;
-	transition: background .3s linear;
+	cursor: pointer;
 }
-.button-swiper-all-right:hover {
-	background: url(../img/Group2.svg);
+.button-swiper-all-right:hover svg path{
+	fill: var(--first-color);
 }
-.button-swiper-all-right:focus {
-	background: url(../img/Frame.svg);
+.button-swiper-all-right:focus svg .path2{
+	stroke: black;
+	stroke-width: 2px;
 }
-.button-swiper-all-right:active {
-	background: url(../img/Group84.svg);
+.button-swiper-all-right:active svg .path2{
+	stroke: black;
+	stroke-width: 2px;
 }
-.swiper-button-disabled.button-swiper-all-left {
-	background: url(../img/Group90.svg);
+.swiper-button-disabled.button-swiper-all-left{
+	opacity: 0.5;
 	cursor: default;
 }
-.swiper-button-disabled.button-swiper-all-right {
-	border: none;
-	background: url(../img/Group89.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 30px;
-	height: 30px;
+.swiper-button-disabled.button-swiper-all-left:hover svg path{
+	fill: #666;
+}
+.swiper-button-disabled.button-swiper-all-left:active svg .path2{
+	stroke-width: 0;
+}
+/* .swiper-button-disabled.button-swiper-all-left:hover svg .path2{
+	fill: #666;
+	opacity: 0.5;
+	cursor: default;
+}
+.swiper-button-disabled.button-swiper-all-left:active svg .path2{
+	fill: #666;
+	stroke: rgba(0, 0, 0, 0);
+} */
+.swiper-button-disabled.button-swiper-all-right{
+	opacity: 0.5;
+	cursor: default;
+}
+.swiper-button-disabled.button-swiper-all-right:hover svg path{
+	fill: #666;
+}
+.swiper-button-disabled.button-swiper-all-right:active svg .path2{
+	stroke-width: 0;
 }
 @media (max-width: 1850px) {
 	.header__black-bar-control {
