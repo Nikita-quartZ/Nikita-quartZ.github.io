@@ -244,7 +244,8 @@ input, textarea, button {
 	width: 82px;
 	height: 28px;
 	position: relative;
-	left: 6px;
+	left: 8px;
+	display: flex;
 }
 .header__focus-block {
 	width: 82px;
@@ -259,8 +260,13 @@ input, textarea, button {
 .header__login:active + .header__focus-block {
 	background: none;
 }
+.accordionjs .acc_section:first-of-type, .accordionjs .acc_section:first-of-type .acc_head {
+	border-radius: 0;
+}
 .header__painters-list {
 	display: flex;
+	margin: 0;
+	padding: 0;
 }
 .header__block-list {
 	display: flex;
@@ -268,13 +274,19 @@ input, textarea, button {
 	height: 70px;
 }
 .header__painters-children {
+	margin-right: 94px;
+}
+.header__painters-children:nth-child(2) {
 	margin-right: 97px;
 }
 .header__painters-children:nth-child(3) {
-	margin-right: 102px;
+	margin-right: 96px;
+}
+.header__painters-children:nth-child(4) svg {
+	left: 2px;
 }
 .header__painters-children:nth-child(4) {
-	margin-right: 100px;
+	margin-right: 99px;
 }
 .header__painters-children-name:focus + .header__painters-focus-block {
 	background: var(--third-color);
@@ -284,7 +296,6 @@ input, textarea, button {
 }
 .header__painters-children-name:focus {
 	color: var(--fourth-color);
-	background-image: url(../img/Rectangle\ 54.svg);
 }
 .header__painters-block {
 	position: relative;;
@@ -305,13 +316,29 @@ input, textarea, button {
 	border: none;
 	background: none;
 	text-align: left;
-	background-image: url(../img/Rectangle\ 54.svg);
+	/* background-image: url(../img/Rectangle\ 54.svg); */
 	background-repeat: no-repeat;
 	background-position: right 10px;
 	cursor: pointer;
 	transition: color .1s linear, background .1s linear;
 	padding: 0;
-	padding-right: 14px;
+}
+.header__painters-children-name svg{
+	position: relative;
+	bottom: 1px;
+	right: 3px;
+}
+.header__painters-children-name svg path{
+	transition: stroke .1s linear;
+}
+.header__painters-children-name:hover svg path{
+	stroke: var(--first-color);
+}
+.header__painters-children-name:active svg path{
+	stroke: var(--first-color);
+}
+.header__painters-children-name:active svg{
+	transform: rotate(180deg);
 }
 .list-active {
 	color: var(--first-color);
@@ -319,11 +346,15 @@ input, textarea, button {
 }
 .header__painters-children-name:hover {
 	color: var(--first-color);
-	background-image: url(../img/Rectangle\ 76.svg);
 }
 .header__painters-active,  .header__painters-active:hover, .header__painters-active:focus{
 	color: var(--third-color);
-	background-image: url(../img/Rectangle\ 74.svg);
+}
+.header__painters-active svg,  .header__painters-active:hover svg, .header__painters-active:focus svg{
+	transform: rotate(180deg);
+}
+.header__painters-active svg path,  .header__painters-active:hover svg path, .header__painters-active:focus svg path{
+	stroke: var(--third-color);
 }
 .header__painters-children-name:hover + .header__painters-focus-block, .header__painters-focus-block-active, .header__painters-focus-block-active:focus {
 	background: none;
@@ -333,7 +364,7 @@ input, textarea, button {
 	background-image: url(../img/RectangleUpp.svg);
 }
 .header__painters-focus-block2 {
-	width: 167px;
+	width: 164px;
 }
 .header__painters-focus-block3 {
 	width: 205px;
@@ -480,6 +511,7 @@ input, textarea, button {
 	color: var(--first-color);
 	width: 218px;
 	padding-bottom: 3px;
+	padding-left: 0;
 	transition: border-bottom .15s linear;
 	position: relative;
 	bottom: 1px;
@@ -492,9 +524,7 @@ input, textarea, button {
 }
 .header__button-search {
 	background-color: rgba(0, 0, 0, 0);
-	background-image: url(../img/Search.svg);
-	background-repeat: no-repeat;
-	background-position: 0px 1px;
+	padding: 0;
 	width: 25px;
 	height: 22px;
 	border: none;
@@ -507,8 +537,8 @@ input, textarea, button {
 .header__input-block:hover .header__header-input, .header__header-input:focus{
 	border-bottom: 1px solid var(--first-color);
 }
-.header__input-block:hover .header__button-search, .header__button-search:focus {
-	background-image: url(../img/search2.svg);
+.header__input-block:hover .header__button-search svg path, .header__input-block:hover .header__button-search svg rect, .header__button-search:focus svg path, .header__button-search:focus svg rect{
+	fill: var(--first-color);
 }
 .header__main-paragraph {
 	font-weight: bold;
@@ -747,9 +777,18 @@ input, textarea, button {
 	position: absolute;
 	top: 0;
 	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: background .15s linear;
 }
-.gallery__picture:active .gallery__paint-picture{
-	background-color: rgba(194, 131, 243, 0.4);
+.gallery__paint-picture:hover {
+	background-image: url(../img/hover.svg);
+}
+.gallery__paint-picture:active {
+	background-image: url(../img/hover.svg);
+	background-color: rgba(194, 131, 243, 0.4);;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 .gallery__picture-all {
 	width: 350px;
@@ -1088,20 +1127,12 @@ input, textarea, button {
 .catalog__painter-paragraph {
 	margin: 0;
 }
-.name-painter-all-active {
-	color: var(--first-color) !important;
-	background: none;
-}
 .catalog__name-personal {
 	background: none;
 	border: none;
 	cursor: pointer;
 	transition: color .3s ease, border .3s ease;
 	border-bottom: 1px solid rgba(0, 0, 0, 0);
-}
-.catalog__name-personal:focus {
-	background: var(--first-color);
-	color: var(--fourth-color);
 }
 .catalog__name-personal:hover {
 	border-bottom: 1px solid var(--first-color);
@@ -1110,6 +1141,29 @@ input, textarea, button {
 .catalog__name-personal:active {
 	border-bottom: none;
 	color: var(--third-color);
+	background: none;
+}
+.catalog__name-personal:focus {
+	background: var(--first-color);
+	color: var(--fourth-color);
+}
+.name-painter-all-active .catalog__name-personal:focus{
+	color: var(--first-color);
+	background: none;
+}
+.name-painter-all-active .catalog__name-personal{
+	color: var(--first-color);
+	background: none;
+}
+.catalog__name-personal:focus {
+	background: var(--first-color);
+	color: var(--fourth-color);
+}
+.name-painter-all-active .catalog__name-personal:focus {
+	background: none;
+}
+.name-painter-all-active:hover .catalog__name-personal{
+	border-bottom: none;
 }
 .name-painter-all-active:hover {
 	text-decoration: none;
@@ -1345,6 +1399,12 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#checks1, #checks2, #checks3, #checks4, #checks5, #checks6, #checks7, #checks8, #checks9, #checks10, #checks11, #checks12 {
+	transition: color .15s linear;
+}
+.publication__checkspan {
+	transition: border .15s linear;
 }
 #check1:checked +span:before, #check2:checked +span:before, #check3:checked +span:before, #check4:checked +span:before, #check5:checked +span:before, #check6:checked +span:before, #check7:checked +span:before, #check8:checked +span:before, #check9:checked +span:before, #check10:checked +span:before, #check11:checked +span:before, #check12:checked +span:before, #check13:checked +span:before, #check14:checked +span:before, #check15:checked +span:before, #check16:checked +span:before, #check17:checked +span:before, #check18:checked +span:before, #check19:checked +span:before, #check20:checked +span:before, #check21:checked +span:before, #check22:checked +span:before, #check23:checked +span:before, #check24:checked +span:before, #check25:checked +span:before, #check26:checked +span:before, #check27:checked +span:before, #check28:checked +span:before, #check29:checked +span:before, #check30:checked +span:before, #check31:checked +span:before, #check32:checked +span:before, #check33:checked +span:before, #check34:checked +span:before, #check35:checked +span:before, #check36:checked +span:before {
     opacity: 1;
@@ -2259,17 +2319,6 @@ label {
 	height: 30px;
 	cursor: pointer;
 }
-.button-swiper-all-left:hover svg path{
-	fill: var(--first-color);
-}
-.button-swiper-all-left:focus svg .path2{
-	stroke: black;
-	stroke-width: 2px;
-}
-.button-swiper-all-left:active svg .path2{
-	stroke: black;
-	stroke-width: 2px;
-}
 .button-swiper-all-right {
 	border: none;
 	background: none;
@@ -2278,14 +2327,17 @@ label {
 	height: 30px;
 	cursor: pointer;
 }
-.button-swiper-all-right:hover svg path{
+.button-swiper-all-right svg path, .button-swiper-all-left svg path{
+	transition: fill .15s linear;
+}
+.button-swiper-all-right:hover svg path, .button-swiper-all-left:hover svg path{
 	fill: var(--first-color);
 }
-.button-swiper-all-right:focus svg .path2{
+.button-swiper-all-right:focus svg .path2, .button-swiper-all-left:focus svg .path2{
 	stroke: black;
 	stroke-width: 2px;
 }
-.button-swiper-all-right:active svg .path2{
+.button-swiper-all-right:active svg .path2, .button-swiper-all-left:active svg .path2{
 	stroke: black;
 	stroke-width: 2px;
 }
