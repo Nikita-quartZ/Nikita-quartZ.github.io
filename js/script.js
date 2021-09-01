@@ -164,7 +164,7 @@ window.addEventListener('DOMContentLoaded', function() {
     myMap.geoObjects.add(myPlacemark); 
         }
     //Все события
-    let fourthSectionButton = document.querySelector('.events__fourth-section-button')
+    let fourthSectionButton = document.querySelector('.events__focus-button')
     let fourthSectionBlockSecond = document.querySelector('.events__fourth-section-block-second')
     fourthSectionButton.addEventListener('click', function(){
         fourthSectionButton.classList.add('is-active-fourth-button')
