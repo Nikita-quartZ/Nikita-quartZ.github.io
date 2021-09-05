@@ -1985,7 +1985,46 @@ label {
 	cursor: pointer;
 	min-width: 30px;
 	height: 30px;
-	
+}
+.email {
+	position: relative;
+	right: 9999px;
+}
+.email1 {
+	background: url(../img/logo.png);
+}
+.email2 {
+	background: url(../img/picture1.jpg);
+}
+.email3 {
+	background: url(../img/picture2.jpg);
+}
+.email4 {
+	background: url(../img/picture3.jpg);
+}
+.email5 {
+	background: url(../img/picture4.jpg);
+}
+.email6 {
+	background: url(../img/picture5.jpg);
+}
+.email7 {
+	background: url(../img/calendar.png);
+}
+.email8 {
+	background: url(../img/check-square.png);
+}
+.email9 {
+	background: url(../img/arrow-up-circle.png);
+}
+.email10 {
+	background: url(../img/fb.png);
+}
+.email11 {
+	background: url(../img/vk.png);
+}
+.email12 {
+	background: url(../img/instagram.png);
 }
 .swiper-left1 svg path {
 	transition: fill .15s linear;
