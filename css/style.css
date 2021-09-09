@@ -1879,12 +1879,9 @@ label {
 	transition: filter .15s linear, opacity .15s linear;
 	opacity: 0.3;
 }
-.projects__partners:hover {
+.swiper-partner:hover .projects__partners {
 	filter: none;
 	opacity: 1;
-}
-.projects__partners:active {
-	/* border: 1px solid var(--first-color); */
 }
 .swiper-partner {
 	cursor: pointer;
