@@ -1893,6 +1893,24 @@ label {
 	border: 1px solid #CACACA;
 	transition: border .3s linear;
 }
+.i-block-link {
+	color: var(--first-color);
+	transition: background-color .15s linear;
+	outline: none;
+}
+.i-block-link:hover {
+	border-bottom: 1px solid var(--first-color);
+}
+.i-block-link:focus {
+	border: none;
+	background-color: var(--first-color);
+	color: white;
+}
+.i-block-link:active{
+	background: none;
+	border-bottom: 1px solid var(--third-color);
+	color: var(--third-color);
+}
 .swiper-partner:active {
 	border: 1px solid var(--first-color);
 }
