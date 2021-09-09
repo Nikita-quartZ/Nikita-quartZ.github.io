@@ -1894,6 +1894,7 @@ label {
 	transition: border .3s linear;
 }
 .i-block-link {
+	font-weight: 600;
 	color: var(--first-color);
 	transition: background-color .15s linear;
 	outline: none;
