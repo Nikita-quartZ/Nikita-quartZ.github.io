@@ -1875,7 +1875,13 @@ label {
 	height: 150px;
 	background-repeat: no-repeat;
 	background-size: 450px 150px;
-	transition: background-image .15s linear;
+	filter: grayscale(100%);
+	transition: filter .15s linear, opacity .15s linear;
+	opacity: 0.3;
+}
+.projects__partners:hover {
+	filter: none;
+	opacity: 1;
 }
 .projects__partners:active {
 	/* border: 1px solid var(--first-color); */
