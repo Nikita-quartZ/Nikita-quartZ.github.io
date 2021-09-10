@@ -1437,7 +1437,7 @@ input, textarea, button {
 }
 .publication__books {
 	color: var(--fourth-color);
-	margin-top: 0;
+	margin: 0;
 	padding-top: 0;
 }
 .publication__label {
@@ -1485,10 +1485,13 @@ input, textarea, button {
 	display: flex;
 	flex-direction: column;
 	margin-bottom: auto;
-	margin-top: 15px;
+	padding-top: 15px;
 }
 .publication__check-span {
 	font-weight: 600;
+	margin: 0;
+	font-size: 16px;
+	line-height: 32px;
 }
 label {
 	display: flex;
@@ -1878,6 +1881,8 @@ label {
 	filter: grayscale(100%);
 	transition: filter .15s linear, opacity .15s linear;
 	opacity: 0.3;
+	max-width: 55%;
+	max-height: 40%;
 }
 .swiper-partner:hover .projects__partners {
 	filter: none;
@@ -1893,8 +1898,15 @@ label {
 	border: 1px solid #CACACA;
 	transition: border .3s linear;
 }
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
 .i-block-link {
-	font-weight: 600;
+    font-weight: 600 ;
 	color: var(--first-color);
 	transition: background-color .15s linear;
 	outline: none;
@@ -1915,23 +1927,20 @@ label {
 .swiper-partner:active {
 	border: 1px solid var(--first-color);
 }
-.partners1 {
-	width: 244px;
-	height: 63px;
-}
 .partners2 {
+	max-height: 100%;
+	max-width: 100%;
 	width: 330px;
 	height: 59px;
 }
-.partners3 {
-	width: 229px;
-	height: 54px;
-}
 .partners4 {
+	max-height: 100%;
+	max-width: 100%;
 	width: 123px;
 	height: 85px;
 }
 .partners5 {
+	max-height: 100%;
 	width: 173px;
 	height: 85px;
 }
@@ -1939,17 +1948,9 @@ label {
 	width: 252px;
 	height: 70px;
 }
-.partners7 {
-	width: 286px;
-	height: 69px;
-}
 .partners8 {
 	width: 185px;
 	height: 81px;
-}
-.partners9 {
-	width: 229px;
-	height: 62px;
 }
 .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
 	content: none;
@@ -1963,19 +1964,17 @@ label {
 	display: flex;
 }
 .contact__phone {
-	width: 37%;
-	max-width: 682px;
+	width: 50vw;
 	border: 1px solid rgba(202, 202, 202, 1);
 	border-bottom: none;
-}
-.contact__do-call {
-	max-width: 680px;
-	padding-left: 160px;
+	padding-left: max(30px, (100vw - 1600px) / 2);
 	padding-top: 124px;
-	min-height: 699px;
+	padding-bottom: 114px;
 }
 .contact__map {
-	width: 63%;
+	max-height: 700px;
+	width: 100%;
+	max-width: 50vw;
 }
 [class*=ground-pane] {
     filter: grayscale(1)
@@ -2095,6 +2094,8 @@ label {
 }
 .swiper-container3 {
 	max-width: 1450px;
+	position: relative;
+	left: 5px;
 }
 .events__title {
 	margin-bottom: 14px;
@@ -2114,6 +2115,7 @@ label {
 	margin-bottom: 27px;
 }
 .contact__call {
+	font-weight: 400;
 	margin: 0;
 	font-size: 24px;
 	line-height: 32px;
@@ -2137,7 +2139,7 @@ label {
 	border: 1px solid #333333;
 	border-radius: 100px;
 	padding-left: 22px;
-	margin-bottom: 20px;
+	margin-bottom: 22px;
 }
 .contact__name:focus, .contact__tel:focus, .contact__name:hover, .contact__tel:hover {
 	background: #EAEAEA;
@@ -2160,6 +2162,20 @@ label {
 	font-weight: bold;
 	transition: background .15s linear;
 	cursor: pointer;
+	position: relative;
+	margin-bottom: 42px;
+}
+.contact__button-call::after {
+	opacity: 0;
+	border-radius: 100px;
+	content: "";
+	position: absolute;
+	top: -6px;
+	left: -6px;
+	width: 162px;
+	height: 63px;
+	border: 2px solid #C283F3;
+	transition: opacity .3s linear;
 }
 .contact__button-call:hover {
 	background: var(--first-color);
@@ -2167,23 +2183,14 @@ label {
 }
 .contact__button-call:focus {
 	border: 2px solid var(--third-color);
-
+}
+.contact__button-call:focus::after{
+	opacity: 1;
 }
 .contact__button-call:active {
 	border: 2px solid #D1A9F0;
 	background: var(--third-color);
 	color: var(--fourth-color);
-}
-.contact__focus-button {
-	width: 165px;
-	height: 67px;
-	padding: 2px;
-	border: 2px solid rgba(0, 0, 0, 0);
-	border-radius: 33px;
-	transition: border .3s linear;
-	position: relative;
-	right: 4px;
-	margin-bottom: 34px;
 }
 .events__focus-button {
 	width: 196px;
@@ -2202,10 +2209,11 @@ label {
 	border: 2px solid #C283F3;
 }
 .contact__phone-follow {
+	font-weight: 400;
 	margin: 0;
 	font-size: 24px;
 	line-height: 32px;
-	margin-bottom: 15px;
+	margin-bottom: 14px;
 }
 .contact__licks {
 	display: flex;
@@ -2581,6 +2589,14 @@ label {
 }
 .swiper-button-disabled.button-swiper-all-right:active svg .path2{
 	stroke-width: 0;
+}
+@media (max-width: 1950px) {
+	.contact__phone {
+		width: 35.5vw;
+	}
+	.contact__map {
+		max-width: 64.5vw;
+	}
 }
 @media (max-width: 1850px) {
 	.header__black-bar-control {
