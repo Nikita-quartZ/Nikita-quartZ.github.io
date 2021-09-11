@@ -653,6 +653,11 @@ input, textarea, button {
 	color: #333333;
 	font-weight: normal;
 }
+.publication__headers {
+	font-size: 16px;
+	line-height: 32px;
+	margin: 0;
+}
 .sixth-section {
 	margin-bottom: 13px;
 }
@@ -1873,28 +1878,26 @@ label {
 	line-height: 32px;
 }
 .projects__partners {
-	cursor: pointer;
-	width: 450px;
-	height: 150px;
 	background-repeat: no-repeat;
 	background-size: 450px 150px;
 	filter: grayscale(100%);
 	transition: filter .15s linear, opacity .15s linear;
 	opacity: 0.3;
-	max-width: 55%;
-	max-height: 40%;
+	max-width: 90%;
+	max-height: 90%;
 }
 .swiper-partner:hover .projects__partners {
 	filter: none;
 	opacity: 1;
 }
-.swiper-partner {
-	cursor: pointer;
+.swiper-link {
+	height: 150px;
+	padding: 0 35px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 450px;
-	height: 150px;
+}
+.swiper-partner {
 	border: 1px solid #CACACA;
 	transition: border .3s linear;
 }
@@ -1926,31 +1929,6 @@ input::-webkit-inner-spin-button {
 }
 .swiper-partner:active {
 	border: 1px solid var(--first-color);
-}
-.partners2 {
-	max-height: 100%;
-	max-width: 100%;
-	width: 330px;
-	height: 59px;
-}
-.partners4 {
-	max-height: 100%;
-	max-width: 100%;
-	width: 123px;
-	height: 85px;
-}
-.partners5 {
-	max-height: 100%;
-	width: 173px;
-	height: 85px;
-}
-.partners6 {
-	width: 252px;
-	height: 70px;
-}
-.partners8 {
-	width: 185px;
-	height: 81px;
 }
 .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
 	content: none;
@@ -1989,8 +1967,9 @@ input::-webkit-inner-spin-button {
 	align-items: center;
 	justify-content: space-between;
 }
-.footer__follow {
+.footer__follow-list {
 	display: flex;
+	margin: 0;
 }
 .follow-children {
 	margin-left: 14px;
@@ -2213,7 +2192,7 @@ input::-webkit-inner-spin-button {
 	margin: 0;
 	font-size: 24px;
 	line-height: 32px;
-	margin-bottom: 14px;
+	margin-bottom: 11px;
 }
 .contact__licks {
 	display: flex;
@@ -2520,9 +2499,10 @@ input::-webkit-inner-spin-button {
 	display: block;
 	width: 45px;
 	height: 45px;
-	margin-right: 20px;
-	transition: background .15s linear;
 	outline: none;
+}
+.footer__follow-children {
+	margin-right: 20px;
 }
 .footer__follow-children svg path{
 	transition: fill .15s linear;
@@ -2589,6 +2569,9 @@ input::-webkit-inner-spin-button {
 }
 .swiper-button-disabled.button-swiper-all-right:active svg .path2{
 	stroke-width: 0;
+}
+.contact {
+	overflow: hidden;
 }
 @media (max-width: 1950px) {
 	.contact__phone {
