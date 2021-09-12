@@ -1749,6 +1749,12 @@ label {
 	padding: 7px 19px;
 	transition: background .15s linear;
 }
+.header__navigation-close svg rect{
+	transition: fill .15s linear;
+}
+.header__navigation-close:hover svg rect{
+	fill: var(--first-color);
+}
 .publication__buy-picture:hover, .publication__buy-picture:focus {
 	background: var(--first-color);
 }
@@ -2238,13 +2244,20 @@ input::-webkit-inner-spin-button {
 	display: none;
 }
 .header__burger {
-	width: 36px;
-	height: 28px;
+	padding: 0;
 	background: none;
-	background-image: url(../img/Burger.svg);
 	display: none;
 	cursor: pointer;
 	border: none;
+}
+.header__burger svg {
+	fill: white;
+}
+.header__burger svg {
+	transition: fill .15s linear;
+}
+.header__burger:hover svg{
+	fill: var(--first-color);
 }
 .catalog__info-accordion-children2 {
 	display: none;
@@ -2371,6 +2384,13 @@ input::-webkit-inner-spin-button {
 	width: 29px;
 	height: 28px;
 	cursor: pointer;
+}
+.header__search-submit svg{
+	fill: var(--fourth-color);
+	transition: fill .15s linear;
+}
+.header__search-submit:hover svg{
+	fill: var(--first-color);
 }
 .header__search-submit-active {
 	margin-right: 14px;
@@ -2594,6 +2614,9 @@ input::-webkit-inner-spin-button {
 		width: 290px;
 		height: 320px;
 		margin-bottom: 0;
+	}
+	.header__login {
+		background-position: 2px 5px;
 	}
 	.header__search-open {
 		display: flex;
