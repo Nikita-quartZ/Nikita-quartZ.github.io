@@ -44,11 +44,12 @@ window.addEventListener('DOMContentLoaded', function() {
         breakpoints: {
             1850: {
               slidesPerView: 3,
-              slidesPerGroup: 3
+              slidesPerGroup: 3,
             },
             740: {
               slidesPerView: 2,
-              slidesPerGroup: 2
+              slidesPerGroup: 2,
+              spaceBetween: 30
             },
             320: {
                 slidesPerView: 1
@@ -290,13 +291,13 @@ window.addEventListener('DOMContentLoaded', function() {
         })
     })
     document.querySelector("#checks1").focus();
-    // //burger
-    // document.querySelector('.header__burger').addEventListener('click', function() {
-    //     document.querySelector('.header__navigation').classList.add('is-active');
-    // });
-    // document.querySelector('.header__navigation-close').addEventListener('click', function() {
-    //     document.querySelector('.header__navigation').classList.remove('is-active');
-    // });
+    //burger
+    document.querySelector('.header__burger').addEventListener('click', function() {
+        document.querySelector('.header__navigation').classList.add('is-active');
+    });
+    document.querySelector('.header__navigation-close').addEventListener('click', function() {
+        document.querySelector('.header__navigation').classList.remove('is-active');
+    });
     // Аккордион на мобильной версии
     document.querySelector('.acc_head6').addEventListener('click', function() {
         document.querySelector('.publication__div-borders').classList.add('div-borders-none');
@@ -316,38 +317,34 @@ window.addEventListener('DOMContentLoaded', function() {
         })
     })
     // search
-    // document.querySelector('.header__search-open').addEventListener('focus', function() {
-    //     document.querySelector('.search-div').classList.add('search-div-active');
-    //     document.querySelector('.header__search-open').classList.add('search-open-focus');
-    // });
-    // document.querySelector('.header__search-open').addEventListener('blur', function() {
-    //     setTimeout(function blur() {
-    //         document.querySelector('.search-div').classList.remove('search-div-active');
-    //         document.querySelector('.header__search-open').classList.remove('search-open-focus')
-    //     }, 0);
-    // });
-    // document.querySelector('.search-input').addEventListener('focus', function() {
-    //     setTimeout(function blur() {
-    //         document.querySelector('.search-div').classList.add('search-div-active');
-    //         document.querySelector('.header__search-open').classList.add('search-open-focus');
-    //     }, 1);
-    // });
-    // document.querySelector('.search-submit').addEventListener('focus', function() {
-    //     setTimeout(function blur() {
-    //         document.querySelector('.search-div').classList.add('search-div-active');
-    //         document.querySelector('.header__search-open').classList.add('search-open-focus');
-    //     }, 1);
-    // });
-    // document.querySelector('.search-input').addEventListener('blur',function() {
-    //         document.querySelector('.search-div').classList.remove('search-div-active');
-    //         document.querySelector('.header__search-open').classList.remove('search-open-focus')
-    // });
-    // document.querySelector('.header__search-open2').addEventListener('click', function() {
-    //     document.querySelector('.header__search-block').classList.add('search-block-active');
-    // });
-    // document.querySelector('.header__search-close2').addEventListener('click', function() {
-    //     document.querySelector('.header__search-block').classList.remove('search-block-active');
-    // });
+    document.querySelector('.header__search-submit').addEventListener('focus', () => {
+        setTimeout(() => {
+        document.querySelector('.header__search-open').classList.add('search-open-focus');
+        setTimeout(() => {
+            document.querySelector('.header__search-input').classList.add('search-input-focus');
+        }, 300)
+        document.querySelector('.header__search-submit').classList.add('header__search-submit-active')}, 500);
+    });
+    document.querySelector('.header__search-input').addEventListener('focus', () => {
+        setTimeout(() => {
+            document.querySelector('.header__search-open').classList.add('search-open-focus');
+            setTimeout(() => {
+                document.querySelector('.header__search-input').classList.add('search-input-focus');
+            }, 300)
+            document.querySelector('.header__search-submit').classList.add('header__search-submit-active')}, 500);
+    });
+    document.querySelector('.header__search-submit').addEventListener('blur', () => {
+        setTimeout(() => {
+            document.querySelector('.header__search-open').classList.remove('search-open-focus');
+            document.querySelector('.header__search-input').classList.remove('search-input-focus');
+            document.querySelector('.header__search-submit').classList.remove('header__search-submit-active')}, 500);
+    });
+    document.querySelector('.header__search-input').addEventListener('blur', () => {
+        setTimeout(() => {
+            document.querySelector('.header__search-open').classList.remove('search-open-focus');
+            document.querySelector('.header__search-input').classList.remove('search-input-focus');
+            document.querySelector('.header__search-submit').classList.remove('header__search-submit-active')}, 500);
+    });
     document.querySelector('.contact__button-call').addEventListener("focus", () => {
         document.querySelector(".contact__focus-button").classList.add("contact__focus-button-active")
     })
