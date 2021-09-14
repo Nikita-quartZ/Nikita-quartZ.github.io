@@ -32,7 +32,7 @@ window.addEventListener('DOMContentLoaded', function() {
     var mySwiper = new Swiper('.swiper-container1', {
         loop: false,
         slidesPerView: 3,
-        spaceBetween: 50,
+        spaceBetween: 54,
         pagination: {
         el: '.gallery__swiper-pagination',
         type: 'fraction'
@@ -42,7 +42,7 @@ window.addEventListener('DOMContentLoaded', function() {
         prevEl: '.first-button-swiper1',
         },
         breakpoints: {
-            1850: {
+            1500: {
               slidesPerView: 3,
               slidesPerGroup: 3,
             },
@@ -70,7 +70,7 @@ window.addEventListener('DOMContentLoaded', function() {
         prevEl: '.first-button-swiper2',
         },
         breakpoints: {
-            1850: {
+            1500: {
               slidesPerView: 3,
               slidesPerGroup: 3
             },
@@ -92,7 +92,7 @@ window.addEventListener('DOMContentLoaded', function() {
         prevEl: '.swiper-left1',
         },
         breakpoints: {
-            1850: {
+            1500: {
               slidesPerView: 3,
               slidesPerGroup: 3
             },
