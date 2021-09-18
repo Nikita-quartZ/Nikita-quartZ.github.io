@@ -1314,8 +1314,7 @@ input, textarea, button {
 	display: none;
 }
 .events__fourth-section-children-add {
-	border: none;
-	height: 0;
+	opacity: 0;
 }
 .is-active-fourth-block {
 	display: flex;
@@ -1967,6 +1966,9 @@ input::-webkit-inner-spin-button {
 }
 [class*=ground-pane] {
     filter: grayscale(1)
+}
+.contact {
+	overflow: hidden;
 }
 .footer {
 	background-color: black;
@@ -2803,7 +2805,6 @@ input::-webkit-inner-spin-button {
 		margin-left: auto;
 	}
 	.events__fourth-section-block-first {
-		max-width: 1000px;
 		margin: 0 auto;
 		margin-bottom: 48px;
 	}
@@ -2835,20 +2836,47 @@ input::-webkit-inner-spin-button {
 		max-width: 594px;
 		margin-left: auto;
 	}
-	.header__black-bar-control {
-		padding: 32px 0;
+	
+	.header__logo {
+		margin-right: 50px;
 	}
 	.header__navigation-children {
-		margin-bottom: 30px;
+		margin-right: 20px;
 	}
 	.header__navigation-children:nth-child(8) {
-		margin-bottom: 195px;
+		margin-right: 0px;
 	}
-	.header__black-bar {
-		background-image: url(../img/logo.svg);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: 187px, 42px;
+	.header__painters-children {
+		margin-right: 40px !important;
+	}
+}
+@media (max-width: 1300px) {
+	.header__logo {
+		margin-right: 20px;
+	}
+	.header__navigation-children {
+		margin-right: 9px;
+	}
+	.header__navigation-children:nth-child(8) {
+		margin-right: 0px;
+	}
+	.header__painters-children {
+		margin-right: 10px !important;
+	}
+	.header__header-input {
+		width: 150px;
+	}
+}
+@media (max-width: 1024px) {
+	.header {
+		animation: change-background1024 25s ease infinite;
+	}
+	.gallery {
+		background-image: url(../img/Fon\ 2x.jpg);
+	}
+	.publication {
+		background-image: url(../img/birmingham2.jpg);
+		padding-bottom: 0px;
 	}
 	.header__login-burger {
 		display: flex;
@@ -2863,6 +2891,12 @@ input::-webkit-inner-spin-button {
 	}
 	.header__burger {
 		display: block;
+	}
+	.country-header {
+		margin-right: 30px;
+	}
+	.catalog__country-block {
+		margin-right: 34px;
 	}
 	.header__navigation {
 		display: block;
@@ -2885,30 +2919,59 @@ input::-webkit-inner-spin-button {
 	.is-active {
 		transform: none;
 	}
-}
-@media (max-width: 1024px) {
-	.header {
-		animation: change-background1024 25s ease infinite;
+	.header__black-bar {
+		background-image: url(../img/logo.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 187px, 42px;
 	}
-	.gallery {
-		background-image: url(../img/Fon\ 2x.jpg);
+	.header__navigation-children {
+		margin-bottom: 30px;
 	}
-	.publication {
-		background-image: url(../img/birmingham2.jpg);
-		padding-bottom: 0px;
+	.header__navigation-children:nth-child(8) {
+		margin-bottom: 195px;
+	}
+	.header__black-bar-control {
+		padding: 32px 0;
 	}
 }
 @media (max-width: 975px) {
-	.publication__checkbox-block {
-		margin-top: 15px;
+	.catalog__info-accordion1 {
+		display: flex;
+		margin-bottom: 25px;
+	}
+	.catalog__info-accordion-children {
+		position: static;
+	}
+	.catalog__info-accordion-children:nth-child(1) {
+		margin-right: 40px;
+	}
+	.catalog__info-accordion2 {
+		display: none;
 	}
 	.header__search-open2 {
 		display: block;
 	}
 	.events__fourth-section-block-first {
-		max-width: 735px;
 		margin: 0 auto;
 		margin-bottom: 50px;
+	}
+	.publication__list {
+		display: flex;
+	}
+	.publication__list-labels {
+		width: 33%;
+	}
+	.publication__list-labels:nth-child(2) {
+		padding-left: 8px;
+	}
+	.publication__list-labels:nth-child(3) {
+		position: relative;
+		left: 45px;
+	}
+	.publication__label {
+		width: 100% !important;
+		max-width: 100% !important;
 	}
 	.first-button-swiper21 {
 		display: block;
@@ -2921,10 +2984,10 @@ input::-webkit-inner-spin-button {
 		display: none;
 	}
 	.gallery {
-		height: 1169px;
+		padding-bottom: 66px;
 	}
 	.about-us {
-		margin-bottom: 69px;
+		padding-top: 80px;
 	}
 	.choices {
 		width: 280px;
@@ -2949,23 +3012,25 @@ input::-webkit-inner-spin-button {
 		display: block;
 		position: static;
 		width: 100%;
+		position: relative;
+		bottom: 5px;
+	}
+	.gallery__first-block {
+		min-height: 0px;
+	}
+	.gallery__flexblock {
+		display: none;
 	}
 	.country-effect {
 		position: relative;
 		bottom: 7px;
-	}
-	.catalog__country-block:first-of-type {
-		margin-left: 33px;
-	}
-	.catalog__country-block {
-		margin-left: 34px;
 	}
 	.catalog__info-about-painters {
 		display: flex;
 		flex-direction: column-reverse;
 	}
 	.catalog__info-painter {
-		margin-top: 33px;
+		padding-top: 30px;
 		width: 100%;
 		padding-right: 0;
 	}
@@ -2976,25 +3041,21 @@ input::-webkit-inner-spin-button {
 	.catalog__painters-paragraph {
 		margin-bottom: 21px;
 	}
-	.catalog__info-accordion-children1 {
-		display: block;
-	}
 	.catalog__info-accordion-children2 {
 		display: none;
 	}
 	.catalog__info-accordion-children:nth-child(2) {
 		left: 33px;
 	}
-	.catalog__info-accordion-children:nth-child(3) {
-		position: relative;
-		left: 67px;
-	}
-	.accordionjs .acc_section {
-		padding: 30px 0;
-	}
 	.catalog__painter {
 		height: 419px;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
+	}
+	.events__section-768 {
+		display: none;
+	}
+	.events {
+		padding-top: 70px;
 	}
 	.fourth-section {
 		margin-top: 70px;
@@ -3006,14 +3067,15 @@ input::-webkit-inner-spin-button {
 		display: block;
 	}
 	.events__fourth-section-children {
-		max-width: 318px;
+		height: 100%;
+		max-width: 320px;
 		padding-bottom: 106px;
+	}
+	.events__fourth-section-children:nth-child(2) {
+		margin-right: 0;
 	}
 	.events__event-paragraph {
 		max-width: 243px;
-	}
-	.events__additional-info {
-		bottom: 51px;
 	}
 	.events__fourth-section-button {
 		margin-bottom: 83px;
@@ -3024,31 +3086,31 @@ input::-webkit-inner-spin-button {
 	.publication__left-colomn {
 		width: 100%;
 	}
-	.left-colomn1 {
-		display: none;
+	.publication {
+		padding-top: 85px;
+	}
+	.events__focus-button {
+		margin-bottom: 74px;
 	}
 	.left-colomn2 {
 		display: block;
 	}
 	.gallery__button-swiper1 {
-		margin-top: 84px;
+		padding-top: 64px;
+		margin-bottom: 45px;
 		margin-left: 0;
+		padding-left: 0;
 	}
-	.accordionjs .acc_section.acc_active > .acc_head {
-		padding-top: 7px;
-		padding-bottom: 45px;
-	}
-	.accordionjs .acc_section .acc_head {
-		padding-bottom: 14px;
-		padding-top: 6px;
-	}
-	.publication__cost-from, .publication__cost-paragraph {
-		display: none;
+	.gallery__picture, .gallery__picture-all {
+		width: 317px;
 	}
 	.publication__cost-block {
 		display: block;
-		margin-top: 26px;
-		margin-bottom: 42px;
+		padding-top: 25px;
+		margin-bottom: 15px;
+	}
+	.publication__left-colomn {
+		min-height: 270px;
 	}
 	.cost-paragraph768 {
 		display: block;
@@ -3073,7 +3135,21 @@ input::-webkit-inner-spin-button {
 		margin: 0 auto;
 	}
 	.publication__button-swiper2 {
-		left: -15px;
+		position: relative;
+		left: -27px;
+	}
+	.sixth-section {
+		margin-bottom: 16px;
+	}
+	.projects-paragraph1 {
+		margin-bottom: 60px;
+	}
+	.swiper-container3 {
+		width: 562px;
+	}
+	.swiper-link {
+		height: 104px;
+		padding: 0 12px;
 	}
 	.projects__link-blanchard {
 		display: block;
@@ -3093,6 +3169,25 @@ input::-webkit-inner-spin-button {
 		bottom: 33px;
 		margin-right: 0;
 		max-width: 290px;
+	}
+	.contact__phone {
+		width: 56%;
+	}
+	.contact__map {
+		width: 44%;
+	}
+	.contact {
+		padding-top: 78px;
+	}
+	.events__fourth-section-children-add {
+		margin-top: 50px;
+		opacity: 1;
+	}
+	.is-active-fourth-block {
+		flex-wrap: wrap;
+	}
+	.events__section-info-add {
+		margin-bottom: 64px;
 	}
 }
 @media (max-width: 740px) {

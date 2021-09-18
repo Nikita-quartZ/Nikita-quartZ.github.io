@@ -76,7 +76,8 @@ window.addEventListener('DOMContentLoaded', function() {
             },
             740: {
               slidesPerView: 2,
-              slidesPerGroup: 2
+              slidesPerGroup: 2,
+              spaceBetween: 34
             },
             320: {
                 slidesPerView: 1
@@ -98,7 +99,8 @@ window.addEventListener('DOMContentLoaded', function() {
             },
             740: {
               slidesPerView: 2,
-              slidesPerGroup: 2
+              slidesPerGroup: 2,
+              spaceBetween: 34
             },
             320: {
                 slidesPerView: 1
