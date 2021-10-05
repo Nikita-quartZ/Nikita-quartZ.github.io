@@ -122,6 +122,19 @@ window.addEventListener('DOMContentLoaded', function() {
         prevEl: '.swiper-left2',
         }
     });
+    var mySwiper = new Swiper('.swiper-container6', {
+        loop: true,
+
+        pagination: {
+            el: '.gallery__swiper-pagination6',
+            type: 'fraction'
+            },
+    
+        navigation: {
+        nextEl: '.second-button-swiper6',
+        prevEl: '.first-button-swiper6',
+        }
+    });
     // Javascript для accordion
     function accordionFunc(section){
         $(section).accordionjs({
@@ -143,7 +156,19 @@ window.addEventListener('DOMContentLoaded', function() {
     accordionFunc("#my-accordion3")
     accordionFunc("#my-accordion4")
     accordionFunc("#my-accordion5")
-    accordionFunc("#my-accordion6")
+    $("#my-accordion6").accordionjs({
+        closeAble   : true,
+
+        closeOther  : true,
+
+        slideSpeed  : 150,
+
+        activeIndex : false,
+
+        openSection: function( section ){},
+
+        beforeOpenSection: function( section ){},
+    });
     //Javascript для Яндекс.Карт
     ymaps.ready(init);
         function init(){
@@ -301,21 +326,18 @@ window.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.header__navigation').classList.remove('is-active');
     });
     // Аккордион на мобильной версии
-    document.querySelector('.acc_head6').addEventListener('click', function() {
-        document.querySelector('.publication__div-borders').classList.add('div-borders-none');
-    });
     document.querySelectorAll('.label-bord').forEach(function(tabs) {
         tabs.addEventListener('click', function(even){
             const check = even.currentTarget.dataset.check
 
-            console.log(document.querySelector(`[data-target="${check}"]`).classList.add('div-border-active'))
+            document.querySelector(`[data-target="${check}"]`).classList.add('div-border-active')
         })
     })
     document.querySelectorAll('.publication__check-button').forEach(function(tabs2) {
         tabs2.addEventListener('click', function(even2){
             const chec = even2.currentTarget.dataset.chec
             
-            console.log(document.querySelector(`[data-target="${chec}"]`).classList.remove('div-border-active'))
+            document.querySelector(`[data-target="${chec}"]`).classList.remove('div-border-active')
         })
     })
     // search
