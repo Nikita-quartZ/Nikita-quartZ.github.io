@@ -59,7 +59,7 @@ window.addEventListener('DOMContentLoaded', function() {
     });
     var mySwiper = new Swiper('.swiper-container2', {
         loop: false,
-        spaceBetween: 50,
+        spaceBetween: 55,
         pagination: {
         el: '.swiper-pagination',
         type: 'fraction'
@@ -74,14 +74,20 @@ window.addEventListener('DOMContentLoaded', function() {
               slidesPerView: 3,
               slidesPerGroup: 3
             },
-            740: {
+            769: {
               slidesPerView: 2,
               slidesPerGroup: 2,
-              spaceBetween: 34
+              spaceBetween: 47
+            },
+            740: {
+                slidesPerView: 2,
+                slidesPerGroup: 2,
+                spaceBetween: 35
             },
             320: {
-                slidesPerView: 1
-                ,slidesPerGroup: 1
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                spaceBetween: 35
             }
         }
     });
@@ -97,14 +103,20 @@ window.addEventListener('DOMContentLoaded', function() {
               slidesPerView: 3,
               slidesPerGroup: 3
             },
+            769: {
+              slidesPerView: 2,
+              slidesPerGroup: 2,
+              spaceBetween: 45
+            },
             740: {
               slidesPerView: 2,
               slidesPerGroup: 2,
-              spaceBetween: 34
+              spaceBetween: 35
             },
             320: {
-                slidesPerView: 1
-                ,slidesPerGroup: 1
+                slidesPerView: 1,
+                slidesPerGroup: 1
+                
             }
         }
     });
