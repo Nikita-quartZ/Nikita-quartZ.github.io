@@ -80,6 +80,12 @@
                                 </svg>
                             </button>
                             <input class="header__search-input" type="text" value="" name="search" id="search">
+                            <button class="header__btn-close">
+                                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2.63672" width="37.2838" height="3.72838" transform="rotate(45 2.63672 0)" fill="white"/>
+                                    <rect y="26.3636" width="37.2838" height="3.72838" transform="rotate(-45 0 26.3636)" fill="white"/>
+                                </svg>                                    
+                            </button>
                         </div>
                     </nav>
                 </div>
@@ -1829,10 +1835,10 @@
                                                 <li class="catalog__name-painter-all" data-painters="b1" data-info="b101" data-target="b1"><button class="catalog__name-personal">Benedetto di Bindo</button></li>
                                                 <li class="catalog__name-painter-all" data-painters="b2" data-info="b102"  data-target="b2"><button class="catalog__name-personal">Bergognone, Ambrogio</button></li>
                                                 <li class="catalog__name-painter-all" data-painters="b3" data-info="b103"  data-target="b3"><button class="catalog__name-personal">Bissolo, Francesco</button></li>
-                                                <li class="catalog__name-painter-all" data-painters="b4" data-info="b104"  data-target="b4"><button class="catalog__name-personal">Boltraffio, Giovanni</button></li>
-                                                <li class="catalog__name-painter-all" data-painters="b5" data-info="b105"  data-target="b5"><button class="catalog__name-personal">Bonsignori, Francesco</button></li>
+                                                <li class="e-painter-all" data-painters="b5" data-info="b105"  data-target="b5"><button class="catalog__name-personal">Bonsignori, Francesco</button></li>
                                                 <li class="catalog__name-painter-all" data-painters="b6" data-info="b106"  data-target="b6"><button class="catalog__name-personal">Botticini, Rafaello</button></li>
-                                                <li class="catalog__name-painter-all name-painter-all-active" data-painters="b7" data-info="b107"  data-target="b7"><button class="catalog__name-personal">Bramantino</button></li>
+                                                <li class="catalog__name-paincatalog__name-painter-all" data-painters="b4" data-info="b104"  data-target="b4"><button class="catalog__name-personal">Boltraffio, Giovanni</button></li>
+                                                <li class="catalog__namter-all name-painter-all-active" data-painters="b7" data-info="b107"  data-target="b7"><button class="catalog__name-personal">Bramantino</button></li>
                                                 <li class="catalog__name-painter-all" data-painters="b8" data-info="b108"  data-target="b8"><button class="catalog__name-personal">Brea, Ludovico</button></li>
                                                 <li class="catalog__name-painter-all" data-painters="b9" data-info="b109"  data-target="b9"><button class="catalog__name-personal">Biagio D ' Antonio Tucci</button></li>
                                             </div>
@@ -2311,7 +2317,7 @@
                         <div class="publication__cost-block cost-block320">
                             <h3 class="publication__cost-paragraph cost-paragraph320 publication__headers">Цена</h3>
                             <div class="publication__cost-from cost-from320">
-                                <span class="publication__from">От</span><input type="text" class="publication__cost-input"><span class="publication__to">до</span><input type="text" class="publication__cost-input cost-input2"><span class="publication__ruble">руб</span>
+                                <span class="publication__from">От</span><input type="number" class="publication__cost-input"><span class="publication__to">до</span><input type="number" class="publication__cost-input cost-input2"><span class="publication__ruble">руб</span>
                             </div>
                         </div>
                         <div class="publication__flex-block-book">
@@ -2585,7 +2591,7 @@
                 <div class="contact__phone">
                     <p class="contact__locate"><span class="contact__locate-H">Шоурум №4</span>Леонтьевский переулок, дом 5/1</p>
                     <h3 class="contact__call contact__call1">Заказать обратный звонок</h3>
-                    <form action="#" class="contact__form-for-call contact__form-for-call1">
+                    <form action="mail.php" enctype="multipart/form-data" class="contact__form-for-call contact__form-for-call1" method="POST">
                         <input type="text" placeholder="Имя*" data-validate-field="name" name="Имя" class="contact__name">
                         <input type="tel" placeholder="Телефон*" data-validate-field="tel" name="tel" class="contact__tel">
                         <button type="submit" class="contact__button-call">Заказать</button>
