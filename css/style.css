@@ -118,6 +118,25 @@
 	--third-color: #7943A4;
 	--fourth-color: #FFF;
 }
+.tippy-box[data-theme~='main'] {
+	background-color: var(--first-color);
+	color: var(--fourth-color);
+  }
+.tippy-box[data-theme~='main'][data-placement^='top'] > .tippy-arrow::before {
+	border-top-color: var(--first-color);
+}
+.tippy-box[data-theme~='main'][data-placement^='bottom'] > .tippy-arrow::before {
+	border-bottom-color: var(--first-color);
+}
+.tippy-box[data-theme~='main'][data-placement^='left'] > .tippy-arrow::before {
+	border-left-color: var(--first-color);
+}
+.tippy-box[data-theme~='main'][data-placement^='right'] > .tippy-arrow::before {
+	border-right-color: var(--first-color);
+}
+.tippy-box[data-theme~='main'] > .tippy-svg-arrow {
+	fill: var(--first-color);
+  }
 * {
 	box-sizing: border-box;
 }
@@ -1835,7 +1854,7 @@ label {
 .toolip-block {
 	position: relative;
 }
-.i-block1, .i-block2, .i-block3 {
+.i-block {
 	display: inline-block;
 	position: relative;
 	top: 3px;
@@ -1844,57 +1863,17 @@ label {
 	cursor: pointer;
 	outline: none;
 }
-.i-block1 svg, .i-block2 svg, .i-block3 svg {
+.i-block svg {
 	transition: fill .3s linear;
 }
-.i-block1:hover svg, .i-block2:hover svg, .i-block3:hover svg{
+.i-block:hover svg{
 	fill: #D1A9F0;
 }
-.i-block1:focus svg, .i-block2:focus svg, .i-block3:focus svg {
+.i-block:focus svg{
 	fill: #9D5CD0;
 }
-.i-block1:focus path:last-child, .i-block2:focus path:last-child, .i-block3:focus path:last-child{
+.i-block:focus path:last-child{
 	fill: white;
-}
-.tooltip {
-	background-image: url(../img/Rectangle\ 42-2.svg);
-	background-repeat: no-repeat;
-	position: absolute;
-	bottom: 23px;
-	left: -125px;
-	width: 264px;
-	height: 59px;
-	font-weight: 600;
-	font-size: 12px;
-	line-height: 16px;
-	color: var(--fourth-color);
-	opacity: 0;
-	text-align: center;
-	padding-top: 8px;
-	transition: opacity .15s linear;
-}
-.tooltip2 {
-	background-image: url(../img/Rectangle\ 42-3.svg);
-	bottom: 15px;
-	left: -125px;
-	width: 264px;
-	height: 80px;
-}
-.tooltip3 {
-	background-image: url(../img/Rectangle\ 42-1.svg);
-	bottom: 21px;
-	left: -109px;
-	width: 242px;
-	height: 42px;
-}
-.i-block1:hover + .tooltip1, .i-block1:focus + .tooltip1 {
-	opacity: 1;
-}
-.i-block2:hover + .tooltip2, .i-block2:focus + .tooltip2 {
-	opacity: 1;
-}
-.i-block3:hover + .tooltip3, .i-block3:focus + .tooltip3 {
-	opacity: 1;
 }
 .projects__link-blanchard {
 	color: var(--first-color);
@@ -2535,6 +2514,10 @@ input::-webkit-inner-spin-button {
 }
 .footer__follow-children:last-child {
 	margin: 0;
+}
+.tooltip-all {
+	text-align: center;
+	display: block;
 }
 .header__non-main-paragraph {
 	position: absolute;

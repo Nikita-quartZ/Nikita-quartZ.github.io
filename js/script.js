@@ -389,16 +389,57 @@ window.addEventListener('DOMContentLoaded', function () {
   //         document.querySelector('.header__search-input').classList.remove('search-input-focus');
   //         document.querySelector('.header__search-submit').classList.remove('header__search-submit-active')}, 500);
   // });
-  document.querySelector('.contact__button-call').addEventListener("focus", () => {
-    document.querySelector(".contact__focus-button").classList.add("contact__focus-button-active")
-  })
-  document.querySelector('.contact__button-call').addEventListener("blur", () => {
-    document.querySelector(".contact__focus-button").classList.remove("contact__focus-button-active")
-  })
   document.querySelector('.events__fourth-section-button').addEventListener("focus", () => {
     document.querySelector(".events__focus-button").classList.add("contact__focus-button-active")
   })
   document.querySelector('.events__fourth-section-button').addEventListener("blur", () => {
     document.querySelector(".events__focus-button").classList.remove("contact__focus-button-active")
   })
+
+  const form = document.querySelector('.contact__form-for-call1');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      // fetch
+    
+      let formData = new FormData(form);
+    
+      fetch('../php/mail.php', { method: 'POST', body: formData })
+        .then(() => console.log('отправлено'))
+        .catch(() => console.log('some error'));
+    
+      // let xhr = new XMLHttpRequest();
+    
+      // xhr.onreadystatechange = function() {
+      // 	if (xhr.readyState === 4) {
+      // 		if (xhr.status === 200) {
+      // 			console.log('Отправлено');
+      // 		}
+      // 	}
+      // }
+    
+      // xhr.open('POST', 'mail.php', true);
+      // xhr.send(formData);
+    
+      form.reset();
+    
+    });
+    tippy('#i-block1', {
+      trigger: 'focus',
+      content: '<span class="tooltip-all">Пример современных тенденций - современная методология разработки</span>',
+      allowHTML: true,
+      theme: 'main',
+    });
+    tippy('#i-block2', {
+      trigger: 'focus',
+      content: '<span class="tooltip-all">Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции</span>',
+      allowHTML: true,
+      theme: 'main',
+    });
+    tippy('#i-block3', {
+      trigger: 'focus',
+      content: '<span class="tooltip-all">В стремлении повысить качество</span>',
+      allowHTML: true,
+      theme: 'main',
+    });
 });
