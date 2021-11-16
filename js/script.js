@@ -407,6 +407,8 @@ window.addEventListener('DOMContentLoaded', function () {
       fetch('../php/mail.php', { method: 'POST', body: formData })
         .then(() => console.log('отправлено'))
         .catch(() => console.log('some error'));
+      form.reset();
+    
     });
     tippy('#i-block1', {
       trigger: 'focus',
