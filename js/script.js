@@ -415,6 +415,7 @@ window.addEventListener('DOMContentLoaded', function () {
       content: '<span class="tooltip-all">Пример современных тенденций - современная методология разработки</span>',
       allowHTML: true,
       theme: 'main',
+      interactiveBorder: 0
     });
     tippy('#i-block2', {
       trigger: 'focus',
