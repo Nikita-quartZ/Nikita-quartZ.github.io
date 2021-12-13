@@ -48,35 +48,35 @@ window.addEventListener('DOMContentLoaded', function () {
       }
     },
     submitHandler: function (form) {
-      // let formData = new FormData(form);
-      // let xhr = new XMLHttpRequest();
+      let formData = new FormData(form);
+      let xhr = new XMLHttpRequest();
       
-      // xhr.onreadystatechange = function () {
-      //   if (xhr.readyState === 4) {
-      //     if (xhr.status === 200) {
-      //       console.log("Отправлено")
-      //     }
-      //   }
-      // }
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+          if (xhr.status === 200) {
+            console.log("Отправлено")
+          }
+        }
+      }
 
-      // xhr.open("POST", "../php/mail.php", true);
-      // xhr.send(formData);
+      xhr.open("POST", "../php/mail.php", true);
+      xhr.send(formData);
 
-      // form.reset();
+      form.reset();
 
 
-      document.querySelector('#frmContact').addEventListener('submit', (e) => {
-        e.preventDefault();
-        // fetch
+      // document.querySelector('#frmContact').addEventListener('submit', (e) => {
+      //   e.preventDefault();
+      //   // fetch
 
-        let formData = new FormData(form);
+      //   let formData = new FormData(form);
 
-        fetch('../php/mail.php', { method: 'POST', body: formData })
-          .then(() => console.log('отправлено'))
-          .catch(() => console.log('some error'));
-        form.reset();
+      //   fetch('../php/mail.php', { method: 'POST', body: formData })
+      //     .then(() => console.log('отправлено'))
+      //     .catch(() => console.log('some error'));
+      //   form.reset();
 
-      });
+      // });
     
     }
   });
