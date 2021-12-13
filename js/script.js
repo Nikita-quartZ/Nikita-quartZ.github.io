@@ -396,20 +396,20 @@ window.addEventListener('DOMContentLoaded', function () {
     document.querySelector(".events__focus-button").classList.remove("contact__focus-button-active")
   })
 
-  const form = document.querySelector('#frmContact');
+  // const form = document.querySelector('#frmContact');
 
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      // fetch
+  //   form.addEventListener('submit', (e) => {
+  //     e.preventDefault();
+  //     // fetch
     
-      let formData = new FormData(form);
+  //     let formData = new FormData(form);
     
-      fetch('../php/mail.php', { method: 'POST', body: formData })
-        .then(() => console.log('отправлено'))
-        .catch(() => console.log('some error'));
-      form.reset();
+  //     fetch('../php/mail.php', { method: 'POST', body: formData })
+  //       .then(() => console.log('отправлено'))
+  //       .catch(() => console.log('some error'));
+  //     form.reset();
     
-    });
+  //   });
     tippy('#i-block1', {
       trigger: 'focus',
       content: '<span class="tooltip-all">Пример современных тенденций - современная методология разработки</span>',
