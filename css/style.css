@@ -1875,6 +1875,13 @@ label {
 .i-block:focus path:last-child{
 	fill: white;
 }
+.contact__label-form {
+	padding-left: 0;
+	position: relative;
+	display: flex;
+	flex-direction: column-reverse;
+	margin-bottom: 23px;
+}
 .projects__link-blanchard {
 	color: var(--first-color);
 	font-weight: 600;
@@ -2134,7 +2141,6 @@ input::-webkit-inner-spin-button {
 	border: 1px solid #333333;
 	border-radius: 100px;
 	padding-left: 22px;
-	margin-bottom: 23px;
 }
 .contact__tel {
 	width: 400px;
