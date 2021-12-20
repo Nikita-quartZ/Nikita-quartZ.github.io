@@ -3261,6 +3261,10 @@ input::-webkit-inner-spin-button {
 	}
 }
 @media (max-width: 740px) {
+	.catalog__name-personal {
+		margin-left: 0;
+		padding-left: 0;
+	}
 	.search-open-focus {
 		left: 0;
 		top: 0px;
