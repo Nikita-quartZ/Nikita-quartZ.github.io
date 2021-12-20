@@ -383,12 +383,6 @@ window.addEventListener('DOMContentLoaded', function () {
       document.querySelector('.header__btn-close').classList.remove('header__btn-close-active');
     }
   });
-  // document.querySelector('.header__search-input').addEventListener('blur', () => {
-  //     setTimeout(() => {
-  //         document.querySelector('.header__search-open').classList.remove('search-open-focus');
-  //         document.querySelector('.header__search-input').classList.remove('search-input-focus');
-  //         document.querySelector('.header__search-submit').classList.remove('header__search-submit-active')}, 500);
-  // });
   document.querySelector('.events__fourth-section-button').addEventListener("focus", () => {
     document.querySelector(".events__focus-button").classList.add("contact__focus-button-active")
   })
