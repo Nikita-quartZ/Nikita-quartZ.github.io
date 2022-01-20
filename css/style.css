@@ -1978,7 +1978,6 @@ input::-webkit-inner-spin-button {
   padding-bottom: 114px;
 }
 .contact__map {
-  max-height: 700px;
   width: 100%;
   max-width: 50vw;
 }

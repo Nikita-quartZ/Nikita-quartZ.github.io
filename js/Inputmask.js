@@ -61,7 +61,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
       xhr.open("POST", "../php/mail.php", true);
       xhr.send(formData);
-
+      alert("Сообщение отправлено")
       form.reset();
 
 
