@@ -298,23 +298,6 @@ window.addEventListener('DOMContentLoaded', function () {
       }
     })
   })
-  document.querySelectorAll('.header__painters-children-name').forEach(function (tabsBtn7) {
-    tabsBtn7.addEventListener('click', function (event7) {
-      const focu = event7.currentTarget.dataset.focu
-      let booll = 0
-      if (document.querySelector(`[data-target="${focu}"]`).classList.contains('header__painters-focus-block-active')) {
-        booll = 1
-      } else {
-        booll = 0
-      }
-      document.querySelectorAll('.header__painters-focus-block').forEach(function (tabCon31) {
-        tabCon31.classList.remove('header__painters-focus-block-active')
-      })
-      if (booll == 0) {
-        document.querySelector(`[data-target="${focu}"]`).classList.add('header__painters-focus-block-active')
-      }
-    })
-  })
   document.querySelector("#checks1").focus();
   //burger
   document.querySelector('.header__burger').addEventListener('click', function () {
