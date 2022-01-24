@@ -3,26 +3,6 @@ window.addEventListener('DOMContentLoaded', function () {
   var selector = document.querySelector("input[type='tel']");
   var im = new Inputmask("+7 (999)-999-99-99");
   im.mask(selector);
-
-  // let validateForms = function(selector, rules, successModal, yaGoals) {
-  //   new window.JustValidate(selector, {
-  //     rules: rules,
-  //     submitHandler: function(form) {
-  //       let formData = new FormData(form);
-  //       let xhr = new XMLHttpRequest();
-  //       xhr.onreadystatechange = function() {
-  //         if (xhr.readyState === 4) {
-  //           if (xhr.status ===200) {
-  //             console.log("Отправлено")
-  //           }
-  //         }
-  //       }
-  //       xhr.open("POST", "mail.php", true);
-  //       xhr.send(formData);
-  //       form.reset();
-  //     }
-  //   })
-  // }
   new JustValidate('.contact__form-for-call', {
     rules: {
       name: {
@@ -58,26 +38,10 @@ window.addEventListener('DOMContentLoaded', function () {
           }
         }
       }
-      console.log(formData);
       xhr.open("POST", "../php/mail.php", true);
       xhr.send(formData);
-      alert("Сообщение отправлено")
+      document.querySelector(".contact__back-block").style.display = 'block';
       form.reset();
-
-
-      // document.querySelector('#frmContact').addEventListener('submit', (e) => {
-      //   e.preventDefault();
-      //   // fetch
-
-      //   let formData = new FormData(form);
-
-      //   fetch('../php/mail.php', { method: 'POST', body: formData })
-      //     .then(() => console.log('отправлено'))
-      //     .catch(() => console.log('some error'));
-      //   form.reset();
-
-      // });
-    
     }
   });
 });
