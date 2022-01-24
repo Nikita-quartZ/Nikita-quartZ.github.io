@@ -58,7 +58,7 @@ window.addEventListener('DOMContentLoaded', function () {
           }
         }
       }
-
+      console.log(formData);
       xhr.open("POST", "../php/mail.php", true);
       xhr.send(formData);
       alert("Сообщение отправлено")
