@@ -1978,6 +1978,7 @@ input::-webkit-inner-spin-button {
   padding-top: 124px;
 }
 .contact__back-block {
+  z-index: 9999;
   background: rgba(0, 0, 0, 0.4);
   position: fixed;
   width: 100vw;
@@ -1987,7 +1988,7 @@ input::-webkit-inner-spin-button {
   bottom: 0;
   right: 0;
   display: none;
-  padding-top: 50px;
+  padding-top: 40vh;
 }
 .contact__block {
   text-align: center;
@@ -1997,7 +1998,6 @@ input::-webkit-inner-spin-button {
   width: 400px;
   display: block;
   margin: 0 auto;
-  top: 50px;
   border: 2px solid var(--first-color);
   border-radius: 5px;
   height: 150px;

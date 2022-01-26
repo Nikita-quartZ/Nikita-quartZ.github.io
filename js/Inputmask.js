@@ -41,6 +41,7 @@ window.addEventListener('DOMContentLoaded', function () {
       xhr.open("POST", "../php/mail.php", true);
       xhr.send(formData);
       document.querySelector(".contact__back-block").style.display = 'block';
+      $("html,body").css("overflow","hidden");
       form.reset();
     }
   });

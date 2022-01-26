@@ -371,7 +371,7 @@ window.addEventListener('DOMContentLoaded', function () {
   })
   document.querySelector('.events__fourth-section-button').addEventListener("blur", () => {
     document.querySelector(".events__focus-button").classList.remove("contact__focus-button-active")
-  })
+  });
   const button = document.querySelector(".contact__button-call")
     const block = document.querySelector(".contact__back-block")
   document.querySelector(".contact__block").addEventListener("click", event => {
@@ -379,6 +379,7 @@ window.addEventListener('DOMContentLoaded', function () {
   })
   document.querySelector(".contact__back-block").addEventListener("click", event => {
     if (event._isClick) return;
+    $("html,body").css("overflow","auto");
     document.querySelector(".contact__back-block").style.display = 'none';
   })
 
